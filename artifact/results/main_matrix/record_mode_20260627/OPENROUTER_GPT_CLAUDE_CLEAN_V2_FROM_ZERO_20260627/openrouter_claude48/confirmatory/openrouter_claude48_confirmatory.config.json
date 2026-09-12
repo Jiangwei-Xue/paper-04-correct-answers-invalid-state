@@ -1,0 +1,114 @@
+{
+  "created_at_utc": "2026-06-27T15:41:17Z",
+  "experiment_id": "pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625__openrouter_claude48_slice",
+  "frozen_concurrency": {
+    "max_concurrent_requests": 10,
+    "scope": "global_live_adapter_ceiling"
+  },
+  "live_runner": {
+    "path": "artifact/verification/run_main_matrix_model_slice.py",
+    "sha256": "0c452ccb13baff4f67c41c17fd0293e52c9a9fed9aec4607cd2175f286c58f7f"
+  },
+  "matrix_role": "confirmatory_primary",
+  "matrix_shape": {
+    "budgets": 2,
+    "expected_rows": 1440,
+    "methods": 6,
+    "models": 1,
+    "runs": 3,
+    "tasks": 40
+  },
+  "model_admission_criteria": {
+    "path": "artifact/protocol/main_matrix/admission/MODEL_ADMISSION_CRITERIA_20260626.md",
+    "sha256": "a9b8f6ee4702b4099cf3d16f60f6d19b344ed0b6cad197d1dc533245f03cc816"
+  },
+  "model_condition_id": "openrouter_claude48",
+  "primary_analysis_eligible": true,
+  "record_mode": "live_provider_adapter_source_then_vcr",
+  "row_manifest": {
+    "path": "artifact/results/main_matrix/record_mode_20260627/OPENROUTER_GPT_CLAUDE_CLEAN_V2_FROM_ZERO_20260627/openrouter_claude48/confirmatory/openrouter_claude48_confirmatory.rows.jsonl",
+    "sha256": "983e46c6ddde23304d6b62516659a397a4a42ec7b3dbfdf6c73acf26582f719c"
+  },
+  "runtime_control_override": {
+    "does_not_modify_existing_rows": true,
+    "halt_on_first_openrouter_transport_failure": true,
+    "local_transport_path_failure_guard": {
+      "action": "halt_slice_without_retry",
+      "enabled": true,
+      "failure_class": "confirmed_local_transport_path_failure",
+      "halt_classes": [
+        "confirmed_local_transport_path_failure",
+        "remote_disconnected",
+        "transport_error",
+        "transport_timeout"
+      ],
+      "trigger": "any pre-HTTP local transport exception classified by the runner"
+    },
+    "max_workers_ceiling_enforced": 10,
+    "minimum_provider_call_interval_seconds_enforced": 0,
+    "minimum_submission_interval_seconds_enforced": 0,
+    "model_condition_id": "openrouter_claude48",
+    "openrouter_metadata_header": "enabled",
+    "override_id": "openrouter_clean_v2_runtime_hardening_20260627",
+    "plugins": [
+      {
+        "enabled": false,
+        "id": "context-compression"
+      }
+    ],
+    "provider_call_interval_seconds": 0.0,
+    "provider_policy": {
+      "allow_fallbacks": false,
+      "order": [
+        "anthropic"
+      ],
+      "require_parameters": true
+    },
+    "retry_policy": {
+      "backoff_seconds": [
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "max_sleep_seconds": 180.0,
+      "max_transport_attempts": 5,
+      "policy_id": "openrouter_post_pause_bounded_backoff_20260627",
+      "respect_retry_after": true,
+      "retryable_http_statuses": [
+        408,
+        429,
+        500,
+        502,
+        503,
+        504
+      ],
+      "schema_version": "pcg_dynamic_state_v2.transport_retry_policy.v1"
+    },
+    "schema_version": "pcg_dynamic_state_v2.runtime_control_override.v1",
+    "scope": "openrouter_clean_v2_from_zero",
+    "sha256": "fdea9bd5251bd09da96c2db4f8d4f8b1eb729e7ccd03509f47ba0675469fea0e"
+  },
+  "schema_version": "pcg_dynamic_state_v2.main_matrix_model_slice_config.v1",
+  "scorer": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b"
+  },
+  "source_config": {
+    "path": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json",
+    "sha256": "443b2813ca4a2a297d98aa19976644825cee8886ced01a93f8558cb57fa66cbc"
+  },
+  "source_experiment_id": "pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625",
+  "source_row_manifest": {
+    "path": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl",
+    "sha256": "10ace9463c960c35bbfa501e23e554924c6ef2f1f5fd904e7e18324e872938e0"
+  },
+  "variable_freeze_spec": {
+    "path": "artifact/protocol/main_matrix/admission/VARIABLE_FREEZE_SPEC_20260625.yaml",
+    "sha256": "d8481d5249612fb312101f0026a3e8fcc1aff28ae7a7d4fde1f6ae8952883836"
+  },
+  "vcr_runner": {
+    "path": "artifact/verification/main_matrix_vcr_runner.py",
+    "sha256": "296e9a5c847c1b0659fc5bbdc9a3284c963f15d4a72071496a58d3931cff7b79"
+  }
+}

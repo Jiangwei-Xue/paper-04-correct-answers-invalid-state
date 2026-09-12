@@ -1,0 +1,21 @@
+{
+  "artifact_manifest_path": "data/pcg_dynamic_state_v2/h5_targeted_backfill_lock_20260623/ARTIFACT_HASH_MANIFEST.jsonl",
+  "backfill_id": "pcg_dynamic_state_v2_targeted_missing_rows_backfill_20260623",
+  "environment_lock_path": "data/pcg_dynamic_state_v2/h5_targeted_backfill_lock_20260623/ENVIRONMENT_LOCK.json",
+  "environment_lock_sha256": "c9fdd0c5ffa4e9b0c146dc81482754797e34a7cb2c9d275f2d1ce7b516341ecb",
+  "failures": [],
+  "h4_incomplete_rows": 0,
+  "h5_private_raw_lock_rows": 2,
+  "lock_id": "pcg_dynamic_state_v2_targeted_missing_rows_backfill_h5_lock_20260623",
+  "model_api_called_by_backfill": true,
+  "model_api_called_by_lock_builder": false,
+  "parent_core_h5_lock_summary_sha256": "3476e8c7718c9354c1091cb20b2361cefc7af9b68da0e31e2a746c6ae8b5c0c9",
+  "public_release_status": "ANON_REVIEW_READY_AS_HASH_LOCK_WITH_PRIVATE_RAW_REFS; raw release policy still required for public artifact release.",
+  "row_count": 2,
+  "row_manifest_path": "data/pcg_dynamic_state_v2/h5_targeted_backfill_lock_20260623/ROW_H5_MANIFEST.jsonl",
+  "schema_version": "pcg_dynamic_state_v2.targeted_backfill_h5_lock_summary.v1",
+  "scope": "Two targeted DeepSeek backfill rows that closed backend_or_empty_output gaps in the core PCG v2 downgrade evidence.",
+  "scores_with_hashes_path": "data/pcg_dynamic_state_v2/h5_targeted_backfill_lock_20260623/backfill_scores_with_h5_hashes.csv",
+  "secret_files_read_by_lock_builder": false,
+  "summary_sha256": "882a8869e1235a0bdfa61dcaef32c5ab94c5350f1d3e8e404df4aa692fe2e64b"
+}

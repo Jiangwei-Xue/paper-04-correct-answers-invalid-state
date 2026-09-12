@@ -1,0 +1,72 @@
+{
+  "allow_safe_symlinks": false,
+  "documentation": {
+    "commands": [
+      {
+        "command": "python3 tools/VERIFY_ARCHIVE.py verify --archive <ARCHIVE_PATH> --public",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "verify",
+        "timeout_seconds": 1800
+      },
+      {
+        "command": "python3 scripts/reproduce_public_release.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "reproduce",
+        "timeout_seconds": 3600
+      },
+      {
+        "command": "python3 scripts/verify_public_package_v6.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "profile",
+        "timeout_seconds": 600
+      },
+      {
+        "command": "python3 scripts/verify_publication_metadata.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "publication",
+        "timeout_seconds": 60
+      }
+    ]
+  },
+  "public_disclosure_profile": "minimal",
+  "references": {
+    "json_globs": [],
+    "markdown_files": [
+      "README.md",
+      "RELEASE_AUDIT.md",
+      "LICENSES/README.md",
+      "LICENSES/THIRD_PARTY.md",
+      "docs/EXPERIMENT_DESIGN.md",
+      "docs/REPRODUCTION_PROTOCOL.md",
+      "docs/PAPER_RESULTS_MAP.md",
+      "docs/PROJECT_RELEASE_PROFILE.md",
+      "results/README.md"
+    ],
+    "stale_patterns": [
+      "pcg-v3-public-replay-20260910-v5",
+      "verify_public_release_v5.py",
+      "docs/CHINESE_ALLOWLIST.md",
+      "release_audit/V4_TO_V5_HASH_MAP.jsonl",
+      "submission/arxiv_revised_v3_20260902/"
+    ]
+  },
+  "release_class": "public",
+  "release_name": "pcg-v3-github-reproduction-20260912-v7",
+  "schema_version": 1,
+  "source_date_epoch": 315532800,
+  "statistical_claims": [],
+  "tool_contract": {
+    "mandatory_public_checks": [
+      "package_integrity",
+      "documentation",
+      "archive_integrity",
+      "reproducibility"
+    ],
+    "name": "experiment-release",
+    "version": "1.2.1"
+  }
+}

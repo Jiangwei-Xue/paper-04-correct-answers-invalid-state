@@ -1,0 +1,10 @@
+{
+  "derived_at_utc": "2026-08-12T18:53:04Z",
+  "network_calls_performed": 0,
+  "schema": "carried_state_validity_v3.oracle_sidecar_manifest.v1",
+  "sidecar": "results/metric_v3/oracles_v3/main_matrix_v1.sidecar.jsonl",
+  "sidecar_sha256": "625942dd20d15ea03b10db1b00dcbc591622f99625cf68c4c419fa7b968b4864",
+  "source_sidecar": "results/metric_v2/oracles_v2/main_matrix_v1.sidecar.jsonl",
+  "source_sidecar_sha256": "4c96bfa33c5158726e872808c56c30fcb37654a50d690f157115e4da7efd0648",
+  "task_count": 40
+}

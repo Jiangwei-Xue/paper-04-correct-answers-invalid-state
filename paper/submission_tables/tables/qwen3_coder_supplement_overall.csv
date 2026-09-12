@@ -1,0 +1,2 @@
+population,rows,backend_error_rows,backend_error_rate,parse_and_score_success_rows,parse_and_score_success_rate,answer_success_rows,answer_success_rate,state_governance_success_rows,state_governance_success_rate,reliable_composite_success_rows,reliable_composite_success_rate,hard_cap_rows,hard_cap_rate
+qwen3_coder_supplement_1440,1440,0,0.000000,1439,0.999306,280,0.194444,298,0.206944,113,0.078472,324,0.225000

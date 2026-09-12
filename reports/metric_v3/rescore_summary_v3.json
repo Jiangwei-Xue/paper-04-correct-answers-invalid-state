@@ -1,0 +1,420 @@
+{
+  "executor_report": "reports/metric_v3/independent_executor_v3_report.json",
+  "method_blocking_primary": true,
+  "network_calls_performed": 0,
+  "pooled_executor_rd_primary": false,
+  "primary_conditionals": {
+    "P_V3_given_A_final_v2": {
+      "denominator": 696,
+      "numerator": 173,
+      "rate": 0.24856321839080459
+    },
+    "P_invalid_V3_given_A_final_v2": {
+      "denominator": 696,
+      "numerator": 523,
+      "rate": 0.7514367816091954
+    }
+  },
+  "primary_v2_to_v3_carried_transition": {
+    "v2_False_v3_False": 6995,
+    "v2_False_v3_True": 76,
+    "v2_True_v3_False": 25,
+    "v2_True_v3_True": 104
+  },
+  "schema": "carried_state_validity_v3.replay_summary.v1",
+  "tiers": {
+    "deepseek_sanity": {
+      "counts": {
+        "answer_state_consistency_v3": 32,
+        "carried_state_validity_v3": 6,
+        "exclusion_safety_v3": 40,
+        "final_answer_success_v2": 6,
+        "intrinsic_state_validity_v3": 6,
+        "joint_final_answer_state_success_v3": 5,
+        "operational_state_sufficiency_v3": 6,
+        "positive_operational_state_present_v3": 40,
+        "representation_parseable_v3": 40
+      },
+      "method_counts": {
+        "deepseek_v4pro_zero_shot_task_sanity_v1": {
+          "answer_state_consistency_v3": 32,
+          "carried_state_validity_v3": 6,
+          "exclusion_safety_v3": 40,
+          "final_answer_success_v2": 6,
+          "intrinsic_state_validity_v3": 6,
+          "joint_final_answer_state_success_v3": 5,
+          "operational_state_sufficiency_v3": 6,
+          "positive_operational_state_present_v3": 40,
+          "representation_parseable_v3": 40
+        }
+      },
+      "rows": 40
+    },
+    "deterministic_validity_suite": {
+      "counts": {
+        "answer_state_consistency_v3": 17895,
+        "carried_state_validity_v3": 7590,
+        "exclusion_safety_v3": 23984,
+        "final_answer_success_v2": 9398,
+        "intrinsic_state_validity_v3": 7590,
+        "joint_final_answer_state_success_v3": 7590,
+        "operational_state_sufficiency_v3": 13350,
+        "positive_operational_state_present_v3": 34560,
+        "representation_parseable_v3": 36000
+      },
+      "method_counts": {
+        "loop_only": {
+          "answer_state_consistency_v3": 2970,
+          "carried_state_validity_v3": 1264,
+          "exclusion_safety_v3": 3973,
+          "final_answer_success_v2": 1564,
+          "intrinsic_state_validity_v3": 1264,
+          "joint_final_answer_state_success_v3": 1264,
+          "operational_state_sufficiency_v3": 2224,
+          "positive_operational_state_present_v3": 5760,
+          "representation_parseable_v3": 6000
+        },
+        "mature_ssr_loop": {
+          "answer_state_consistency_v3": 2992,
+          "carried_state_validity_v3": 1266,
+          "exclusion_safety_v3": 4006,
+          "final_answer_success_v2": 1571,
+          "intrinsic_state_validity_v3": 1266,
+          "joint_final_answer_state_success_v3": 1266,
+          "operational_state_sufficiency_v3": 2226,
+          "positive_operational_state_present_v3": 5760,
+          "representation_parseable_v3": 6000
+        },
+        "rolling_summary": {
+          "answer_state_consistency_v3": 2970,
+          "carried_state_validity_v3": 1266,
+          "exclusion_safety_v3": 3985,
+          "final_answer_success_v2": 1567,
+          "intrinsic_state_validity_v3": 1266,
+          "joint_final_answer_state_success_v3": 1266,
+          "operational_state_sufficiency_v3": 2226,
+          "positive_operational_state_present_v3": 5760,
+          "representation_parseable_v3": 6000
+        },
+        "rolling_visible_carry_forward": {
+          "answer_state_consistency_v3": 2996,
+          "carried_state_validity_v3": 1267,
+          "exclusion_safety_v3": 4009,
+          "final_answer_success_v2": 1567,
+          "intrinsic_state_validity_v3": 1267,
+          "joint_final_answer_state_success_v3": 1267,
+          "operational_state_sufficiency_v3": 2227,
+          "positive_operational_state_present_v3": 5760,
+          "representation_parseable_v3": 6000
+        },
+        "rolling_visible_fields_only": {
+          "answer_state_consistency_v3": 2998,
+          "carried_state_validity_v3": 1262,
+          "exclusion_safety_v3": 4022,
+          "final_answer_success_v2": 1563,
+          "intrinsic_state_validity_v3": 1262,
+          "joint_final_answer_state_success_v3": 1262,
+          "operational_state_sufficiency_v3": 2222,
+          "positive_operational_state_present_v3": 5760,
+          "representation_parseable_v3": 6000
+        },
+        "ssr_no_visible_carry": {
+          "answer_state_consistency_v3": 2969,
+          "carried_state_validity_v3": 1265,
+          "exclusion_safety_v3": 3989,
+          "final_answer_success_v2": 1566,
+          "intrinsic_state_validity_v3": 1265,
+          "joint_final_answer_state_success_v3": 1265,
+          "operational_state_sufficiency_v3": 2225,
+          "positive_operational_state_present_v3": 5760,
+          "representation_parseable_v3": 6000
+        }
+      },
+      "rows": 36000
+    },
+    "primary": {
+      "counts": {
+        "answer_state_consistency_v3": 2626,
+        "carried_state_validity_v3": 180,
+        "exclusion_safety_v3": 3537,
+        "final_answer_success_v2": 696,
+        "intrinsic_state_validity_v3": 191,
+        "joint_final_answer_state_success_v3": 173,
+        "operational_state_sufficiency_v3": 272,
+        "positive_operational_state_present_v3": 4699,
+        "representation_parseable_v3": 6100
+      },
+      "method_counts": {
+        "loop_only": {
+          "answer_state_consistency_v3": 759,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 1200,
+          "final_answer_success_v2": 0,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 0,
+          "representation_parseable_v3": 1002
+        },
+        "mature_ssr_loop": {
+          "answer_state_consistency_v3": 627,
+          "carried_state_validity_v3": 113,
+          "exclusion_safety_v3": 667,
+          "final_answer_success_v2": 157,
+          "intrinsic_state_validity_v3": 115,
+          "joint_final_answer_state_success_v3": 109,
+          "operational_state_sufficiency_v3": 176,
+          "positive_operational_state_present_v3": 880,
+          "representation_parseable_v3": 973
+        },
+        "rolling_summary": {
+          "answer_state_consistency_v3": 304,
+          "carried_state_validity_v3": 20,
+          "exclusion_safety_v3": 609,
+          "final_answer_success_v2": 192,
+          "intrinsic_state_validity_v3": 26,
+          "joint_final_answer_state_success_v3": 19,
+          "operational_state_sufficiency_v3": 33,
+          "positive_operational_state_present_v3": 747,
+          "representation_parseable_v3": 879
+        },
+        "rolling_visible_carry_forward": {
+          "answer_state_consistency_v3": 386,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 0,
+          "final_answer_success_v2": 228,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 6,
+          "positive_operational_state_present_v3": 1117,
+          "representation_parseable_v3": 1200
+        },
+        "rolling_visible_fields_only": {
+          "answer_state_consistency_v3": 0,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 0,
+          "final_answer_success_v2": 0,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 1200,
+          "representation_parseable_v3": 1200
+        },
+        "ssr_no_visible_carry": {
+          "answer_state_consistency_v3": 550,
+          "carried_state_validity_v3": 47,
+          "exclusion_safety_v3": 1061,
+          "final_answer_success_v2": 119,
+          "intrinsic_state_validity_v3": 50,
+          "joint_final_answer_state_success_v3": 45,
+          "operational_state_sufficiency_v3": 57,
+          "positive_operational_state_present_v3": 755,
+          "representation_parseable_v3": 846
+        }
+      },
+      "rows": 7200
+    },
+    "primary_budget300": {
+      "counts": {
+        "answer_state_consistency_v3": 215,
+        "carried_state_validity_v3": 30,
+        "exclusion_safety_v3": 463,
+        "final_answer_success_v2": 96,
+        "intrinsic_state_validity_v3": 31,
+        "joint_final_answer_state_success_v3": 30,
+        "operational_state_sufficiency_v3": 59,
+        "positive_operational_state_present_v3": 493,
+        "representation_parseable_v3": 522
+      },
+      "method_counts": {
+        "mature_ssr_loop": {
+          "answer_state_consistency_v3": 102,
+          "carried_state_validity_v3": 21,
+          "exclusion_safety_v3": 115,
+          "final_answer_success_v2": 32,
+          "intrinsic_state_validity_v3": 21,
+          "joint_final_answer_state_success_v3": 21,
+          "operational_state_sufficiency_v3": 44,
+          "positive_operational_state_present_v3": 163,
+          "representation_parseable_v3": 173
+        },
+        "rolling_summary": {
+          "answer_state_consistency_v3": 42,
+          "carried_state_validity_v3": 3,
+          "exclusion_safety_v3": 156,
+          "final_answer_success_v2": 21,
+          "intrinsic_state_validity_v3": 3,
+          "joint_final_answer_state_success_v3": 3,
+          "operational_state_sufficiency_v3": 3,
+          "positive_operational_state_present_v3": 77,
+          "representation_parseable_v3": 88
+        },
+        "rolling_visible_carry_forward": {
+          "answer_state_consistency_v3": 46,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 0,
+          "final_answer_success_v2": 27,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 4,
+          "positive_operational_state_present_v3": 200,
+          "representation_parseable_v3": 200
+        },
+        "ssr_no_visible_carry": {
+          "answer_state_consistency_v3": 25,
+          "carried_state_validity_v3": 6,
+          "exclusion_safety_v3": 192,
+          "final_answer_success_v2": 16,
+          "intrinsic_state_validity_v3": 7,
+          "joint_final_answer_state_success_v3": 6,
+          "operational_state_sufficiency_v3": 8,
+          "positive_operational_state_present_v3": 53,
+          "representation_parseable_v3": 61
+        }
+      },
+      "rows": 800
+    },
+    "qwen": {
+      "counts": {
+        "answer_state_consistency_v3": 454,
+        "carried_state_validity_v3": 42,
+        "exclusion_safety_v3": 604,
+        "final_answer_success_v2": 148,
+        "intrinsic_state_validity_v3": 42,
+        "joint_final_answer_state_success_v3": 42,
+        "operational_state_sufficiency_v3": 56,
+        "positive_operational_state_present_v3": 1009,
+        "representation_parseable_v3": 1319
+      },
+      "method_counts": {
+        "loop_only": {
+          "answer_state_consistency_v3": 57,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 240,
+          "final_answer_success_v2": 0,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 0,
+          "representation_parseable_v3": 240
+        },
+        "mature_ssr_loop": {
+          "answer_state_consistency_v3": 100,
+          "carried_state_validity_v3": 21,
+          "exclusion_safety_v3": 115,
+          "final_answer_success_v2": 33,
+          "intrinsic_state_validity_v3": 21,
+          "joint_final_answer_state_success_v3": 21,
+          "operational_state_sufficiency_v3": 32,
+          "positive_operational_state_present_v3": 232,
+          "representation_parseable_v3": 240
+        },
+        "rolling_summary": {
+          "answer_state_consistency_v3": 85,
+          "carried_state_validity_v3": 1,
+          "exclusion_safety_v3": 97,
+          "final_answer_success_v2": 33,
+          "intrinsic_state_validity_v3": 1,
+          "joint_final_answer_state_success_v3": 1,
+          "operational_state_sufficiency_v3": 1,
+          "positive_operational_state_present_v3": 141,
+          "representation_parseable_v3": 184
+        },
+        "rolling_visible_carry_forward": {
+          "answer_state_consistency_v3": 79,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 0,
+          "final_answer_success_v2": 47,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 234,
+          "representation_parseable_v3": 240
+        },
+        "rolling_visible_fields_only": {
+          "answer_state_consistency_v3": 0,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 0,
+          "final_answer_success_v2": 0,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 240,
+          "representation_parseable_v3": 240
+        },
+        "ssr_no_visible_carry": {
+          "answer_state_consistency_v3": 133,
+          "carried_state_validity_v3": 20,
+          "exclusion_safety_v3": 152,
+          "final_answer_success_v2": 35,
+          "intrinsic_state_validity_v3": 20,
+          "joint_final_answer_state_success_v3": 20,
+          "operational_state_sufficiency_v3": 23,
+          "positive_operational_state_present_v3": 162,
+          "representation_parseable_v3": 175
+        }
+      },
+      "rows": 1440
+    },
+    "qwen_budget300": {
+      "counts": {
+        "answer_state_consistency_v3": 46,
+        "carried_state_validity_v3": 3,
+        "exclusion_safety_v3": 99,
+        "final_answer_success_v2": 11,
+        "intrinsic_state_validity_v3": 3,
+        "joint_final_answer_state_success_v3": 3,
+        "operational_state_sufficiency_v3": 4,
+        "positive_operational_state_present_v3": 88,
+        "representation_parseable_v3": 91
+      },
+      "method_counts": {
+        "mature_ssr_loop": {
+          "answer_state_consistency_v3": 21,
+          "carried_state_validity_v3": 3,
+          "exclusion_safety_v3": 25,
+          "final_answer_success_v2": 4,
+          "intrinsic_state_validity_v3": 3,
+          "joint_final_answer_state_success_v3": 3,
+          "operational_state_sufficiency_v3": 4,
+          "positive_operational_state_present_v3": 40,
+          "representation_parseable_v3": 40
+        },
+        "rolling_summary": {
+          "answer_state_consistency_v3": 7,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 38,
+          "final_answer_success_v2": 4,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 2,
+          "representation_parseable_v3": 4
+        },
+        "rolling_visible_carry_forward": {
+          "answer_state_consistency_v3": 2,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 0,
+          "final_answer_success_v2": 0,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 39,
+          "representation_parseable_v3": 40
+        },
+        "ssr_no_visible_carry": {
+          "answer_state_consistency_v3": 16,
+          "carried_state_validity_v3": 0,
+          "exclusion_safety_v3": 36,
+          "final_answer_success_v2": 3,
+          "intrinsic_state_validity_v3": 0,
+          "joint_final_answer_state_success_v3": 0,
+          "operational_state_sufficiency_v3": 0,
+          "positive_operational_state_present_v3": 7,
+          "representation_parseable_v3": 7
+        }
+      },
+      "rows": 160
+    }
+  }
+}

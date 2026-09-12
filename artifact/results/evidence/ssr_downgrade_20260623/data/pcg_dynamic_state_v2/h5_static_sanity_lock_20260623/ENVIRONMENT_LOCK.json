@@ -1,0 +1,13 @@
+{
+  "environment_lock_sha256": "d314a0f76ba7e3ec18e3b9d6155fe2e9762284128505d9973d9e1940728a7f4c",
+  "machine": "arm64",
+  "model_api_called_by_lock_builder": false,
+  "platform": "Darwin-arm64",
+  "processor": null,
+  "python_executable_name": "python3.14",
+  "python_version": "3.14",
+  "requirements_path": "requirements.txt",
+  "requirements_sha256": "378f5763eecd4a0dd4e2977f1b63227d119fdace60ca265328fb2f01fa2c0bb8",
+  "schema_version": "pcg_dynamic_state_v2.static_sanity_h5_environment_lock.v1",
+  "secret_files_read": false
+}

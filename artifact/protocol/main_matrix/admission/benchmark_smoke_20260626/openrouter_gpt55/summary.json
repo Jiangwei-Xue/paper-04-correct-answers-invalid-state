@@ -1,0 +1,21 @@
+{
+  "adapter_source_budget300_diagnostic": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/adapter_source.budget300_diagnostic.jsonl",
+  "adapter_source_confirmatory": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/adapter_source.confirmatory.jsonl",
+  "api_calls_performed": 61,
+  "confirmatory_config": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/openrouter_gpt55_confirmatory_12row.json",
+  "controlled_rows_budget300_diagnostic": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/CONTROLLED_ROWS.budget300_diagnostic.jsonl",
+  "controlled_rows_confirmatory": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/CONTROLLED_ROWS.confirmatory.jsonl",
+  "created_at_utc": "2026-06-26T11:43:52Z",
+  "decision": {
+    "confirmatory_rows": 12,
+    "decision": "ADMIT_MODEL",
+    "hard_failure_count": 0,
+    "outcome_fields_used_for_admission": false,
+    "parse_and_score_success_count": 12,
+    "per_model_threshold": "11/12"
+  },
+  "diagnostic_config": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/openrouter_gpt55_budget300_diagnostic_4row.json",
+  "model_condition_id": "openrouter_gpt55",
+  "schema_version": "pcg_dynamic_state_v2.benchmark_admission_summary.v1",
+  "task_id": "pcgds_v2_00001_api_migration_state_transition_easy"
+}

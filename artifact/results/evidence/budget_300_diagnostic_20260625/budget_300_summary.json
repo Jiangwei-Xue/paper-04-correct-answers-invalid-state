@@ -1,0 +1,616 @@
+{
+  "aggregate_by_budget": {
+    "1200": {
+      "answer_success_count": 31,
+      "answer_success_rate": 0.172222,
+      "final_exact_success_count": 31,
+      "final_exact_success_rate": 0.172222,
+      "hard_cap_any_count": 18,
+      "hard_cap_any_rate": 0.1,
+      "reliable_success_count": 12,
+      "reliable_success_rate": 0.066667,
+      "rows": 180,
+      "state_chars_after_budget": {
+        "max": 1200,
+        "mean": 531.7,
+        "median": 467.0
+      },
+      "state_chars_before_budget": {
+        "max": 1842,
+        "mean": 539.2,
+        "median": 467.0
+      },
+      "state_governance_success_count": 40,
+      "state_governance_success_rate": 0.222222
+    },
+    "300": {
+      "answer_success_count": 19,
+      "answer_success_rate": 0.105556,
+      "final_exact_success_count": 19,
+      "final_exact_success_rate": 0.105556,
+      "hard_cap_any_count": 154,
+      "hard_cap_any_rate": 0.855556,
+      "reliable_success_count": 6,
+      "reliable_success_rate": 0.033333,
+      "rows": 180,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 286.8,
+        "median": 300.0
+      },
+      "state_chars_before_budget": {
+        "max": 1643,
+        "mean": 384.7,
+        "median": 337.0
+      },
+      "state_governance_success_count": 31,
+      "state_governance_success_rate": 0.172222
+    },
+    "600": {
+      "answer_success_count": 36,
+      "answer_success_rate": 0.2,
+      "final_exact_success_count": 36,
+      "final_exact_success_rate": 0.2,
+      "hard_cap_any_count": 72,
+      "hard_cap_any_rate": 0.4,
+      "reliable_success_count": 10,
+      "reliable_success_rate": 0.055556,
+      "rows": 180,
+      "state_chars_after_budget": {
+        "max": 600,
+        "mean": 439.1,
+        "median": 441.5
+      },
+      "state_chars_before_budget": {
+        "max": 1430,
+        "mean": 467.0,
+        "median": 441.5
+      },
+      "state_governance_success_count": 40,
+      "state_governance_success_rate": 0.222222
+    }
+  },
+  "aggregate_by_method_budget": [
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "budget": 300,
+      "final_exact_success_count": 0,
+      "final_exact_success_rate": 0.0,
+      "hard_cap_any_count": 30,
+      "hard_cap_any_rate": 1.0,
+      "method": "loop_only",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 297.1,
+        "median": 300.0
+      },
+      "state_chars_before_budget": {
+        "max": 1023,
+        "mean": 484.7,
+        "median": 466.0
+      },
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "budget": 600,
+      "final_exact_success_count": 0,
+      "final_exact_success_rate": 0.0,
+      "hard_cap_any_count": 20,
+      "hard_cap_any_rate": 0.666667,
+      "method": "loop_only",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 600,
+        "mean": 506.9,
+        "median": 517.0
+      },
+      "state_chars_before_budget": {
+        "max": 1375,
+        "mean": 537.0,
+        "median": 517.0
+      },
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "budget": 1200,
+      "final_exact_success_count": 0,
+      "final_exact_success_rate": 0.0,
+      "hard_cap_any_count": 0,
+      "hard_cap_any_rate": 0.0,
+      "method": "loop_only",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 816,
+        "mean": 542.4,
+        "median": 530.5
+      },
+      "state_chars_before_budget": {
+        "max": 816,
+        "mean": 542.4,
+        "median": 530.5
+      },
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 2,
+      "answer_success_rate": 0.066667,
+      "budget": 300,
+      "final_exact_success_count": 2,
+      "final_exact_success_rate": 0.066667,
+      "hard_cap_any_count": 22,
+      "hard_cap_any_rate": 0.733333,
+      "method": "mature_ssr_loop",
+      "reliable_success_count": 1,
+      "reliable_success_rate": 0.033333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 282.7,
+        "median": 300.0
+      },
+      "state_chars_before_budget": {
+        "max": 1643,
+        "mean": 420.6,
+        "median": 323.5
+      },
+      "state_governance_success_count": 6,
+      "state_governance_success_rate": 0.2
+    },
+    {
+      "answer_success_count": 2,
+      "answer_success_rate": 0.066667,
+      "budget": 600,
+      "final_exact_success_count": 2,
+      "final_exact_success_rate": 0.066667,
+      "hard_cap_any_count": 12,
+      "hard_cap_any_rate": 0.4,
+      "method": "mature_ssr_loop",
+      "reliable_success_count": 1,
+      "reliable_success_rate": 0.033333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 600,
+        "mean": 409.9,
+        "median": 384.0
+      },
+      "state_chars_before_budget": {
+        "max": 1055,
+        "mean": 449.6,
+        "median": 384.0
+      },
+      "state_governance_success_count": 5,
+      "state_governance_success_rate": 0.166667
+    },
+    {
+      "answer_success_count": 2,
+      "answer_success_rate": 0.066667,
+      "budget": 1200,
+      "final_exact_success_count": 2,
+      "final_exact_success_rate": 0.066667,
+      "hard_cap_any_count": 2,
+      "hard_cap_any_rate": 0.066667,
+      "method": "mature_ssr_loop",
+      "reliable_success_count": 1,
+      "reliable_success_rate": 0.033333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 1200,
+        "mean": 478.5,
+        "median": 402.0
+      },
+      "state_chars_before_budget": {
+        "max": 1385,
+        "mean": 480.5,
+        "median": 402.0
+      },
+      "state_governance_success_count": 6,
+      "state_governance_success_rate": 0.2
+    },
+    {
+      "answer_success_count": 4,
+      "answer_success_rate": 0.133333,
+      "budget": 300,
+      "final_exact_success_count": 4,
+      "final_exact_success_rate": 0.133333,
+      "hard_cap_any_count": 23,
+      "hard_cap_any_rate": 0.766667,
+      "method": "rolling_summary",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 282.2,
+        "median": 300.0
+      },
+      "state_chars_before_budget": {
+        "max": 765,
+        "mean": 339.6,
+        "median": 319.5
+      },
+      "state_governance_success_count": 9,
+      "state_governance_success_rate": 0.3
+    },
+    {
+      "answer_success_count": 5,
+      "answer_success_rate": 0.166667,
+      "budget": 600,
+      "final_exact_success_count": 5,
+      "final_exact_success_rate": 0.166667,
+      "hard_cap_any_count": 15,
+      "hard_cap_any_rate": 0.5,
+      "method": "rolling_summary",
+      "reliable_success_count": 1,
+      "reliable_success_rate": 0.033333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 600,
+        "mean": 488.3,
+        "median": 524.0
+      },
+      "state_chars_before_budget": {
+        "max": 913,
+        "mean": 502.4,
+        "median": 524.0
+      },
+      "state_governance_success_count": 15,
+      "state_governance_success_rate": 0.5
+    },
+    {
+      "answer_success_count": 4,
+      "answer_success_rate": 0.133333,
+      "budget": 1200,
+      "final_exact_success_count": 4,
+      "final_exact_success_rate": 0.133333,
+      "hard_cap_any_count": 6,
+      "hard_cap_any_rate": 0.2,
+      "method": "rolling_summary",
+      "reliable_success_count": 1,
+      "reliable_success_rate": 0.033333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 1200,
+        "mean": 662.0,
+        "median": 673.5
+      },
+      "state_chars_before_budget": {
+        "max": 1536,
+        "mean": 666.8,
+        "median": 673.5
+      },
+      "state_governance_success_count": 10,
+      "state_governance_success_rate": 0.333333
+    },
+    {
+      "answer_success_count": 4,
+      "answer_success_rate": 0.133333,
+      "budget": 300,
+      "final_exact_success_count": 4,
+      "final_exact_success_rate": 0.133333,
+      "hard_cap_any_count": 30,
+      "hard_cap_any_rate": 1.0,
+      "method": "rolling_visible_carry_forward",
+      "reliable_success_count": 1,
+      "reliable_success_rate": 0.033333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 299.8,
+        "median": 300.0
+      },
+      "state_chars_before_budget": {
+        "max": 759,
+        "mean": 434.8,
+        "median": 415.0
+      },
+      "state_governance_success_count": 1,
+      "state_governance_success_rate": 0.033333
+    },
+    {
+      "answer_success_count": 22,
+      "answer_success_rate": 0.733333,
+      "budget": 600,
+      "final_exact_success_count": 22,
+      "final_exact_success_rate": 0.733333,
+      "hard_cap_any_count": 19,
+      "hard_cap_any_rate": 0.633333,
+      "method": "rolling_visible_carry_forward",
+      "reliable_success_count": 8,
+      "reliable_success_rate": 0.266667,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 600,
+        "mean": 532.0,
+        "median": 565.5
+      },
+      "state_chars_before_budget": {
+        "max": 1002,
+        "mean": 580.3,
+        "median": 565.5
+      },
+      "state_governance_success_count": 10,
+      "state_governance_success_rate": 0.333333
+    },
+    {
+      "answer_success_count": 20,
+      "answer_success_rate": 0.666667,
+      "budget": 1200,
+      "final_exact_success_count": 20,
+      "final_exact_success_rate": 0.666667,
+      "hard_cap_any_count": 5,
+      "hard_cap_any_rate": 0.166667,
+      "method": "rolling_visible_carry_forward",
+      "reliable_success_count": 10,
+      "reliable_success_rate": 0.333333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 1200,
+        "mean": 697.4,
+        "median": 676.0
+      },
+      "state_chars_before_budget": {
+        "max": 1700,
+        "mean": 707.3,
+        "median": 676.0
+      },
+      "state_governance_success_count": 17,
+      "state_governance_success_rate": 0.566667
+    },
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "budget": 300,
+      "final_exact_success_count": 0,
+      "final_exact_success_rate": 0.0,
+      "hard_cap_any_count": 30,
+      "hard_cap_any_rate": 1.0,
+      "method": "rolling_visible_fields_only",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 294.8,
+        "median": 300.0
+      },
+      "state_chars_before_budget": {
+        "max": 346,
+        "mean": 307.1,
+        "median": 309.0
+      },
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "budget": 600,
+      "final_exact_success_count": 0,
+      "final_exact_success_rate": 0.0,
+      "hard_cap_any_count": 0,
+      "hard_cap_any_rate": 0.0,
+      "method": "rolling_visible_fields_only",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 346,
+        "mean": 307.1,
+        "median": 309.0
+      },
+      "state_chars_before_budget": {
+        "max": 346,
+        "mean": 307.1,
+        "median": 309.0
+      },
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "budget": 1200,
+      "final_exact_success_count": 0,
+      "final_exact_success_rate": 0.0,
+      "hard_cap_any_count": 0,
+      "hard_cap_any_rate": 0.0,
+      "method": "rolling_visible_fields_only",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 346,
+        "mean": 307.1,
+        "median": 309.0
+      },
+      "state_chars_before_budget": {
+        "max": 346,
+        "mean": 307.1,
+        "median": 309.0
+      },
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 9,
+      "answer_success_rate": 0.3,
+      "budget": 300,
+      "final_exact_success_count": 9,
+      "final_exact_success_rate": 0.3,
+      "hard_cap_any_count": 19,
+      "hard_cap_any_rate": 0.633333,
+      "method": "ssr_no_visible_carry",
+      "reliable_success_count": 4,
+      "reliable_success_rate": 0.133333,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 300,
+        "mean": 263.9,
+        "median": 299.5
+      },
+      "state_chars_before_budget": {
+        "max": 1365,
+        "mean": 321.5,
+        "median": 299.5
+      },
+      "state_governance_success_count": 15,
+      "state_governance_success_rate": 0.5
+    },
+    {
+      "answer_success_count": 7,
+      "answer_success_rate": 0.233333,
+      "budget": 600,
+      "final_exact_success_count": 7,
+      "final_exact_success_rate": 0.233333,
+      "hard_cap_any_count": 6,
+      "hard_cap_any_rate": 0.2,
+      "method": "ssr_no_visible_carry",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 600,
+        "mean": 390.3,
+        "median": 367.0
+      },
+      "state_chars_before_budget": {
+        "max": 1430,
+        "mean": 425.9,
+        "median": 367.0
+      },
+      "state_governance_success_count": 10,
+      "state_governance_success_rate": 0.333333
+    },
+    {
+      "answer_success_count": 5,
+      "answer_success_rate": 0.166667,
+      "budget": 1200,
+      "final_exact_success_count": 5,
+      "final_exact_success_rate": 0.166667,
+      "hard_cap_any_count": 5,
+      "hard_cap_any_rate": 0.166667,
+      "method": "ssr_no_visible_carry",
+      "reliable_success_count": 0,
+      "reliable_success_rate": 0.0,
+      "rows": 30,
+      "state_chars_after_budget": {
+        "max": 1200,
+        "mean": 503.0,
+        "median": 393.0
+      },
+      "state_chars_before_budget": {
+        "max": 1842,
+        "mean": 530.9,
+        "median": 393.0
+      },
+      "state_governance_success_count": 7,
+      "state_governance_success_rate": 0.233333
+    }
+  ],
+  "definition": {
+    "hard_cap_any": "row.state_hard_cap_used OR any compiler_audits[].state_hard_cap_used",
+    "rows_analyzed": "three direct-provider random10 PCG dynamic-state v2 pilot packets",
+    "scope": "diagnostic evidence for budget-axis disposition, not primary outcome estimation"
+  },
+  "interpretation": [
+    "Budget 300 shows a much higher state hard-cap rate than 600 or 1200 in the released pilot rows.",
+    "The 300 rows are evidence for a low-budget diagnostic regime, not a confirmatory budget level.",
+    "The evidence supports a bounded claim about frequent hard-capping and low success in key carry conditions; it does not prove that every method always floors at 300."
+  ],
+  "sample_hard_cap_rows": [
+    {
+      "answer_success": false,
+      "budget": 300,
+      "global_artifact_id": "_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100::pcgds_v2_00004_api_migration_state_transition_medium::loop_only::budget300::run1",
+      "method": "loop_only",
+      "reliable_success": false,
+      "source_file": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/CONTROLLED_ROWS.jsonl",
+      "source_line": 1,
+      "state_chars_after_budget_first": 300,
+      "state_chars_before_budget_first": 389,
+      "state_hard_cap_used": true
+    },
+    {
+      "answer_success": false,
+      "budget": 300,
+      "global_artifact_id": "_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100::pcgds_v2_00004_api_migration_state_transition_medium::mature_ssr_loop::budget300::run1",
+      "method": "mature_ssr_loop",
+      "reliable_success": false,
+      "source_file": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/CONTROLLED_ROWS.jsonl",
+      "source_line": 4,
+      "state_chars_after_budget_first": 300,
+      "state_chars_before_budget_first": 321,
+      "state_hard_cap_used": true
+    },
+    {
+      "answer_success": false,
+      "budget": 300,
+      "global_artifact_id": "_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100::pcgds_v2_00004_api_migration_state_transition_medium::rolling_summary::budget300::run1",
+      "method": "rolling_summary",
+      "reliable_success": false,
+      "source_file": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/CONTROLLED_ROWS.jsonl",
+      "source_line": 7,
+      "state_chars_after_budget_first": 300,
+      "state_chars_before_budget_first": 319,
+      "state_hard_cap_used": true
+    },
+    {
+      "answer_success": false,
+      "budget": 300,
+      "global_artifact_id": "_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100::pcgds_v2_00004_api_migration_state_transition_medium::rolling_visible_carry_forward::budget300::run1",
+      "method": "rolling_visible_carry_forward",
+      "reliable_success": false,
+      "source_file": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/CONTROLLED_ROWS.jsonl",
+      "source_line": 10,
+      "state_chars_after_budget_first": 300,
+      "state_chars_before_budget_first": 407,
+      "state_hard_cap_used": true
+    },
+    {
+      "answer_success": false,
+      "budget": 300,
+      "global_artifact_id": "_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100::pcgds_v2_00004_api_migration_state_transition_medium::rolling_visible_fields_only::budget300::run1",
+      "method": "rolling_visible_fields_only",
+      "reliable_success": false,
+      "source_file": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/CONTROLLED_ROWS.jsonl",
+      "source_line": 13,
+      "state_chars_after_budget_first": 283,
+      "state_chars_before_budget_first": 283,
+      "state_hard_cap_used": true
+    }
+  ],
+  "schema_version": "budget_300_diagnostic_evidence.v1",
+  "source_files": [
+    {
+      "path": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/CONTROLLED_ROWS.jsonl",
+      "rows": 180,
+      "sha256": "2768bc2b5e7137b929e7991755b266e28dd5084e2054dc080f124b9ae16f776f"
+    },
+    {
+      "path": "results/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/CONTROLLED_ROWS.jsonl",
+      "rows": 180,
+      "sha256": "02158cd09e9a0e0792c859ba623f284f4a70f16a1a107ab0884be5ecd513c0e7"
+    },
+    {
+      "path": "results/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/CONTROLLED_ROWS.jsonl",
+      "rows": 180,
+      "sha256": "f7711d82c945464f685599915307d1e2650ece16b605506bef2b54fc1249eb97"
+    }
+  ],
+  "source_packet": "artifact/results/evidence/ssr_downgrade_20260623"
+}

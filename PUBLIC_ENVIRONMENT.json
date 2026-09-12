@@ -1,0 +1,9 @@
+{
+  "archive_tool": "7zz, 7z, or 7za",
+  "dependencies": "Python standard library only",
+  "minimum_free_space_gb": 2,
+  "python_minimum": "3.10",
+  "reproduction_timezone": "UTC",
+  "tested_platform": "macOS",
+  "tested_python": "3.14.5"
+}

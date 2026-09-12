@@ -1,0 +1,176 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "condition_id": "deepseek_v4pro",
+    "fallback_enabled": false,
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro"
+  },
+  "created_at_utc": "2026-06-20T14:22:45Z",
+  "default_max_workers": 100,
+  "expected_rows": 52,
+  "experiment_id": "_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run",
+  "implementation": {
+    "runner": "tools/run_ecvs_deepseek_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_2budget.py",
+    "scorer": "tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_outputs.py"
+  },
+  "method_protocol_doc": "<AUTHOR_LOCAL_WORKSPACE>/stateful-reasoning-benchmark-release/docs/protocol/fresh_main_matrix_v2/METHOD_CONDITION_PROTOCOLS.md",
+  "method_protocol_versions": {
+    "mature_ssr_loop": "mature_ssr_loop_protocol_v1_ecvs_safe_visible_only",
+    "rolling_visible_carry_forward": "rolling_visible_identifier_carry_forward_v1_ecvs_safe_visible_only"
+  },
+  "methods": [
+    "rolling_visible_carry_forward",
+    "mature_ssr_loop"
+  ],
+  "positioning": "local_calibration_only_not_primary_not_admission_not_main_matrix",
+  "request_controls": {
+    "cache": "not_requested",
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_or_thinking": {
+      "send_mode": "explicit",
+      "value": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "ecvs_deepseek_probe_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "retryable_transport_failures": [
+      "timeout",
+      "connection_reset"
+    ]
+  },
+  "row_field_contract": [
+    "global_artifact_id",
+    "config_sha256",
+    "task_manifest_sha256",
+    "prompt_hash",
+    "runner_sha256",
+    "scorer_oracle_sha256",
+    "environment_hash_or_commit",
+    "request_hash",
+    "raw_response_sha256",
+    "parsed_output_sha256",
+    "metric_record_sha256",
+    "manifest_entry_hash",
+    "h5_chain_hash",
+    "provider",
+    "base_url",
+    "requested_model",
+    "selected_model_or_returned_model",
+    "fallback_enabled",
+    "reasoning_tokens_observed",
+    "reasoning_content_present",
+    "state_budget",
+    "state_hard_cap_used",
+    "final_exact_success",
+    "reliable_success"
+  ],
+  "runs": 1,
+  "safety": {
+    "default_mode": "preflight_only_no_api_no_key_read",
+    "preflight_calls_api": false,
+    "preflight_reads_api_key": false,
+    "run_api_requires_flag": "--run-api"
+  },
+  "state_budget_chars": [
+    600,
+    1200
+  ],
+  "task_hashes": {
+    "base_manifest_sha256": "82fd977783abe6163a273406157af6661d3d626cc12cdf4bdcaede0fbaba47f3",
+    "base_model_visible_manifest_sha256": "f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1",
+    "base_oracle_manifest_sha256": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280",
+    "subset_model_visible_manifest_sha256": "caea7fdc801c3eb5d5fb6d1f47c0fd747c32b7ec07c93c74bc13e16082fe69e9",
+    "subset_oracle_manifest_sha256": "bb8843b7ab29ab664460c091721141a9499b8eec8c4a4f4d1b132d98436b708e",
+    "subset_task_provenance_manifest_sha256": "0b152d13af227228f4e0c0a817338f5447d68db75a27a25a17f9f517cce99ae7",
+    "subset_task_selection_csv_sha256": "b7e7023c30155729cb5729f61bc64adc4637bdbaf69589a80ac2d3d5ff33e73e",
+    "subset_task_split_audit_sha256": "7f4401f6475b9835a99dc3af7e53f065b2eced2129405514ecbaef52b9b85607"
+  },
+  "task_source": {
+    "base_manifest": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_manifest.json",
+    "base_model_visible_manifest": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_model_visible.jsonl",
+    "base_oracle_manifest": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_oracle.jsonl",
+    "base_sha256s": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_sha256s.txt",
+    "hard_diagnostic_families": [
+      "permission_boundary_with_attractive_blocked_path",
+      "decoy_heavy_same_prefix_config",
+      "protected_information_redaction_under_task_pressure"
+    ],
+    "selection_rule": "all_easy_plus_three_diagnostic_hard_families_no_outcome",
+    "subset_model_visible_manifest": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "subset_oracle_manifest": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run/SCORER_ORACLE_MANIFEST.jsonl",
+    "subset_task_provenance_manifest": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run/TASK_PROVENANCE_MANIFEST.jsonl",
+    "subset_task_selection_csv": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run/TASK_SELECTION.csv",
+    "subset_task_split_audit": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run/TASK_SPLIT_AUDIT.json",
+    "task_counts": {
+      "easy": 10,
+      "hard": 3
+    }
+  },
+  "variable_control_doc": "<AUTHOR_LOCAL_WORKSPACE>/stateful-reasoning-benchmark-release/docs/protocol/fresh_main_matrix_v2/LATEST_EXPERIMENT_VARIABLE_REQUIREMENTS_ROLLING_VISIBLE_CARRY_FORWARD_LOCAL.md"
+}

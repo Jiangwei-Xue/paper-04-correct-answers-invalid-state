@@ -1,0 +1,23 @@
+{
+  "schema": "academic_experiment_audit.prematrix_variable_control.v1",
+  "agent": "prematrix-variable-control-agent",
+  "summary": "Representation is explicitly treated as a blocking variable; operational sufficiency is action-dependent; executor estimates are within method and no pooled RD is primary.",
+  "evidence_strength": "E4",
+  "pass_fail_table": {
+    "representation_blocking_variable": "pass",
+    "action_dependent_sufficiency": "pass",
+    "answer_selected_path_support": "pass",
+    "method_blocked_executor_estimand": "pass",
+    "outcome_dependent_refill": "pass_false"
+  },
+  "red_flags": ["Rolling visible-carry-forward has no V3-valid answer-correct rows, so its within-method RD is not estimable."],
+  "open_questions": ["Whether methods with zero V3-positive rows should appear in the revised main table is a manuscript decision."],
+  "required_fixes_before_main_matrix": [],
+  "safe_to_include": ["reports/metric_v3/independent_executor_v3_report.json", "reports/metric_v3/rescore_summary_v3.json"],
+  "exclude_or_rerun": ["Do not report pooled executor RD as the primary effect."],
+  "confidence": "high",
+  "findings": [
+    {"finding_id": "PVC_V3_001", "agent": "prematrix-variable-control-agent", "severity": "R0", "status": "pass", "claim": "The V3 plan fixes representation as a blocking/stratification variable.", "evidence_refs": [{"type": "file", "ref": "specs/carried_state_validity_v3.yaml", "hash": "0312e40a7c0175f70f1559977b17049e2803fdc9be5176d1fd866295ab89d669"}, {"type": "file", "ref": "docs/metric_v3_revision_analysis_plan.md", "hash": "4c5e21233c965f26b13f0f7d4f98574116f0e8e87426f73f49d24a1dfb344d53"}], "affected_runs": ["primary"], "affected_artifacts": ["reports/metric_v3/independent_executor_v3_report.json"], "recommended_action": "Report method-specific estimates and estimability flags.", "blocks_main_matrix": false},
+    {"finding_id": "PVC_V3_002", "agent": "prematrix-variable-control-agent", "severity": "R1", "status": "pass", "claim": "Mandatory facts plus at least one admissible action option define operational sufficiency, and a selected answer path must be supported.", "evidence_refs": [{"type": "file", "ref": "metric_v3/evaluator.py", "hash": "973ed041013dc81066ba99924866c35acc1a02fc7b63f5f4ca5e726b7cda5198"}, {"type": "file", "ref": "reports/metric_v3/gates/representation_invariance_suite.json", "hash": "c4f096e1b5d1abaebdbe109000e98592126903e168aef00b7913391e61fbee37"}], "affected_runs": ["V3 representation suite", "V3 offline replay"], "affected_artifacts": ["metric_v3/evaluator.py"], "recommended_action": "Retain the 10-case invariance suite as a release gate.", "blocks_main_matrix": false}
+  ]
+}

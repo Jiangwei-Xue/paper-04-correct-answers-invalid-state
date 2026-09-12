@@ -1,0 +1,24 @@
+{
+  "api_calls_performed": 40,
+  "by_policy": [
+    {
+      "answer_success_count": 10,
+      "answer_success_rate": 0.25,
+      "co_success_count": 5,
+      "co_success_rate": 0.125,
+      "method": "deepseek_v4pro_zero_shot_task_sanity_v1",
+      "n": 40,
+      "state_governance_success_count": 24,
+      "state_governance_success_rate": 0.6
+    }
+  ],
+  "created_at_utc": "2026-07-06T09:34:29Z",
+  "max_workers": 10,
+  "model_condition_id": "deepseek_v4pro",
+  "primary_analysis_eligible": false,
+  "provider": "deepseek",
+  "requested_model": "deepseek-v4-pro",
+  "rows": 40,
+  "schema_version": "pcg_dynamic_state_v2.deepseek_api_sanity_summary.v1",
+  "suite_id": "deepseek_v4pro_api_sanity_20260706"
+}

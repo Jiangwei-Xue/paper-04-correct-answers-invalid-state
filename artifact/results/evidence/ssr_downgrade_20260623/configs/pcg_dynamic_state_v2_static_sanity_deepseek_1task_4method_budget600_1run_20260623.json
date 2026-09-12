@@ -1,0 +1,157 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "condition_id": "deepseek_v4pro",
+    "fallback_enabled": false,
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro"
+  },
+  "created_at_utc": "2026-06-23T14:23:02Z",
+  "default_max_workers": 1,
+  "expected_rows": 4,
+  "experiment_id": "pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623",
+  "gate_rule": {
+    "non_admission": "static sanity rows are not main-matrix evidence and must not be pooled",
+    "pass_rule": "single-task mature_ssr_loop answer_success and reliable_composite_success must both be true with no boundary leakage",
+    "source_doc": "docs/protocol/pcg_dynamic_state_v2_main_matrix/STATIC_SANITY_GATE_20260623.md"
+  },
+  "implementation": {
+    "base_runner_reused": "tools/run_ecvs_deepseek_pcg_dynamic_state_v2_e10_h3_decisive_4method_2budget_1run.py",
+    "random10_canonical_runner_reused": "tools/run_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+    "runner": "tools/run_deepseek_pcg_dynamic_state_v2_static_sanity_20260623.py",
+    "scorer": "tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py"
+  },
+  "matrix_shape": {
+    "expected_rows": 4,
+    "methods": 4,
+    "models": 1,
+    "runs": 1,
+    "state_budgets": 1,
+    "tasks": 1
+  },
+  "method_protocol_doc": "docs/protocol/pcg_dynamic_state_v2_main_matrix/METHOD_CONDITION_PROTOCOLS_v2.md",
+  "method_protocol_versions": {
+    "mature_ssr_loop": "mature_ssr_loop_protocol_v1_ecvs_safe_visible_only",
+    "rolling_visible_carry_forward": "rolling_visible_identifier_carry_forward_v1_ecvs_safe_visible_only",
+    "rolling_visible_fields_only": "rolling_visible_fields_only_protocol_v1_pcg_dynamic_state_v2_safe_visible_only",
+    "ssr_no_visible_carry": "ssr_no_visible_carry_protocol_v1_alias_ssr_only_no_deterministic_visible_carry"
+  },
+  "methods": [
+    "rolling_visible_carry_forward",
+    "rolling_visible_fields_only",
+    "ssr_no_visible_carry",
+    "mature_ssr_loop"
+  ],
+  "positioning": "static_sanity_gate_only_not_main_matrix_not_pooled",
+  "request_controls": {
+    "cache": "not_requested",
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_or_thinking": {
+      "send_mode": "explicit",
+      "value": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "deepseek_static_sanity_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "retryable_transport_failures": [
+      "timeout",
+      "connection_reset"
+    ]
+  },
+  "runs": 1,
+  "safety": {
+    "api_key_value_never_printed": true,
+    "api_run_requires_flag": "--run-api",
+    "git_invocation_disabled": true,
+    "preflight_calls_api": false
+  },
+  "state_budget_chars": [
+    600
+  ],
+  "task_hashes": {
+    "subset_model_visible_manifest_sha256": "103efdf5ec5f75904442dc63c199ffbc9c7a4bec67c0d8413757a3d9ac95dcda",
+    "subset_oracle_manifest_sha256": "8cb146c6779070475c407d7eda9c40bc5ca2d4b37d3872e2e3540c5ceb1d9730",
+    "subset_task_provenance_manifest_sha256": "a7829ac4b8bfb40a25693e629de087682c32384470e295bc7b25bf836a2157b2",
+    "subset_task_selection_csv_sha256": "c841dae663c580c8a327deab774afb5996db863aa128c8908dfb24cf155d41e1",
+    "subset_task_split_audit_sha256": "5bf1b2a2c9f07e54453b2b43b68859ff6d4a9837f9cf523c07814cdfeb2111ac"
+  },
+  "task_source": {
+    "historical_candidate_evidence_role": "static65/static82/static90 motivate the need for this canonical control but are not reused as passing evidence",
+    "selection_rule": "hand_frozen_static_runner_discrimination_control_before_execution",
+    "selection_used_model_outcomes": false,
+    "subset_model_visible_manifest": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "subset_oracle_manifest": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/SCORER_ORACLE_MANIFEST.jsonl",
+    "subset_task_provenance_manifest": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/TASK_PROVENANCE_MANIFEST.jsonl",
+    "subset_task_selection_csv": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/TASK_SELECTION.csv",
+    "subset_task_split_audit": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/TASK_SPLIT_AUDIT.json",
+    "task_ids": [
+      "pcgds_v2_static_sanity_20260623_clear_boundary_v1"
+    ]
+  },
+  "variable_control_doc": "docs/protocol/pcg_dynamic_state_v2_main_matrix/LATEST_EXPERIMENT_VARIABLE_REQUIREMENTS_v2.md"
+}

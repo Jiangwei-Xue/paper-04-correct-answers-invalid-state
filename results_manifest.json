@@ -1,0 +1,25 @@
+{
+  "schema": "pcg.public_results_manifest.v1",
+  "claim_bearing_metric": "representation-normalized carried-state validity V3",
+  "primary": {
+    "rows": 7200,
+    "score_rows": "results/metric_v3/scores_v3/primary.production.jsonl",
+    "summary": "reports/metric_v3/rescore_summary_v3.json",
+    "final_answer_success": 696,
+    "answer_aligned_validity": 180,
+    "joint_success": 173,
+    "conditional_validity_numerator": 173,
+    "conditional_validity_denominator": 696
+  },
+  "executor": {
+    "row_output": "results/metric_v3/executor/primary.executor.jsonl",
+    "report": "reports/metric_v3/independent_executor_v3_report.json",
+    "method_blocked": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260813
+  },
+  "model_budget_diagnostic": "reports/metric_v3/primary_model_budget_cap_v3.csv",
+  "paper_tables": "paper/submission_tables/tables/",
+  "replay_command": "python3 scripts/reproduce_public_release.py --archive <ARCHIVE_PATH>"
+}
+

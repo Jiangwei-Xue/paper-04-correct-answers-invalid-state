@@ -1,0 +1,6 @@
+baseline_policy_id,n,answer_success_count,answer_success_rate,state_governance_success_count,state_governance_success_rate,co_success_count,co_success_rate
+carry_all_visible_v1,7200,0,0.0,0,0.0,0,0.0
+copy_initial_visible_v1,7200,1080,0.15,7200,1.0,1080,0.15
+oracle_ceiling_control_v1,7200,7200,1.0,7200,1.0,7200,1.0
+random_visible_v1,7200,38,0.005278,1320,0.183333,38,0.005278
+rule_visible_transition_v1,7200,1080,0.15,1080,0.15,1080,0.15

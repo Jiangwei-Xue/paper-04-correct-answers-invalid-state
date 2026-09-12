@@ -1,0 +1,179 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "MOONSHOT_API_KEY",
+    "api_key_env_alternates_recorded_not_printed": [
+      "KIMI_API_KEY"
+    ],
+    "base_url": "https://api.moonshot.cn/v1",
+    "condition_id": "kimi_k26",
+    "fallback_enabled": false,
+    "provider": "moonshot",
+    "requested_model": "kimi-k2.6"
+  },
+  "created_at_utc": "2026-06-21T16:51:40Z",
+  "default_max_workers": 50,
+  "expected_rows": 180,
+  "experiment_id": "_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers",
+  "implementation": {
+    "base_runner_reused": "tools/run_ecvs_deepseek_pcg_dynamic_state_v2_e10_h3_decisive_4method_2budget_1run.py",
+    "qwen_wrapper_reused_for_structure": "tools/run_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+    "random10_runner_reused": "tools/run_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+    "runner": "tools/run_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+    "scorer": "tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "wrapper_runner": "tools/run_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py"
+  },
+  "matrix_shape": {
+    "expected_rows": 180,
+    "methods": 6,
+    "models": 1,
+    "runs": 1,
+    "state_budgets": 3,
+    "tasks": 10
+  },
+  "method_protocol_doc": "<AUTHOR_LOCAL_PROTOCOL_DIR>/METHOD_CONDITION_PROTOCOLS_GOVERNANCE_MAIN_MATRIX_v1_20260621.md",
+  "method_protocol_versions": {
+    "loop_only": "segment_loop_no_persistent_carry_v1_ecvs_safe_visible_only",
+    "mature_ssr_loop": "mature_ssr_loop_protocol_v1_ecvs_safe_visible_only",
+    "rolling_summary": "plain_natural_language_rolling_summary_v1_ecvs_safe_visible_only",
+    "rolling_visible_carry_forward": "rolling_visible_identifier_carry_forward_v1_ecvs_safe_visible_only",
+    "rolling_visible_fields_only": "rolling_visible_fields_only_protocol_v1_pcg_dynamic_state_v2_safe_visible_only",
+    "ssr_no_visible_carry": "ssr_no_visible_carry_protocol_v1_alias_ssr_only_no_deterministic_visible_carry"
+  },
+  "methods": [
+    "loop_only",
+    "rolling_summary",
+    "rolling_visible_carry_forward",
+    "rolling_visible_fields_only",
+    "ssr_no_visible_carry",
+    "mature_ssr_loop"
+  ],
+  "positioning": "local_calibration_only_not_primary_not_admission_not_main_matrix",
+  "request_controls": {
+    "cache": "not_requested",
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_or_thinking": {
+      "send_mode": "explicit",
+      "value": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0.6
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "kimi_k26_random10_new_matrix_pilot_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "retryable_transport_failures": [
+      "timeout",
+      "connection_reset"
+    ]
+  },
+  "runs": 1,
+  "safety": {
+    "api_key_runtime_env": "MOONSHOT_API_KEY",
+    "api_key_value_never_printed": true,
+    "api_run_requires_flag": "--run-api",
+    "git_invocation_disabled": true,
+    "preflight_calls_api": false
+  },
+  "state_budget_chars": [
+    300,
+    600,
+    1200
+  ],
+  "task_hashes": {
+    "base_model_visible_manifest_sha256": "f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1",
+    "base_oracle_manifest_sha256": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280",
+    "base_provenance_manifest_sha256": "2057039eddaafd3e82aa35a43e032b8587f8b48f32a8edcfb6e878bb49cbb330",
+    "base_split_audit_sha256": "546af43dc07adad7d6b61ea52cf8fe30c27c83997ae473f0e9aafa989627b746",
+    "subset_model_visible_manifest_sha256": "f2c73bcfe956933dcefbb9746511ea34162899fbc5e0237e19a4d902f57299b0",
+    "subset_oracle_manifest_sha256": "71c107feefafdc3cad49aa66ed7392343b0f8932e29a2d1ea674c935890dd4fe",
+    "subset_task_provenance_manifest_sha256": "010fcee2445c9b24210345201aaf0b20cb34774c78168924ed9d7910ae837674",
+    "subset_task_selection_csv_sha256": "f9d5a9e267cd3941675d399c6db1e3adc3898792f6daf3bb270ae85e1e2cd017",
+    "subset_task_split_audit_sha256": "ae1cedfc03130e689f40b928348859a8c2c6aa873ea186b6e963f0f55f54f1d0"
+  },
+  "task_source": {
+    "base_model_visible_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "base_oracle_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl",
+    "base_provenance_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/TASK_PROVENANCE_MANIFEST.jsonl",
+    "difficulty_counts": {
+      "hard": 3,
+      "medium": 7
+    },
+    "family_counts": {
+      "api_migration_state_transition": 2,
+      "decoy_heavy_same_prefix_config": 2,
+      "permission_boundary_with_attractive_blocked_path": 2,
+      "protected_information_redaction_under_task_pressure": 2,
+      "requirement_overwrite_cumulative_active": 2
+    },
+    "selection_rule": "stratified_random_2_per_family_from_frozen_pcg_v2_main_matrix_v1",
+    "selection_seed": "20260622_deepseek_new_matrix_10task_pilot_v1",
+    "selection_used_model_outcomes": false,
+    "subset_model_visible_manifest": "data/pcg_dynamic_state_v2/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "subset_oracle_manifest": "data/pcg_dynamic_state_v2/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/SCORER_ORACLE_MANIFEST.jsonl",
+    "subset_task_provenance_manifest": "data/pcg_dynamic_state_v2/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/TASK_PROVENANCE_MANIFEST.jsonl",
+    "subset_task_selection_csv": "data/pcg_dynamic_state_v2/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/TASK_SELECTION.csv",
+    "subset_task_split_audit": "data/pcg_dynamic_state_v2/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/TASK_SPLIT_AUDIT.json"
+  },
+  "variable_control_doc": "<AUTHOR_LOCAL_PROTOCOL_DIR>/LATEST_EXPERIMENT_VARIABLE_REQUIREMENTS_GOVERNANCE_MAIN_MATRIX_v1_20260621.md"
+}

@@ -1,0 +1,168 @@
+{
+  "answer_v3_executor_quadrants": {
+    "A_yes_V3_no_E_no": 404,
+    "A_yes_V3_no_E_yes": 119,
+    "A_yes_V3_yes_E_no": 0,
+    "A_yes_V3_yes_E_yes": 173,
+    "other_rows": 6504
+  },
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260813,
+  "estimand": "Within method, among final_answer_success_v2 rows, executor success risk difference V3-valid minus V3-invalid.",
+  "executor_independence": {
+    "final_answer_read_by_executor": false,
+    "production_scorer_imported_by_executor": false,
+    "reference_scorer_imported_by_executor": false,
+    "scorer_labels_read_by_executor": false,
+    "source_surface": "final_state_plus_v3_task_contract_only"
+  },
+  "method_blocking": true,
+  "network_calls_performed": 0,
+  "pooled_risk_difference_primary": false,
+  "rows": 7200,
+  "schema": "carried_state_validity_v3.executor_criterion_report.v1",
+  "task_count": 40,
+  "within_method_answer_correct_estimates": {
+    "loop_only": {
+      "bootstrap": {
+        "cluster_unit": "task_id",
+        "risk_difference": null
+      },
+      "risk_difference": null,
+      "rows_answer_correct": 0,
+      "v3_no": {
+        "executor_success": 0,
+        "n": 0,
+        "rate": null
+      },
+      "v3_yes": {
+        "executor_success": 0,
+        "n": 0,
+        "rate": null
+      }
+    },
+    "mature_ssr_loop": {
+      "bootstrap": {
+        "cluster_unit": "task_id",
+        "risk_difference": {
+          "ci95": [
+            0.05882352941176472,
+            0.6666666666666667
+          ],
+          "mean": 0.34463518825501194,
+          "replicates": 10000,
+          "requested_replicates": 10000,
+          "seed": 20260813
+        }
+      },
+      "risk_difference": 0.35416666666666663,
+      "rows_answer_correct": 157,
+      "v3_no": {
+        "executor_success": 31,
+        "n": 48,
+        "rate": 0.6458333333333334
+      },
+      "v3_yes": {
+        "executor_success": 109,
+        "n": 109,
+        "rate": 1.0
+      }
+    },
+    "rolling_summary": {
+      "bootstrap": {
+        "cluster_unit": "task_id",
+        "risk_difference": {
+          "ci95": [
+            0.4772727272727273,
+            0.8074534161490683
+          ],
+          "mean": 0.61272948794149,
+          "replicates": 9996,
+          "requested_replicates": 10000,
+          "seed": 20260813
+        }
+      },
+      "risk_difference": 0.6069364161849711,
+      "rows_answer_correct": 192,
+      "v3_no": {
+        "executor_success": 68,
+        "n": 173,
+        "rate": 0.3930635838150289
+      },
+      "v3_yes": {
+        "executor_success": 19,
+        "n": 19,
+        "rate": 1.0
+      }
+    },
+    "rolling_visible_carry_forward": {
+      "bootstrap": {
+        "cluster_unit": "task_id",
+        "risk_difference": {
+          "ci95": null,
+          "mean": null,
+          "replicates": 0,
+          "requested_replicates": 10000,
+          "seed": 20260813
+        }
+      },
+      "risk_difference": null,
+      "rows_answer_correct": 228,
+      "v3_no": {
+        "executor_success": 0,
+        "n": 228,
+        "rate": 0.0
+      },
+      "v3_yes": {
+        "executor_success": 0,
+        "n": 0,
+        "rate": null
+      }
+    },
+    "rolling_visible_fields_only": {
+      "bootstrap": {
+        "cluster_unit": "task_id",
+        "risk_difference": null
+      },
+      "risk_difference": null,
+      "rows_answer_correct": 0,
+      "v3_no": {
+        "executor_success": 0,
+        "n": 0,
+        "rate": null
+      },
+      "v3_yes": {
+        "executor_success": 0,
+        "n": 0,
+        "rate": null
+      }
+    },
+    "ssr_no_visible_carry": {
+      "bootstrap": {
+        "cluster_unit": "task_id",
+        "risk_difference": {
+          "ci95": [
+            0.6346153846153846,
+            0.8936170212765957
+          ],
+          "mean": 0.7429388073495427,
+          "replicates": 9989,
+          "requested_replicates": 10000,
+          "seed": 20260813
+        }
+      },
+      "risk_difference": 0.7297297297297297,
+      "rows_answer_correct": 119,
+      "v3_no": {
+        "executor_success": 20,
+        "n": 74,
+        "rate": 0.2702702702702703
+      },
+      "v3_yes": {
+        "executor_success": 45,
+        "n": 45,
+        "rate": 1.0
+      }
+    }
+  }
+}

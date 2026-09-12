@@ -1,0 +1,7 @@
+method,state_budget,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+mature_ssr_loop,300,18,17,0,1,0.5,0.0,0
+mature_ssr_loop,600,18,18,0,0,0.555556,0.0,0
+mature_ssr_loop,1200,18,18,0,0,0.555556,0.0,0
+rolling_visible_carry_forward,300,18,18,0,0,0.555556,0.0,0
+rolling_visible_carry_forward,600,18,16,0,2,0.5,0.0,0
+rolling_visible_carry_forward,1200,18,17,0,1,0.555556,0.055556,0

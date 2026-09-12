@@ -1,0 +1,49 @@
+{
+  "config_sha256": "551b27f70de2317d291f2d1a785170095693e32584624444c303b454953ad0e5",
+  "created_at_utc": "2026-06-23T13:38:36Z",
+  "experiment_id": "pcg_dynamic_state_v2_main_matrix_40task_5model_6method_3budget_3run",
+  "superseded_by_later_budget_disposition": {
+    "confirmatory_expected_rows": 7200,
+    "confirmatory_state_budgets": [600, 1200],
+    "diagnostic_expected_rows": 800,
+    "diagnostic_state_budget": 300,
+    "note": "This freeze packet records the earlier 3-budget candidate. Current protocol treats budget 300 as a separate descriptive diagnostic probe."
+  },
+  "hash_manifest_sha256": "6b4594fca1289486238ee65ea2b15a7f013763039ebe67dad3a07e46d45b1f51",
+  "main_matrix_gate": "HOLD_PRE_API_STATIC_SANITY_PROVIDER_PURITY_AND_HASH_LOCK_REQUIRED",
+  "matrix_shape": {
+    "expected_rows": 10800,
+    "methods": 6,
+    "models": 5,
+    "runs_per_cell": 3,
+    "state_budgets": 3,
+    "tasks": 40
+  },
+  "method_implementation_status": {
+    "loop_only": "implemented_in_legacy_runner",
+    "mature_ssr_loop": "implemented_in_20260622_six_method_runner_as_canonical_slot_compiler_with_visible_carry_support",
+    "rolling_summary": "implemented_in_legacy_runner",
+    "rolling_visible_carry_forward": "implemented_in_ecvs_visible_carry_runner",
+    "rolling_visible_fields_only": "implemented_in_20260622_six_method_runner_as_mechanical_visible_fields_negative_control",
+    "ssr_no_visible_carry": "implemented_in_20260622_six_method_runner_as_canonical_slot_compiler_without_deterministic_visible_carry"
+  },
+  "model_visible_sha256": "f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1",
+  "no_git_invoked_by_freeze_script": true,
+  "no_model_api_called_by_freeze_script": true,
+  "no_secret_files_read_by_freeze_script": true,
+  "oracle_sha256": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280",
+  "packet_files": {
+    "config": "configs/pcg_dynamic_state_v2/pcg_dynamic_state_v2_main_matrix_40task_5model_6method_3budget_3run.json",
+    "hash_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/HASH_MANIFEST.jsonl",
+    "model_visible_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "scorer_oracle_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl",
+    "task_provenance_manifest": "data/pcg_dynamic_state_v2/main_matrix_v1/TASK_PROVENANCE_MANIFEST.jsonl",
+    "task_split_audit": "data/pcg_dynamic_state_v2/main_matrix_v1/TASK_SPLIT_AUDIT.json"
+  },
+  "schema_version": "pcg_dynamic_state_v2.main_matrix_freeze_packet_index.v1",
+  "split_audit_status": "PASS",
+  "status": "HOLD_PRE_API_STATIC_SANITY_PROVIDER_PURITY_AND_HASH_LOCK_REQUIRED",
+  "strict_scorer_sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b",
+  "substrate_status": "FROZEN_PRE_API",
+  "task_provenance_sha256": "2057039eddaafd3e82aa35a43e032b8587f8b48f32a8edcfb6e878bb49cbb330"
+}

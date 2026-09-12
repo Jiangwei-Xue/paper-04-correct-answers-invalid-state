@@ -1,0 +1,13 @@
+{
+  "audit_type": "pcg_dynamic_state_v2_probe_task_split_audit",
+  "created_at_utc": "2026-06-21T16:51:40Z",
+  "hard_fail_forbidden_metadata_hits": [],
+  "model_visible_forbidden_key_hits": [],
+  "model_visible_rows": 10,
+  "notes": [
+    "Model-visible subset is copied from the v2 model-visible manifest only.",
+    "Oracle subset is written separately and is used only by scoring code after provider output capture."
+  ],
+  "prompt_oracle_split_status": "PASS",
+  "scorer_oracle_rows": 10
+}

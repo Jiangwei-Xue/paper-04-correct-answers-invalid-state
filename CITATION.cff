@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the corresponding preprint when using this reproduction package."
+type: software
+title: "PCG V3 carried-state reproduction package"
+version: "7"
+authors:
+  - family-names: Xue
+    given-names: Jiangwei
+  - family-names: Qin
+    given-names: Zhida
+  - family-names: Bi
+    given-names: Yuda
+repository-code: "https://github.com/Jiangwei-Xue/paper-04-correct-answers-invalid-state"
+url: "https://github.com/Jiangwei-Xue/paper-04-correct-answers-invalid-state"
+preferred-citation:
+  type: article
+  title: "When Correct Answers Carry Invalid State: Evaluating Explicit State Carriers in Stateful LLM Agents"
+  authors:
+    - family-names: Xue
+      given-names: Jiangwei
+    - family-names: Qin
+      given-names: Zhida
+    - family-names: Bi
+      given-names: Yuda
+  doi: "10.5281/zenodo.22720976"
+  year: 2026

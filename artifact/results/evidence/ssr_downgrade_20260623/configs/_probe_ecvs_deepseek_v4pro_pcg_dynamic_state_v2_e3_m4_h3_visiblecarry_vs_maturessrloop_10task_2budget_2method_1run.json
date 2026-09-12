@@ -1,0 +1,214 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "condition_id": "deepseek_v4pro",
+    "fallback_enabled": false,
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro"
+  },
+  "created_at_utc": "2026-06-20T13:51:06Z",
+  "default_max_workers": 100,
+  "expected_rows": 40,
+  "experiment_id": "_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run",
+  "implementation": {
+    "runner": "tools/run_ecvs_deepseek_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_2budget.py",
+    "scorer": "tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_outputs.py"
+  },
+  "method_protocol_doc": "<AUTHOR_LOCAL_WORKSPACE>/stateful-reasoning-benchmark-release/docs/protocol/fresh_main_matrix_v2/METHOD_CONDITION_PROTOCOLS.md",
+  "method_protocol_versions": {
+    "mature_ssr_loop": "mature_ssr_loop_protocol_v1_ecvs_safe_visible_only",
+    "rolling_visible_carry_forward": "rolling_visible_identifier_carry_forward_v1_ecvs_safe_visible_only"
+  },
+  "methods": [
+    "rolling_visible_carry_forward",
+    "mature_ssr_loop"
+  ],
+  "positioning": "local_calibration_only_not_primary_not_admission_not_main_matrix",
+  "request_controls": {
+    "cache": "not_requested",
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_or_thinking": {
+      "send_mode": "explicit",
+      "value": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "ecvs_deepseek_probe_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "retryable_transport_failures": [
+      "timeout",
+      "connection_reset"
+    ]
+  },
+  "row_field_contract": [
+    "global_artifact_id",
+    "config_sha256",
+    "task_manifest_sha256",
+    "prompt_hash",
+    "runner_sha256",
+    "scorer_oracle_sha256",
+    "environment_hash_or_commit",
+    "request_hash",
+    "raw_response_sha256",
+    "parsed_output_sha256",
+    "metric_record_sha256",
+    "manifest_entry_hash",
+    "h5_chain_hash",
+    "provider",
+    "base_url",
+    "requested_model",
+    "selected_model_or_returned_model",
+    "fallback_enabled",
+    "reasoning_tokens_observed",
+    "reasoning_content_present",
+    "state_budget",
+    "state_hard_cap_used",
+    "final_exact_success",
+    "reliable_success"
+  ],
+  "runs": 1,
+  "safety": {
+    "default_mode": "preflight_only_no_api_no_key_read",
+    "preflight_calls_api": false,
+    "preflight_reads_api_key": false,
+    "run_api_requires_flag": "--run-api"
+  },
+  "state_budget_chars": [
+    600,
+    1200
+  ],
+  "task_hashes": {
+    "base_manifest_sha256": "82fd977783abe6163a273406157af6661d3d626cc12cdf4bdcaede0fbaba47f3",
+    "base_model_visible_manifest_sha256": "f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1",
+    "base_oracle_manifest_sha256": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280",
+    "subset_model_visible_manifest_sha256": "af516149c4259c9f449ae64f35277c12de61fbc75da53703afccb75b550f33f6",
+    "subset_oracle_manifest_sha256": "6bf3e3f94fad6997853444ed7576fefe5edc1d47d91281effa626e2ab84b224e",
+    "subset_task_provenance_manifest_sha256": "e6a0ddf3ad1d89bc73732d1211861596f530bd31070c52a01753a3d60f36a585",
+    "subset_task_selection_csv_sha256": "65d9275654ea6ed3d4a088aad9f9d8a3a256a156616e4794def2e2d67088b31e",
+    "subset_task_split_audit_sha256": "12add478cb60b2193f037668be57046e080fe6981607e24faac8560ef4ba7696"
+  },
+  "task_source": {
+    "base_manifest": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_manifest.json",
+    "base_model_visible_manifest": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_model_visible.jsonl",
+    "base_oracle_manifest": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_oracle.jsonl",
+    "base_sha256s": "data/pcg_dynamic_state_v2/tasks_pcg_dynamic_state_v2_sha256s.txt",
+    "selection_plan": [
+      [
+        "api_migration_state_transition",
+        "easy"
+      ],
+      [
+        "api_migration_state_transition",
+        "hard"
+      ],
+      [
+        "permission_boundary_with_attractive_blocked_path",
+        "easy"
+      ],
+      [
+        "permission_boundary_with_attractive_blocked_path",
+        "medium"
+      ],
+      [
+        "requirement_overwrite_cumulative_active",
+        "easy"
+      ],
+      [
+        "requirement_overwrite_cumulative_active",
+        "medium"
+      ],
+      [
+        "decoy_heavy_same_prefix_config",
+        "medium"
+      ],
+      [
+        "decoy_heavy_same_prefix_config",
+        "hard"
+      ],
+      [
+        "protected_information_redaction_under_task_pressure",
+        "medium"
+      ],
+      [
+        "protected_information_redaction_under_task_pressure",
+        "hard"
+      ]
+    ],
+    "selection_rule": "fixed_family_balanced_plan_e3_m4_h3_two_tasks_per_family_no_outcome",
+    "subset_model_visible_manifest": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "subset_oracle_manifest": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run/SCORER_ORACLE_MANIFEST.jsonl",
+    "subset_task_provenance_manifest": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run/TASK_PROVENANCE_MANIFEST.jsonl",
+    "subset_task_selection_csv": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run/TASK_SELECTION.csv",
+    "subset_task_split_audit": "data/pcg_dynamic_state_v2/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run/TASK_SPLIT_AUDIT.json",
+    "task_counts": {
+      "easy": 3,
+      "hard": 3,
+      "medium": 4
+    }
+  },
+  "variable_control_doc": "<AUTHOR_LOCAL_WORKSPACE>/stateful-reasoning-benchmark-release/docs/protocol/fresh_main_matrix_v2/LATEST_EXPERIMENT_VARIABLE_REQUIREMENTS_ROLLING_VISIBLE_CARRY_FORWARD_LOCAL.md"
+}

@@ -1,0 +1,58 @@
+{
+  "all_pass": false,
+  "canonical_semantics": {
+    "allowed_paths": [
+      "src/api/unit_01_f1c1da.py"
+    ],
+    "required_tokens": [
+      "API_01_10BBFA",
+      "API_01_C1FFF0"
+    ]
+  },
+  "interpretation": "A failure means the frozen v2 field-role map is representation-sensitive for that native state encoding; it is not evidence about model quality.",
+  "representations": {
+    "rolling_summary_native": {
+      "answer_state_consistency_v2": false,
+      "answer_success_v2": true,
+      "carried_state_validity_v2": false,
+      "exclusion_safety_v2": true,
+      "intrinsic_state_validity_v2": false,
+      "joint_answer_state_success_v2": false,
+      "output_bearing_present_v2": false,
+      "required_state_completeness_v2": false,
+      "state_parseable_v2": true,
+      "state_reason_codes_v2": [
+        "ANSWER_UNSUPPORTED:API_01_10BBFA",
+        "ANSWER_UNSUPPORTED:API_01_C1FFF0",
+        "ANSWER_UNSUPPORTED:src/api/unit_01_f1c1da.py",
+        "MISSING_REQUIRED_STATE",
+        "NO_OUTPUT_BEARING_STATE"
+      ]
+    },
+    "ssr_native": {
+      "answer_state_consistency_v2": true,
+      "answer_success_v2": true,
+      "carried_state_validity_v2": true,
+      "exclusion_safety_v2": true,
+      "intrinsic_state_validity_v2": true,
+      "joint_answer_state_success_v2": true,
+      "output_bearing_present_v2": true,
+      "required_state_completeness_v2": true,
+      "state_parseable_v2": true,
+      "state_reason_codes_v2": []
+    },
+    "visible_carry_native": {
+      "answer_state_consistency_v2": true,
+      "answer_success_v2": true,
+      "carried_state_validity_v2": true,
+      "exclusion_safety_v2": true,
+      "intrinsic_state_validity_v2": true,
+      "joint_answer_state_success_v2": true,
+      "output_bearing_present_v2": true,
+      "required_state_completeness_v2": true,
+      "state_parseable_v2": true,
+      "state_reason_codes_v2": []
+    }
+  },
+  "task_id": "pcgds_v2_00001_api_migration_state_transition_easy"
+}

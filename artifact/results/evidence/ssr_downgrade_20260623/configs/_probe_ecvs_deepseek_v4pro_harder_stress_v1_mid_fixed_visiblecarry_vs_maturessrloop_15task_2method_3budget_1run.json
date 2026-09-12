@@ -1,0 +1,209 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "condition_id": "deepseek_v4pro",
+    "fallback_enabled": false,
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro"
+  },
+  "expected_rows": 90,
+  "experiment_id": "_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run",
+  "implementation": {
+    "mature_ssr_loop_impl": "tools/run_ecvs_deepseek_mature_ssr_probe.py",
+    "mature_ssr_loop_internal_method": "ssr_loop",
+    "rolling_visible_carry_forward_impl": "tools/run_ecvs_deepseek_rolling_visible_carry_forward_baseline.py",
+    "wrapper_runner": "tools/run_ecvs_deepseek_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop.py"
+  },
+  "internal_method_mapping": {
+    "mature_ssr_loop": "ssr_loop",
+    "rolling_visible_carry_forward": "rolling_visible_carry_forward"
+  },
+  "local_artifacts": {
+    "config_path": "configs/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run.json",
+    "model_snapshot_proxy": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/MODEL_SNAPSHOT_PROXY.json",
+    "preflight_audit_json": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/PREFLIGHT_AUDIT.json",
+    "preflight_audit_md": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/PREFLIGHT_AUDIT.md",
+    "preflight_hash_manifest": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/PREFLIGHT_HASH_MANIFEST.jsonl",
+    "preflight_sha256sums": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/PREFLIGHT_SHA256SUMS.txt",
+    "raw_dir": "released_raw_outputs/model_outputs/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/deepseek",
+    "result_dir": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run",
+    "run_plan": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/RUN_PLAN.md",
+    "supported_parameter_snapshot": "results/_probe_ecvs_deepseek_v4pro_harder_stress_v1_mid_fixed_visiblecarry_vs_maturessrloop_15task_2method_3budget_1run/SUPPORTED_PARAMETER_SNAPSHOT.json"
+  },
+  "max_workers_default": 2,
+  "max_workers_user_override_allowed_max": 100,
+  "method_protocol_versions": {
+    "mature_ssr_loop": "mature_ssr_loop_protocol_v1_ecvs_safe_visible_only",
+    "rolling_visible_carry_forward": "rolling_visible_identifier_carry_forward_v1_ecvs_safe_visible_only"
+  },
+  "methods": [
+    "rolling_visible_carry_forward",
+    "mature_ssr_loop"
+  ],
+  "positioning": "calibration_only_not_primary_evidence",
+  "request_controls": {
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_disable_mode": "thinking.type=disabled",
+    "reasoning_request": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "ecvs_harder_stress_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retry_backoff_seconds": 2.0,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ]
+  },
+  "row_field_contract": [
+    "global_artifact_id",
+    "experiment_id",
+    "condition_id",
+    "task_id",
+    "method",
+    "state_budget",
+    "run_index",
+    "source_type",
+    "difficulty_tier",
+    "task_family",
+    "static_difficulty_features",
+    "task_manifest_sha256",
+    "task_entry_sha256",
+    "scorer_oracle_manifest_sha256",
+    "scorer_oracle_sha256",
+    "task_provenance_manifest_sha256",
+    "prompt_hash",
+    "config_sha256",
+    "runner_sha256",
+    "parser_sha256",
+    "eval_harness_sha256",
+    "environment_hash_or_commit",
+    "request_hash",
+    "response_metadata_sha256",
+    "usage_metadata_sha256",
+    "raw_response_sha256",
+    "parsed_output_sha256",
+    "metric_record_sha256",
+    "manifest_entry_hash",
+    "h5_chain_hash",
+    "provider",
+    "base_url",
+    "requested_model",
+    "selected_model_or_returned_model",
+    "temperature_send_mode",
+    "temperature_value",
+    "max_tokens",
+    "reasoning_disable_mode",
+    "reasoning_tokens_observed",
+    "reasoning_content_present",
+    "input_tokens",
+    "output_tokens",
+    "call_count",
+    "state_hard_cap_used",
+    "final_json_parse_success",
+    "final_exact_success",
+    "reliable_success",
+    "forbidden_token_leakage",
+    "forbidden_action_violation",
+    "boundary_violation",
+    "backend_error",
+    "gate_status",
+    "gate_reason",
+    "private_raw_ref"
+  ],
+  "row_gate": {
+    "backend_error": "rerun_required",
+    "exact_failure": "measured_row",
+    "parse_failure": "measured_row",
+    "positive_reasoning_tokens": "excluded",
+    "reasoning_content_returned": "excluded"
+  },
+  "runs": 1,
+  "safety": {
+    "api_run_requires_flag": "--run-api",
+    "default_mode": "preflight_only_no_api_no_key_read",
+    "preflight_calls_api": false,
+    "preflight_reads_api_key": false
+  },
+  "source_artifact_hashes": {
+    "blocker_md_sha256": "19daaf6180eb54afd5ff35e4779670fc8b4a2e78deeb2c09469a4f227d37df5c",
+    "model_visible_manifest_sha256": "8085473491820bd48e15eb6f5881eaabd96a3d64c9b5152f91ccdd2ba72a1b82",
+    "scorer_oracle_manifest_sha256": "38d8dd842a81e44b475983025a8d01d4adde04b33bca1c359f810ad8001ffbac",
+    "task_provenance_manifest_sha256": "abf8ac8855d25531360cca80b570153f12dc88ba4ef6345f1abad27c379d9de5",
+    "task_selection_csv_sha256": "c6441e4d077d65fcc69a7cd1b409fb52185e184c0654d42b336f265c07015e2e",
+    "task_split_audit_sha256": "03466831049f2c5d1b4a88ae09a07216226439cae5603394c5044df2a4534242"
+  },
+  "source_artifacts": {
+    "blocker": "data/main_v1/harder_visible_state_transfer_stress_v1_mid_fixed/BLOCKER.md",
+    "model_visible_manifest": "data/main_v1/harder_visible_state_transfer_stress_v1_mid_fixed/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "scorer_oracle_manifest": "data/main_v1/harder_visible_state_transfer_stress_v1_mid_fixed/SCORER_ORACLE_MANIFEST.jsonl",
+    "task_provenance_manifest": "data/main_v1/harder_visible_state_transfer_stress_v1_mid_fixed/TASK_PROVENANCE_MANIFEST.jsonl",
+    "task_selection_csv": "data/main_v1/harder_visible_state_transfer_stress_v1_mid_fixed/TASK_SELECTION.csv",
+    "task_split_audit": "data/main_v1/harder_visible_state_transfer_stress_v1_mid_fixed/TASK_SPLIT_AUDIT.json"
+  },
+  "state_budget_chars": [
+    300,
+    600,
+    1200
+  ]
+}

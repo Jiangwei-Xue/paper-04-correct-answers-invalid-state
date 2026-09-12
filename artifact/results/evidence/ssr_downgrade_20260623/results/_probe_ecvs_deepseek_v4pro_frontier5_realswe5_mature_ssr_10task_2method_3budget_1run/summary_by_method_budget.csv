@@ -1,0 +1,7 @@
+method,state_budget,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+ssr_loop,300,10,10,0,0,1.0,1.0,0
+ssr_loop,600,10,10,0,0,1.0,1.0,0
+ssr_loop,1200,10,10,0,0,1.0,1.0,0
+ssr_only,300,10,9,0,1,0.9,0.9,0
+ssr_only,600,10,9,0,1,0.9,0.9,0
+ssr_only,1200,10,9,0,1,0.9,0.9,0

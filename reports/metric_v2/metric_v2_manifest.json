@@ -1,0 +1,174 @@
+{
+  "entries": [
+    {
+      "bytes": 3439,
+      "path": "specs/carried_state_validity_v2.yaml",
+      "sha256": "4b7e3d1f2c8b2858eff08ee1ba8718d1461242320ffe04174a4991bc1f42b445"
+    },
+    {
+      "bytes": 3554,
+      "path": "docs/carried_state_validity_v2.md",
+      "sha256": "7e39fe2d82304fe64aac280d4d1391ea13224c5d436afb8a5f7e8855693109ab"
+    },
+    {
+      "bytes": 714,
+      "path": "docs/metric_v2_changelog.md",
+      "sha256": "abda6d582f3dcde37bbc4677fd2e9e3415004693613cc885cf2c16012c7efeee"
+    },
+    {
+      "bytes": 4701,
+      "path": "metric_v2/common.py",
+      "sha256": "dae6450851450acb41d887d32766d271817849b26e839ed546471e0c893dbb78"
+    },
+    {
+      "bytes": 10756,
+      "path": "metric_v2/production_scorer.py",
+      "sha256": "e98d44f0034417aff59d46458d2960d0c937febb7a3121ad2c0663b5a3e56379"
+    },
+    {
+      "bytes": 10210,
+      "path": "metric_v2/reference_scorer/reference_scorer.py",
+      "sha256": "8ee2d4dacb8d6e26757a8c3078afd2e8a85ef9ebc8fe1dbb0dd7ee7b5b84a063"
+    },
+    {
+      "bytes": 3561,
+      "path": "scripts/derive_metric_v2_oracles.py",
+      "sha256": "76f60c552b6c32c315c3c7458ab844e7e44097a34962c8be5082feb0f20d9b7d"
+    },
+    {
+      "bytes": 3274,
+      "path": "scripts/build_metric_v2_inputs.py",
+      "sha256": "48f3cc7b729f97419f84f87debaa156069fd7795bdae7cb098711921683d22e9"
+    },
+    {
+      "bytes": 5701,
+      "path": "scripts/metric_v2_audit.py",
+      "sha256": "c44a1fc62e0fe9fd97738024cdc05d1be387b3efadfe2f7f6bd1c793bc1c9883"
+    },
+    {
+      "bytes": 6622,
+      "path": "scripts/test_metric_v2_properties.py",
+      "sha256": "df5c4c3a4d0c493a37d1f836e0ac302eaf774297578e37faf98ffa12a97a60ea"
+    },
+    {
+      "bytes": 7346,
+      "path": "scripts/independent_executor.py",
+      "sha256": "0931fa3f4b39e3e683cf4bc268a18ab0da1a25d21a863d1c872b3f783f7613c1"
+    },
+    {
+      "bytes": 1971,
+      "path": "scripts/verify_metric_v2.sh",
+      "sha256": "b64dc9bbbceb6319850924192ee425b7dacf09441553189b0d15b77d170184c2"
+    },
+    {
+      "bytes": 390939,
+      "path": "reports/metric_v2/original_evidence_hashes.sha256",
+      "sha256": "df729b8de6f76e3e2a4aa4f3d8090a42571ba8397494f46db06ce69e466b95da"
+    },
+    {
+      "bytes": 842,
+      "path": "reports/metric_v2/oracles_v2_manifest.json",
+      "sha256": "6ccb1dda2c079043dfc003fe650a49ffe073233642f3b3e0182a75b18b66d690"
+    },
+    {
+      "bytes": 105600,
+      "path": "results/metric_v2/oracles_v2/main_matrix_v1.sidecar.jsonl",
+      "sha256": "4c96bfa33c5158726e872808c56c30fcb37654a50d690f157115e4da7efd0648"
+    },
+    {
+      "bytes": 25155408,
+      "path": "results/metric_v2/raw_inputs/primary.jsonl",
+      "sha256": "ad1597b91183a4c763a8cd7d302975e10b85d821931540b2d7e4159f23206e27"
+    },
+    {
+      "bytes": 2535770,
+      "path": "results/metric_v2/raw_inputs/primary_budget300.jsonl",
+      "sha256": "a8cdc12bb614ae56658e29876c3ccdc79e4122a712210ab17406c15c3774e67e"
+    },
+    {
+      "bytes": 4955858,
+      "path": "results/metric_v2/raw_inputs/qwen.jsonl",
+      "sha256": "dc6aaad3d1911a122b8e1965c76d97c1e01c7bb85de07a294c906a446c3c29f6"
+    },
+    {
+      "bytes": 494067,
+      "path": "results/metric_v2/raw_inputs/qwen_budget300.jsonl",
+      "sha256": "08f8b7c39ffc0af15ede0b0f94fc014f7f0796e4451dea95686d886e186c6a35"
+    },
+    {
+      "bytes": 115393,
+      "path": "results/metric_v2/raw_inputs/deepseek_sanity.jsonl",
+      "sha256": "1177e17b80a3e6089d64bff50000ede891de6cda8481c4f738143043e47254e7"
+    },
+    {
+      "bytes": 44997474,
+      "path": "results/metric_v2/raw_inputs/deterministic_validity_suite.jsonl",
+      "sha256": "8ad2d24fbcf4638f42c6fbc0c357511793d5f001e859ecf15b1036f436f61c9b"
+    },
+    {
+      "bytes": 152030,
+      "path": "reports/metric_v2/rescore_summary.json",
+      "sha256": "3b97d1022f42d199ba1184cb7195c6a47ee378c5467d28144b828e37032b8a1c"
+    },
+    {
+      "bytes": 2778,
+      "path": "reports/metric_v2/differential_report.json",
+      "sha256": "48aeb17d2e99ea34f43c488ad2c241bcb184aff4a79b4cf292228f5a1f15c50b"
+    },
+    {
+      "bytes": 4635,
+      "path": "reports/metric_v2/property_mutation_report.json",
+      "sha256": "4ddad53f2479c17d6d5c6631060f0454942b84e572eab313f32df78c33b963b1"
+    },
+    {
+      "bytes": 6535807,
+      "path": "reports/metric_v2/independent_executor_report.json",
+      "sha256": "f0cab7e1393b0425b53f22d2e3376e25eb9b97f16d900167a92fed38b3ccad09"
+    },
+    {
+      "bytes": 269,
+      "path": "reports/metric_v2/hash_interlock_report.json",
+      "sha256": "295ee02025b23b8a87dc4a15baeb0b8687c52282ddf64cb20646ff0a5b0f60cd"
+    },
+    {
+      "bytes": 147,
+      "path": "reports/metric_v2/legacy_v1_preservation.json",
+      "sha256": "f851848687c6e2882fb5a257cfa796e8b1388f852aa05a0c4ff9786961a93986"
+    },
+    {
+      "bytes": 19941,
+      "path": "scripts/metric_v2_gate_audit.py",
+      "sha256": "ddf1d7f44cb5ec7030e71ca3f2ac2c5f3320d138f1f8e3fc32e2064274e8346d"
+    },
+    {
+      "bytes": 144719,
+      "path": "reports/metric_v2/gates/metric_v2_pre_revision_gate_audit.json",
+      "sha256": "85ce20eda0a990f0057c7975ca7fe72c41611c0d9ff201cccfdcfa63adb6b494"
+    },
+    {
+      "bytes": 1169852,
+      "path": "reports/metric_v2/gates/answer_crosswalk_rows.jsonl",
+      "sha256": "eb3dc2f1f58c147a0df9818b035833135352375d7a311a8036fcd382d7cba40a"
+    },
+    {
+      "bytes": 19140,
+      "path": "reports/metric_v2/gates/answer_crosswalk_summary.json",
+      "sha256": "c9a1a84d312978d9bf378dd9a5e11b1b30d330620db74fb586cf715f8f9ecf16"
+    },
+    {
+      "bytes": 121657,
+      "path": "reports/metric_v2/gates/method_component_executor_summary.json",
+      "sha256": "f7dd28844c4c7c734248bdcbe68e2b5dfaf0bf303347f68e9da74dbd60b01df0"
+    },
+    {
+      "bytes": 1971,
+      "path": "reports/metric_v2/gates/representation_control.json",
+      "sha256": "7fa87f05ffb4203d4f922646b1f83160b90dad4db42f6c7be6ecaf41fcd4fd46"
+    }
+  ],
+  "entry_count": 33,
+  "network_calls_performed": 0,
+  "original_evidence_hash_manifest": "reports/metric_v2/original_evidence_hashes.sha256",
+  "schema": "metric_v2_lineage_manifest.v1",
+  "self_excluding": true
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "academic_experiment_audit.method_delta.v1",
+  "agent": "method-delta-agent",
+  "summary": "V3 is a post-hoc measurement-contract revision over frozen saved outputs. It does not alter V2, prompts, model calls, or the confirmatory row set.",
+  "evidence_strength": "E4",
+  "pass_fail_table": {
+    "model_outputs_unchanged": "pass",
+    "v2_contract_unchanged": "pass",
+    "v3_construct_delta_documented": "pass",
+    "revision_analysis_plan_before_v3_replay": "pass",
+    "preregistered_claim": "not_applicable"
+  },
+  "red_flags": ["The V3 specification postdates the underlying model outputs; it must not be described as preregistered."],
+  "open_questions": ["External validity of V3 beyond these saved representations remains out of scope."],
+  "required_fixes_before_main_matrix": [],
+  "safe_to_include": ["results/metric_v3/scores_v3/*.jsonl as revision-level offline replay", "results/metric_v3/executor/primary.executor.jsonl"],
+  "exclude_or_rerun": ["Do not replace the frozen V2 primary denominator in the original claim tables without a revision decision."],
+  "confidence": "high",
+  "findings": [
+    {"finding_id": "MD_V3_001", "agent": "method-delta-agent", "severity": "R0", "status": "pass", "claim": "V3 leaves V2 and saved model outputs intact.", "evidence_refs": [{"type": "public_release", "ref": "pcg-v3-github-reproduction-20260910-v6", "hash": null}, {"type": "file", "ref": "docs/metric_v3_changelog.md", "hash": null}, {"type": "file", "ref": "specs/carried_state_validity_v2.yaml", "hash": null}], "affected_runs": ["primary", "primary_budget300", "qwen", "qwen_budget300", "deepseek_sanity", "deterministic_validity_suite"], "affected_artifacts": ["results/metric_v2", "results/metric_v3"], "recommended_action": "Keep V2 as the frozen prior contract and label V3 as revision-level replay.", "blocks_main_matrix": false},
+    {"finding_id": "MD_V3_002", "agent": "method-delta-agent", "severity": "R2", "status": "pass", "claim": "The changed construct and estimands are documented before full V3 replay.", "evidence_refs": [{"type": "file", "ref": "docs/metric_v3_construct_decision_memo.md", "hash": null}, {"type": "file", "ref": "docs/metric_v3_revision_analysis_plan.md", "hash": "4c5e21233c965f26b13f0f7d4f98574116f0e8e87426f73f49d24a1dfb344d53"}, {"type": "file", "ref": "reports/metric_v3/rescore_summary_v3.json", "hash": "05561ac9fb5bb15f9d00ddcde45205b9fc39242441bc8a7657184f9b72e3b341"}], "affected_runs": ["V3 offline replay"], "affected_artifacts": ["specs/carried_state_validity_v3.yaml"], "recommended_action": "Use accurate frozen-before-replay wording, not preregistration wording.", "blocks_main_matrix": false}
+  ]
+}

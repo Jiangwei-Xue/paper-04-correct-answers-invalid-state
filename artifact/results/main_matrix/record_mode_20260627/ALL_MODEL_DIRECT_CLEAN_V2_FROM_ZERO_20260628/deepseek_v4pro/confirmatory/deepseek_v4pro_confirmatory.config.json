@@ -1,0 +1,55 @@
+{
+  "created_at_utc": "2026-06-28T15:46:37Z",
+  "experiment_id": "pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625__deepseek_v4pro_slice",
+  "frozen_concurrency": {
+    "max_concurrent_requests": 10,
+    "scope": "global_live_adapter_ceiling"
+  },
+  "live_runner": {
+    "path": "artifact/verification/run_main_matrix_model_slice.py",
+    "sha256": "0c452ccb13baff4f67c41c17fd0293e52c9a9fed9aec4607cd2175f286c58f7f"
+  },
+  "matrix_role": "confirmatory_primary",
+  "matrix_shape": {
+    "budgets": 2,
+    "expected_rows": 1440,
+    "methods": 6,
+    "models": 1,
+    "runs": 3,
+    "tasks": 40
+  },
+  "model_admission_criteria": {
+    "path": "artifact/protocol/main_matrix/admission/MODEL_ADMISSION_CRITERIA_20260626.md",
+    "sha256": "a9b8f6ee4702b4099cf3d16f60f6d19b344ed0b6cad197d1dc533245f03cc816"
+  },
+  "model_condition_id": "deepseek_v4pro",
+  "primary_analysis_eligible": true,
+  "record_mode": "live_provider_adapter_source_then_vcr",
+  "row_manifest": {
+    "path": "artifact/results/main_matrix/record_mode_20260627/ALL_MODEL_DIRECT_CLEAN_V2_FROM_ZERO_20260628/deepseek_v4pro/confirmatory/deepseek_v4pro_confirmatory.rows.jsonl",
+    "sha256": "8ba1397d0a322702f88f1a0eb67db84cf9808aca9d1e1f3af50c3641ea7ba087"
+  },
+  "runtime_control_override": null,
+  "schema_version": "pcg_dynamic_state_v2.main_matrix_model_slice_config.v1",
+  "scorer": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b"
+  },
+  "source_config": {
+    "path": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json",
+    "sha256": "443b2813ca4a2a297d98aa19976644825cee8886ced01a93f8558cb57fa66cbc"
+  },
+  "source_experiment_id": "pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625",
+  "source_row_manifest": {
+    "path": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl",
+    "sha256": "10ace9463c960c35bbfa501e23e554924c6ef2f1f5fd904e7e18324e872938e0"
+  },
+  "variable_freeze_spec": {
+    "path": "artifact/protocol/main_matrix/admission/VARIABLE_FREEZE_SPEC_20260625.yaml",
+    "sha256": "d8481d5249612fb312101f0026a3e8fcc1aff28ae7a7d4fde1f6ae8952883836"
+  },
+  "vcr_runner": {
+    "path": "artifact/verification/main_matrix_vcr_runner.py",
+    "sha256": "296e9a5c847c1b0659fc5bbdc9a3284c963f15d4a72071496a58d3931cff7b79"
+  }
+}

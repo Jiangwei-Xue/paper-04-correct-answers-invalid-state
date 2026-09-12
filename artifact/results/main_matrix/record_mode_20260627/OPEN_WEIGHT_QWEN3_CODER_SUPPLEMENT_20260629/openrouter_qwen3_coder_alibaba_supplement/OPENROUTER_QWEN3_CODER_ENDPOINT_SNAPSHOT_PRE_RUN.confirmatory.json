@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-06-29T11:25:04Z",
+  "endpoint_count_total": 7,
+  "expected_returned_model": "qwen/qwen3-coder-480b-a35b-07-25",
+  "provider_name": "Alibaba",
+  "provider_order": [
+    "alibaba"
+  ],
+  "provider_tag": "alibaba/opensource",
+  "requested_model": "qwen/qwen3-coder",
+  "schema_version": "pcg_dynamic_state_v2.open_weight_qwen3_coder_endpoint_snapshot.v1",
+  "selected_endpoint_count": 1,
+  "selected_endpoints": [
+    {
+      "context_length": 262144,
+      "latency_last_30m": null,
+      "max_completion_tokens": 65536,
+      "max_prompt_tokens": 204800,
+      "model_id": "qwen/qwen3-coder",
+      "model_name": "Qwen: Qwen3 Coder 480B A35B",
+      "name": "Alibaba | qwen/qwen3-coder-480b-a35b-07-25",
+      "pricing": {
+        "completion": "0.000004875",
+        "discount": 0.35,
+        "prompt": "0.000000975"
+      },
+      "provider_name": "Alibaba",
+      "quantization": "unknown",
+      "status": 0,
+      "supported_parameters": [
+        "structured_outputs",
+        "response_format",
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "seed",
+        "presence_penalty",
+        "tools",
+        "tool_choice",
+        "logprobs",
+        "top_logprobs"
+      ],
+      "supports_implicit_caching": false,
+      "tag": "alibaba/opensource",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 99.97976118194697,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    }
+  ],
+  "source_url": "https://openrouter.ai/api/v1/models/qwen/qwen3-coder/endpoints"
+}

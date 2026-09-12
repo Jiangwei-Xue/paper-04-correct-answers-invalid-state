@@ -1,0 +1,9 @@
+{
+  "bootstrap_replicates": 10000,
+  "family_count": 5,
+  "network_calls_performed": 0,
+  "passed": true,
+  "rows": 7200,
+  "schema": "metric_v2_executor_verification.v1",
+  "task_count": 40
+}

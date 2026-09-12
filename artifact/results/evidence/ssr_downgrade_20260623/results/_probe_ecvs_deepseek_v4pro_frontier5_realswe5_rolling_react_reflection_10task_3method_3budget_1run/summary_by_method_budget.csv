@@ -1,0 +1,10 @@
+method,state_budget,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+react_literature_adapted,300,10,10,0,0,0.0,0.0,0
+react_literature_adapted,600,10,9,0,1,0.0,0.0,0
+react_literature_adapted,1200,10,10,0,0,0.3,0.3,0
+reflexion_literature_adapted,300,10,9,0,1,0.2,0.2,0
+reflexion_literature_adapted,600,10,9,0,1,0.4,0.2,0
+reflexion_literature_adapted,1200,10,10,0,0,0.7,0.5,0
+rolling_summary,300,10,8,0,2,0.2,0.2,0
+rolling_summary,600,10,9,0,1,0.5,0.4,0
+rolling_summary,1200,10,10,0,0,0.7,0.4,0

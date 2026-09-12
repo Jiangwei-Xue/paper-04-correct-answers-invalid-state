@@ -1,0 +1,11 @@
+{
+  "command_ids": [
+    "profile",
+    "publication",
+    "reproduce",
+    "verify"
+  ],
+  "created_utc": "1980-01-01T00:00:00Z",
+  "publication_rule": "Builder aborts before atomic publication if any canonical command returns non-zero.",
+  "status": "PASS"
+}

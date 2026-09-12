@@ -1,0 +1,136 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "condition_id": "deepseek_v4pro",
+    "fallback_enabled": false,
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro"
+  },
+  "expected_rows": 60,
+  "experiment_id": "_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run",
+  "local_artifact_hashes": {
+    "model_snapshot_proxy_sha256": "9e7dac3c0e2390ff01652d435c9f1306f6b01b80e832f002899c86de3eccefa8",
+    "model_visible_subset_sha256": "0c34b9d65f290c5ae1f69df62f807131b12af880fb7f25e76a971df0793a03fe",
+    "scorer_oracle_subset_sha256": "2b8d54b172b2fe3b62220252d612c8f62cddb7b7e3ed8b9bc4d31ce97df85c30",
+    "supported_parameter_snapshot_sha256": "6ae6a2c7ff4e01c6fa26058cac9288db1e9a40205e1dc73622e174db3e34383e",
+    "task_selection_csv_sha256": "ccd5bdac2f1401548e38b67271f45df287da369d3c651b33a50ba779484168a1"
+  },
+  "local_artifacts": {
+    "model_snapshot_proxy": "results/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run/MODEL_SNAPSHOT_PROXY.json",
+    "model_visible_subset": "data/main_v1/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run_model_visible_subset.jsonl",
+    "raw_dir": "released_raw_outputs/model_outputs/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run/deepseek",
+    "result_dir": "results/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run",
+    "scorer_oracle_subset": "data/main_v1/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run_scorer_oracle_subset.jsonl",
+    "supported_parameter_snapshot": "results/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run/SUPPORTED_PARAMETER_SNAPSHOT.json",
+    "task_selection_csv": "data/main_v1/_probe_ecvs_deepseek_v4pro_frontier5_realswe5_ssr_only_ssr_loop_10task_2method_3budget_1run_task_selection.csv"
+  },
+  "max_workers_default": 10,
+  "method_aliases": {
+    "ssr_loop": "ssr_loop",
+    "ssr_only": "ssr_only"
+  },
+  "methods": [
+    "ssr_only",
+    "ssr_loop"
+  ],
+  "positioning": "calibration_only_not_primary_evidence",
+  "request_controls": {
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_request": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "ecvs_probe_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retry_backoff_seconds": 2.0,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ]
+  },
+  "row_gate": {
+    "backend_error": "rerun_required",
+    "missing_required_hash": "rerun_required",
+    "positive_reasoning_tokens": "exclude",
+    "reasoning_content_returned": "exclude"
+  },
+  "runs": 1,
+  "selection_rule": "same task set as the prior rolling/ReAct/Reflexion ECVS probe: five non-real frontier_hard tasks and five non-frontier real_swe tasks, selected by the prior stable hash seed without model outcomes",
+  "selection_seed": "ecvs_deepseek_v4pro_frontier5_realswe5_rolling_react_reflection_seed_20260619_no_outcome",
+  "source_artifact_hashes": {
+    "control_standard_sha256": "fc283cc4f6b9ac41fb059587de9b336304106f48a6016c4e4c983c337318d51f",
+    "model_visible_manifest_sha256": "332fc62c4c2add35f996350a78da57702b9b152d3eac5dc446f009576cf6f83c",
+    "scorer_oracle_manifest_sha256": "9f38bf226eba05f629df02660a9f41de60dbfbd0d306b5ca3935e159f6040fb9",
+    "task_provenance_manifest_sha256": "7cf445e2d5a0e8ed1df5f11380c3cb36a74d862d163fa547f2fac3fe1939b61e"
+  },
+  "source_artifacts": {
+    "control_standard": "../stateful-reasoning-benchmark-release/docs/protocol/EXPERIMENT_CONTROL_AND_VARIABLE_STANDARD.md",
+    "model_visible_manifest": "../stateful-reasoning-benchmark-release/data/main_v1/fresh_main_matrix_v2/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "scorer_oracle_manifest": "../stateful-reasoning-benchmark-release/data/main_v1/fresh_main_matrix_v2/SCORER_ORACLE_MANIFEST.jsonl",
+    "task_provenance_manifest": "../stateful-reasoning-benchmark-release/data/main_v1/fresh_main_matrix_v2/TASK_PROVENANCE_MANIFEST.jsonl"
+  },
+  "state_budget_chars": [
+    300,
+    600,
+    1200
+  ]
+}

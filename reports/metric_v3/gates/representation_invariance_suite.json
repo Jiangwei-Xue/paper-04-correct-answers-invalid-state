@@ -1,0 +1,405 @@
+{
+  "adapter_hidden_status_gate_passed": true,
+  "case_count": 10,
+  "failures": [],
+  "network_calls_performed": 0,
+  "representation_count": 3,
+  "representation_invariance_passed": true,
+  "results": [
+    {
+      "case": "valid",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; P is active; R is revoked\", \"signature\": [true, true, true, true, true, true, true]}",
+        "ssr": "{\"raw\": \"OUT=A,B,P\\nNO=R\", \"signature\": [true, true, true, true, true, true, true]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,P\\nNOTE=R is revoked\", \"signature\": [true, true, true, true, true, true, true]}"
+      },
+      "expected_carried_state_validity": true,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "ssr": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "visible_carry": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "case": "missing_required_fact",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; P is active; R is revoked\", \"signature\": [true, true, true, false, true, false, false]}",
+        "ssr": "{\"raw\": \"OUT=A,P\\nNO=R\", \"signature\": [true, true, true, false, true, false, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,P\\nNOTE=R is revoked\", \"signature\": [true, true, true, false, true, false, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "ssr": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "visible_carry": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "case": "revoked_positive",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; P is active; R is active\", \"signature\": [true, true, false, true, true, false, false]}",
+        "ssr": "{\"raw\": \"OUT=A,B,P,R\", \"signature\": [true, true, false, true, true, false, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,P,R\", \"signature\": [true, true, false, true, true, false, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "ssr": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "visible_carry": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "case": "revoked_correctly_excluded",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; P is active; R is revoked\", \"signature\": [true, true, true, true, true, true, true]}",
+        "ssr": "{\"raw\": \"OUT=A,B,P\\nNO=R\", \"signature\": [true, true, true, true, true, true, true]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,P\\nNOTE=R is revoked\", \"signature\": [true, true, true, true, true, true, true]}"
+      },
+      "expected_carried_state_validity": true,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "ssr": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "visible_carry": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "case": "allowed_alternative",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; Q is active; R is revoked\", \"signature\": [true, true, true, true, true, true, true]}",
+        "ssr": "{\"raw\": \"OUT=A,B,Q\\nNO=R\", \"signature\": [true, true, true, true, true, true, true]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,Q\\nNOTE=R is revoked\", \"signature\": [true, true, true, true, true, true, true]}"
+      },
+      "expected_carried_state_validity": true,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "ssr": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "visible_carry": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "case": "answer_selected_path_unsupported",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; Q is active; R is revoked\", \"signature\": [true, true, true, true, false, true, false]}",
+        "ssr": "{\"raw\": \"OUT=A,B,Q\\nNO=R\", \"signature\": [true, true, true, true, false, true, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,Q\\nNOTE=R is revoked\", \"signature\": [true, true, true, true, false, true, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "ssr": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "visible_carry": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "case": "conflicting_polarity",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; P is active; R is revoked; B has conflicting status\", \"signature\": [true, true, false, false, false, false, false]}",
+        "ssr": "{\"raw\": \"OUT=A,B,P,B\\nNO=R,B\", \"signature\": [true, true, false, false, false, false, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,P,B\\nNOTE=R is revoked; B has conflicting status\", \"signature\": [true, true, false, false, false, false, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "ssr": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "visible_carry": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "case": "same_prefix_distractor",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A_EXTRA is active; B is active; P is active; R is revoked\", \"signature\": [true, true, true, false, false, false, false]}",
+        "ssr": "{\"raw\": \"OUT=A_EXTRA,B,P\\nNO=R\", \"signature\": [true, true, true, false, false, false, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A_EXTRA,B,P\\nNOTE=R is revoked\", \"signature\": [true, true, true, false, false, false, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "ssr": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "visible_carry": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "case": "empty_non_bearing",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=No active state\", \"signature\": [true, false, true, false, true, false, false]}",
+        "ssr": "{\"raw\": \"OUT=\\nNOTE=No active state\", \"signature\": [true, false, true, false, true, false, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=\\nNOTE=No active state\", \"signature\": [true, false, true, false, true, false, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "ssr": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "visible_carry": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "case": "protected_oracle_leak",
+      "details": {
+        "rolling_summary": "{\"raw\": \"SUMMARY=A is active; B is active; P is active; R is revoked\\nNOTE=ORACLE_SECRET_01 is protected\", \"signature\": [true, true, false, true, true, false, false]}",
+        "ssr": "{\"raw\": \"OUT=A,B,P\\nNO=R\\nNOTE=ORACLE_SECRET_01 is protected\", \"signature\": [true, true, false, true, true, false, false]}",
+        "visible_carry": "{\"raw\": \"VISIBLE_KEEP=A,B,P\\nNOTE=R is revoked\\nNOTE=ORACLE_SECRET_01 is protected\", \"signature\": [true, true, false, true, true, false, false]}"
+      },
+      "expected_carried_state_validity": false,
+      "signatures": {
+        "rolling_summary": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "ssr": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "visible_carry": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false
+        ]
+      }
+    }
+  ],
+  "schema": "carried_state_validity_v3.representation_invariance_report.v1",
+  "signature_fields": [
+    "representation_parseable_v3",
+    "positive_operational_state_present_v3",
+    "exclusion_safety_v3",
+    "operational_state_sufficiency_v3",
+    "answer_state_consistency_v3",
+    "intrinsic_state_validity_v3",
+    "carried_state_validity_v3"
+  ],
+  "tested_representations": [
+    "rolling_summary",
+    "visible_carry",
+    "ssr"
+  ]
+}

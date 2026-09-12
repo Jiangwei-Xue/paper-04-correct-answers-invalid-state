@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-06-25T10:54:41Z",
+  "experiment_id": "pcg_dynamic_state_v2_provider_live_refresh_20260625",
+  "matrix_role": "admission_provider_live_refresh_not_primary",
+  "matrix_shape": {
+    "budgets": 1,
+    "expected_rows": 5,
+    "methods": 1,
+    "models": 5,
+    "runs": 1,
+    "tasks": 1
+  },
+  "primary_analysis_eligible": false,
+  "prompt": {
+    "kind": "nonbenchmark_provider_refresh",
+    "sha256": "c072824f1aefd4a6f913d5c608b0d26a69ad62632adacbffca9127a0cb5e79c6"
+  },
+  "row_manifest": {
+    "path": "artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_live_refresh_smoke_config.rows.jsonl",
+    "sha256": "df133d3076c271753bbe1799692a37d7ccbf25ee4e4b2678adefc595661d49eb"
+  },
+  "schema_version": "pcg_dynamic_state_v2.provider_live_refresh_config.v1"
+}

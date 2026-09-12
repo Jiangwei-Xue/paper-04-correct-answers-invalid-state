@@ -1,0 +1,74 @@
+{
+  "all_binary_components_agree": true,
+  "all_reason_code_sets_agree": true,
+  "network_calls_performed": 0,
+  "schema": "metric_v2_differential_report.v1",
+  "tiers": {
+    "deepseek_sanity": {
+      "binary_component_agreement": true,
+      "mismatch_count": 0,
+      "mismatches_sample": [],
+      "missing_or_extra_row_ids": [],
+      "production": "results/metric_v2/scores_v2/deepseek_sanity.production.jsonl",
+      "production_rows": 40,
+      "reason_code_set_agreement": true,
+      "reference": "results/metric_v2/scores_v2/deepseek_sanity.reference.jsonl",
+      "reference_rows": 40
+    },
+    "deterministic_validity_suite": {
+      "binary_component_agreement": true,
+      "mismatch_count": 0,
+      "mismatches_sample": [],
+      "missing_or_extra_row_ids": [],
+      "production": "results/metric_v2/scores_v2/deterministic_validity_suite.production.jsonl",
+      "production_rows": 36000,
+      "reason_code_set_agreement": true,
+      "reference": "results/metric_v2/scores_v2/deterministic_validity_suite.reference.jsonl",
+      "reference_rows": 36000
+    },
+    "primary": {
+      "binary_component_agreement": true,
+      "mismatch_count": 0,
+      "mismatches_sample": [],
+      "missing_or_extra_row_ids": [],
+      "production": "results/metric_v2/scores_v2/primary.production.jsonl",
+      "production_rows": 7200,
+      "reason_code_set_agreement": true,
+      "reference": "results/metric_v2/scores_v2/primary.reference.jsonl",
+      "reference_rows": 7200
+    },
+    "primary_budget300": {
+      "binary_component_agreement": true,
+      "mismatch_count": 0,
+      "mismatches_sample": [],
+      "missing_or_extra_row_ids": [],
+      "production": "results/metric_v2/scores_v2/primary_budget300.production.jsonl",
+      "production_rows": 800,
+      "reason_code_set_agreement": true,
+      "reference": "results/metric_v2/scores_v2/primary_budget300.reference.jsonl",
+      "reference_rows": 800
+    },
+    "qwen": {
+      "binary_component_agreement": true,
+      "mismatch_count": 0,
+      "mismatches_sample": [],
+      "missing_or_extra_row_ids": [],
+      "production": "results/metric_v2/scores_v2/qwen.production.jsonl",
+      "production_rows": 1440,
+      "reason_code_set_agreement": true,
+      "reference": "results/metric_v2/scores_v2/qwen.reference.jsonl",
+      "reference_rows": 1440
+    },
+    "qwen_budget300": {
+      "binary_component_agreement": true,
+      "mismatch_count": 0,
+      "mismatches_sample": [],
+      "missing_or_extra_row_ids": [],
+      "production": "results/metric_v2/scores_v2/qwen_budget300.production.jsonl",
+      "production_rows": 160,
+      "reason_code_set_agreement": true,
+      "reference": "results/metric_v2/scores_v2/qwen_budget300.reference.jsonl",
+      "reference_rows": 160
+    }
+  }
+}

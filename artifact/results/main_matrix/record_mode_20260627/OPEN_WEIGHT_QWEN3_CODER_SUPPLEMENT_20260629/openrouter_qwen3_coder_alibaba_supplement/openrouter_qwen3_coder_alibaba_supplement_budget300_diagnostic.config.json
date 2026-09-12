@@ -1,0 +1,186 @@
+{
+  "created_at_utc": "2026-06-29T12:11:22Z",
+  "endpoint_snapshot": {
+    "path": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/OPENROUTER_QWEN3_CODER_ENDPOINT_SNAPSHOT_PRE_RUN.budget300_diagnostic.json",
+    "sha256": "ba9c88a98c96b5246ad4c33f778561a61e88c31bfbe35520319f650b20811837"
+  },
+  "expected_returned_model": "qwen/qwen3-coder-480b-a35b-07-25",
+  "experiment_id": "pcg_dynamic_state_v2_open_weight_qwen3_coder_supplement_20260629_budget300_diagnostic",
+  "matrix_role": "open_weight_supplement_budget300_diagnostic_not_primary",
+  "matrix_shape": {
+    "budgets": 1,
+    "expected_rows": 160,
+    "methods": 4,
+    "models": 1,
+    "runs": 1,
+    "tasks": 40
+  },
+  "model_condition_id": "openrouter_qwen3_coder_alibaba_supplement",
+  "open_weight_supplement": true,
+  "phase": "budget300_diagnostic",
+  "primary_analysis_eligible": false,
+  "provider_control": {
+    "fallback": "disabled",
+    "max_tokens": 4096,
+    "network_execution": "direct_no_system_proxy",
+    "provider_name": "Alibaba",
+    "provider_order": [
+      "alibaba"
+    ],
+    "provider_tag": "alibaba/opensource",
+    "quantization": "unknown",
+    "reasoning": "not_exposed_not_requested",
+    "require_parameters": true,
+    "structured_output_forcing": "not_requested",
+    "temperature": 0,
+    "tools_function_web_retrieval_agent": "not_requested",
+    "top_k": "not_sent",
+    "top_p": 1
+  },
+  "record_mode": "live_provider_adapter_source_then_vcr",
+  "request_controls": {
+    "agent_mode": "disabled",
+    "cache": "not_requested",
+    "function_calling": "disabled",
+    "include_reasoning": {
+      "send_mode": "not_exposed_not_requested",
+      "value": null
+    },
+    "local_transport_path_failure_guard": {
+      "send_mode": "local_guard",
+      "value": {
+        "action": "halt_only_confirmed_local_transport_path_failure",
+        "enabled": true,
+        "failure_class": "confirmed_local_transport_path_failure",
+        "halt_classes": [
+          "confirmed_local_transport_path_failure"
+        ],
+        "nonlocal_transport_failures": "retry_under_bounded_openrouter_policy",
+        "trigger": "any pre-HTTP local transport exception classified by the runner"
+      }
+    },
+    "max_tokens": 4096,
+    "network_execution": {
+      "send_mode": "process_environment",
+      "value": {
+        "mode": "direct_no_system_proxy",
+        "no_proxy": "*",
+        "proxy_environment_variables": "cleared",
+        "urllib_proxy_handler": "disabled"
+      }
+    },
+    "openrouter_metadata_header": {
+      "send_mode": "explicit",
+      "value": "enabled"
+    },
+    "plugins": {
+      "send_mode": "explicit",
+      "value": [
+        {
+          "enabled": false,
+          "id": "context-compression"
+        }
+      ]
+    },
+    "provider": {
+      "send_mode": "explicit",
+      "value": {
+        "allow_fallbacks": false,
+        "order": [
+          "alibaba"
+        ],
+        "require_parameters": true
+      }
+    },
+    "reasoning": {
+      "send_mode": "not_exposed_not_requested",
+      "value": null
+    },
+    "reasoning_effort": {
+      "send_mode": "not_exposed_not_requested",
+      "value": null
+    },
+    "response_format": {
+      "send_mode": "not_requested",
+      "value": null
+    },
+    "retrieval": "disabled",
+    "retry_policy": {
+      "backoff_seconds": [
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "max_sleep_seconds": 180.0,
+      "max_transport_attempts": 5,
+      "policy_id": "openrouter_post_pause_bounded_backoff_20260627",
+      "respect_retry_after": true,
+      "retryable_http_statuses": [
+        408,
+        429,
+        500,
+        502,
+        503,
+        504
+      ],
+      "schema_version": "pcg_dynamic_state_v2.transport_retry_policy.v1"
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "structured_outputs": {
+      "send_mode": "not_requested",
+      "value": null
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tool_choice": {
+      "send_mode": "not_requested",
+      "value": null
+    },
+    "tools": "disabled",
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "explicit",
+      "value": 1
+    },
+    "web": "disabled"
+  },
+  "requested_model": "qwen/qwen3-coder",
+  "row_manifest": {
+    "path": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/openrouter_qwen3_coder_alibaba_supplement_budget300_diagnostic.rows.jsonl",
+    "sha256": "08b33c06d79b52391c7065907c3e4030ccfcb4a96db1eec5145fff23622147ee"
+  },
+  "runner": {
+    "path": "artifact/verification/run_open_weight_qwen3_coder_supplement.py",
+    "sha256": "ab3a987baf7666c9e33cc3558f4ff1db3d8e686017c68739dc082e6a62cee4f8"
+  },
+  "schema_version": "pcg_dynamic_state_v2.open_weight_qwen3_coder_supplement_config.v1",
+  "scorer": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b"
+  },
+  "source_configs": [
+    {
+      "path": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json",
+      "sha256": "443b2813ca4a2a297d98aa19976644825cee8886ced01a93f8558cb57fa66cbc"
+    },
+    {
+      "path": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.json",
+      "sha256": "4ac3b530f947e01d205c1a20e88d07c0786f1bc6d4eb90c62b88344881c0252d"
+    }
+  ],
+  "source_model_condition_id_used_for_row_geometry": "openrouter_gpt55",
+  "supplement_id": "open_weight_qwen3_coder_supplement_20260629",
+  "supplement_protocol": {
+    "path": "artifact/protocol/main_matrix/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_PROTOCOL_20260629.md",
+    "sha256": "62de56e100e0d6ee494b0a277482a49c12c2b74a6855d0159fcd8318f7ce0ce7"
+  }
+}

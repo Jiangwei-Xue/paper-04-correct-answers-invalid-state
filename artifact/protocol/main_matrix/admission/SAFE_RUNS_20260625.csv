@@ -1,0 +1,3 @@
+run_id,status,notes
+provider_live_refresh,SAFE_ADMISSION_ONLY,five endpoint nonbenchmark live refresh passed; excluded from primary aggregation
+benchmark_smoke_20260626,SAFE_ADMISSION_ONLY,five-model benchmark admission smoke passed; excluded from primary aggregation

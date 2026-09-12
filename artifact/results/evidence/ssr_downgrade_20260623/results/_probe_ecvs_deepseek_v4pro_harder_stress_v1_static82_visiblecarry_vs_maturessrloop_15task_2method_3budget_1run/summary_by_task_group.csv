@@ -1,0 +1,4 @@
+selection_group,difficulty_tier,source_type,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+,frontier_plus,diagnostic_controlled_frontier_plus,24,24,0,0,1.0,1.0,0
+,frontier_plus,semi_real_repo_style_controlled_frontier_plus,36,36,0,0,0.972222,0.972222,0
+,real_swe_plus,real_swe_style_controlled_plus,30,30,0,0,0.933333,0.933333,0

@@ -1,0 +1,6 @@
+scope,required_action,blocking_findings
+fresh_five_model_admission,"Create freeze packet, commit/tag before results, run into new dirs, write post-run audit",MD-001;PVC-001;OR-002
+openrouter_gpt55_condition,Rerun if it should count beyond access/routing preflight,HASH-002;OR-002;CL-001
+openrouter_claude48_condition,Rerun and resolve task-failure/audit contradiction,HASH-003;OR-002;CL-001
+local_qwen32b_condition,Rerun under preregistered backend/retry/missingness policy,PVC-004;CL-002
+future_main_matrix,Run only after admission is passed and H4/H5 chain exists,HASH-001;PVC-003

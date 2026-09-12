@@ -1,0 +1,20 @@
+{
+  "artifact_manifest_path": "data/pcg_dynamic_state_v2/h5_static_sanity_lock_20260623/ARTIFACT_HASH_MANIFEST.jsonl",
+  "environment_lock_path": "data/pcg_dynamic_state_v2/h5_static_sanity_lock_20260623/ENVIRONMENT_LOCK.json",
+  "environment_lock_sha256": "d314a0f76ba7e3ec18e3b9d6155fe2e9762284128505d9973d9e1940728a7f4c",
+  "experiment_id": "pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623",
+  "failures": [],
+  "h4_incomplete_rows": 0,
+  "h5_private_raw_lock_rows": 4,
+  "lock_id": "pcg_dynamic_state_v2_static_sanity_h5_lock_20260623",
+  "model_api_called_by_lock_builder": false,
+  "model_api_called_by_static_sanity_runner": true,
+  "public_release_status": "ANON_REVIEW_READY_AS_HASH_LOCK_WITH_PRIVATE_RAW_REFS; raw release policy still required for public artifact release.",
+  "row_count": 4,
+  "row_manifest_path": "data/pcg_dynamic_state_v2/h5_static_sanity_lock_20260623/ROW_H5_MANIFEST.jsonl",
+  "schema_version": "pcg_dynamic_state_v2.static_sanity_h5_lock_summary.v1",
+  "scope": "Canonical one-task static-sanity gate for the 2026-06-22 PCG v2 mature_ssr_loop runner.",
+  "scores_with_hashes_path": "data/pcg_dynamic_state_v2/h5_static_sanity_lock_20260623/static_sanity_scores_with_h5_hashes.csv",
+  "secret_files_read_by_lock_builder": false,
+  "summary_sha256": "8993dd7b63d5a84b49deab0848cbf3bbe85bf50339b528c148d1c2e44887f469"
+}

@@ -1,0 +1,98 @@
+{
+  "completed_model_conditions": [
+    "openrouter_gpt55",
+    "openrouter_claude48",
+    "deepseek_v4pro",
+    "qwen37max",
+    "kimi_k26"
+  ],
+  "created_at_utc": "2026-06-26T16:27:21Z",
+  "full_five_model_smoke_complete": true,
+  "global_confirmatory_parse_and_score_success": 60,
+  "global_confirmatory_rows": 60,
+  "global_threshold": "57/60",
+  "global_threshold_passed": true,
+  "metadata_relock": {
+    "api_calls_performed": 0,
+    "created_at_utc": "2026-06-26T16:27:21Z",
+    "reason": "no_api_metadata_relock_after_sap_freeze",
+    "statistical_analysis_plan_sha256": "efcb9e52ccc4621a573c9eb7430d99216cbe6aa2baf6f9fbba65950a9f96a2c5",
+    "variable_freeze_spec_sha256": "83871f5d9aae7f42366909bdeb0284a2fef34ce65e92ca7857d3e17da84f419a"
+  },
+  "pending_model_conditions": [],
+  "rows": {
+    "deepseek_v4pro": {
+      "api_calls_performed": 61,
+      "budget300_parse_and_score_success": 4,
+      "budget300_reliable_composite_success": 2,
+      "budget300_rows": 4,
+      "confirmatory_answer_success": 4,
+      "confirmatory_hard_failure_count": 0,
+      "confirmatory_parse_and_score_success": 12,
+      "confirmatory_reliable_composite_success": 3,
+      "confirmatory_rows": 12,
+      "confirmatory_state_governance_success": 5,
+      "decision": "ADMIT_MODEL",
+      "summary_path": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/deepseek_v4pro/summary.json"
+    },
+    "kimi_k26": {
+      "api_calls_performed": 61,
+      "budget300_parse_and_score_success": 4,
+      "budget300_reliable_composite_success": 0,
+      "budget300_rows": 4,
+      "confirmatory_answer_success": 1,
+      "confirmatory_hard_failure_count": 0,
+      "confirmatory_parse_and_score_success": 12,
+      "confirmatory_reliable_composite_success": 0,
+      "confirmatory_rows": 12,
+      "confirmatory_state_governance_success": 3,
+      "decision": "ADMIT_MODEL",
+      "summary_path": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/kimi_k26/summary.json"
+    },
+    "openrouter_claude48": {
+      "api_calls_performed": 61,
+      "budget300_parse_and_score_success": 4,
+      "budget300_reliable_composite_success": 0,
+      "budget300_rows": 4,
+      "confirmatory_answer_success": 4,
+      "confirmatory_hard_failure_count": 0,
+      "confirmatory_parse_and_score_success": 12,
+      "confirmatory_reliable_composite_success": 2,
+      "confirmatory_rows": 12,
+      "confirmatory_state_governance_success": 3,
+      "decision": "ADMIT_MODEL",
+      "summary_path": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_claude48/summary.json"
+    },
+    "openrouter_gpt55": {
+      "api_calls_performed": 61,
+      "budget300_parse_and_score_success": 4,
+      "budget300_reliable_composite_success": 0,
+      "budget300_rows": 4,
+      "confirmatory_answer_success": 4,
+      "confirmatory_hard_failure_count": 0,
+      "confirmatory_parse_and_score_success": 12,
+      "confirmatory_reliable_composite_success": 1,
+      "confirmatory_rows": 12,
+      "confirmatory_state_governance_success": 1,
+      "decision": "ADMIT_MODEL",
+      "summary_path": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_gpt55/summary.json"
+    },
+    "qwen37max": {
+      "api_calls_performed": 61,
+      "budget300_parse_and_score_success": 4,
+      "budget300_reliable_composite_success": 0,
+      "budget300_rows": 4,
+      "confirmatory_answer_success": 5,
+      "confirmatory_hard_failure_count": 0,
+      "confirmatory_parse_and_score_success": 12,
+      "confirmatory_reliable_composite_success": 4,
+      "confirmatory_rows": 12,
+      "confirmatory_state_governance_success": 6,
+      "decision": "ADMIT_MODEL",
+      "summary_path": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/qwen37max/summary.json"
+    }
+  },
+  "schema_version": "pcg_dynamic_state_v2.benchmark_admission_smoke_summary.v1",
+  "scope": "five_model_complete_admission_smoke",
+  "task_id": "pcgds_v2_00001_api_migration_state_transition_easy"
+}

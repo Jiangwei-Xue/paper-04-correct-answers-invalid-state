@@ -1,0 +1,52 @@
+{
+  "schema_version": "pcg.latest_paper.v1",
+  "title": "When Correct Answers Carry Invalid State: Evaluating Explicit State Carriers in Stateful LLM Agents",
+  "authors": [
+    "Jiangwei Xue",
+    "Zhida Qin",
+    "Yuda Bi"
+  ],
+  "corresponding_author": "Yuda Bi",
+  "doi": "10.5281/zenodo.22720976",
+  "reproducibility_repository": "https://github.com/Jiangwei-Xue/paper-04-correct-answers-invalid-state",
+  "paper_license": "CC-BY-4.0",
+  "reproduction_release": "pcg-v3-github-reproduction-20260912-v7",
+  "paper_bundled_in_experiment_archive": false,
+  "paper_files": [
+    {
+      "path": "main.tex",
+      "sha256": "9aa2039f6ceb609c2f3eb27458c5d205b976ffd556f66dbb62023b73ca730739"
+    },
+    {
+      "path": "PCG_Carried_State_V3_Public_20260912.pdf",
+      "sha256": "4d0e4cab8785d829db9ba1249acfd728928e0cdfdd04e53faecc304bfc805102"
+    },
+    {
+      "path": "figures/fig02_architecture.pdf",
+      "sha256": "50ef846a020cdbb417ac746e94b64d3237890ccda16931820c72d04a07ac9a44"
+    },
+    {
+      "path": "figures/fig03_answer_state_gap.pdf",
+      "sha256": "1eacd4d58cd563c5c75bb8102ea4994ff709ed2179defd3be3e382ce02a2e4f6"
+    },
+    {
+      "path": "figures/fig04_protocol_profiles.pdf",
+      "sha256": "b6b3ffb7f5ba62c0df3b0b23ef8367aa4ea20ac05822b79b0ee723d87b99e1bd"
+    },
+    {
+      "path": "figures/fig05_executor_forest.pdf",
+      "sha256": "74498b02ed9c6b9ccd2f41fabe1a679afd062304805443a6f47c800c81d7bb29"
+    },
+    {
+      "path": "figures/fig06_product_reference.pdf",
+      "sha256": "305d7de5eb5f9ec7567be035268a0df85e05ff4856f2011cc797850e8ff803b9"
+    }
+  ],
+  "primary_results": {
+    "rows": 7200,
+    "final_answer_success": 696,
+    "intrinsic_validity": 191,
+    "answer_aligned_validity": 180,
+    "joint_success": 173
+  }
+}

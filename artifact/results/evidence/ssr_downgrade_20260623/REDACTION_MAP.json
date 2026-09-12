@@ -1,0 +1,479 @@
+{
+  "policy": "Only author-local paths and author identifiers were redacted. H5 row manifests were not edited.",
+  "redacted_file_count": 35,
+  "redactions": [
+    {
+      "original_sha256": "d0cfd5d4cd85beb45c8fb12c09dcd657a2eddea692e85da08c71a7067636dfef",
+      "path": "configs/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100.json",
+      "public_sha256": "2a1959515914de733b586884fea9720559571c8b17b35db9f1cb9b109ea3642c",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "665bfe62467601050cda1d9acd4a98554dc5d8e84f7704f3c893f3c55385e7ec",
+      "path": "configs/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run.json",
+      "public_sha256": "c4b204848425cfecca672b81b40485a7c3419f44aef193cc44fd1cd36deb2b61",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "047982d36c9df0f6aff8d882f6b2f45208a5a88eceddde3abec96ec8ae0ef38a",
+      "path": "configs/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_decisive_13task_4method_2budget_1run.json",
+      "public_sha256": "f1d46919e32fde2339738a6efd5af34660eed0dc361299ba7112c8f130e7566a",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "79df64b429989396be2a3bea0708217056929b307dfc94de3798ec5589258ef0",
+      "path": "configs/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_visiblecarry_vs_maturessrloop_13task_2budget_2method_1run.json",
+      "public_sha256": "38ca568c3312ff86394a42bbe6da163d6dcb2955ffd28455f25e9fa7c49fc8ae",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "c7f2bcf74fe30b04c327da510628fcd06eee5e68c09afe9cb9b699e0788386a2",
+      "path": "configs/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e3_m4_h3_visiblecarry_vs_maturessrloop_10task_2budget_2method_1run.json",
+      "public_sha256": "031782930a1e6740a9ffce67efc5ed3a29500ffa2ae50fc380075dee4f2d62ff",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "a4b968977b528a9d7210aafc222b9b4c74b4a871c8bed95d550a666b678817d5",
+      "path": "configs/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers.json",
+      "public_sha256": "2c849f082c1b79a525b7983f4dc3c0d5dd79fad1187a9ec213385e0b7130b08c",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "3ba7e6466ce7e38ba62071508fe2b35df90f9bc6b8476ca7b724b213be4fa64a",
+      "path": "configs/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers.json",
+      "public_sha256": "d4e0702b8593ea0aec932bfd4c7e01ab6b6d05e8712d3d60cf6a4b105405b495",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "9844931c40e77b0b94fb2a49512bd1d9673fce3a091fd5a5868014035260463d",
+      "path": "docs/protocol/pcg_dynamic_state_v2_main_matrix/HASH_INTERLOCK_REPORT_20260623.md",
+      "public_sha256": "c0dbb1d45d5714707b83ff6b8568ffe06bed89a10af2b2d1f7cd669c2f544dd4",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "f6505156c940af6bba2902394c470103a6b52a963c1e91d40064a7501eb2784b",
+      "path": "historical_matrixgate_20260618/MAIN_MATRIX_GATE.md",
+      "public_sha256": "392dd1bc77797459fc631a4f9f94edacdebe6226990b42c4c098f8d3af474ad9",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "5d5cff13e53580aaae54ccc86eacc6b4c2bde7d3b641f136dc76d80c2fd1b4e0",
+      "path": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/PREFLIGHT_AUDIT.json",
+      "public_sha256": "ba4d8ea3f8d60deb06362cb11f2b770c712ca5c26f3f15a7ba9135f40f2c3607",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "47e3fb83538835b8437b405efc357e1c574fd4ce9d33922910fc4be30914f495",
+      "path": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/PREFLIGHT_AUDIT.md",
+      "public_sha256": "6d5964371495892f745bba2877b33aa0cfc8f869f99859b64d46917152604d71",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "31df534a48e38fb1ea1a2ee7d5ed363f6e5e060d7bc55bd61c418cfe9ccffe59",
+      "path": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/PREFLIGHT_HASH_MANIFEST.jsonl",
+      "public_sha256": "1340b8e7a3e177992bee7f75e5c7d866dc4ce9d24610223856f861a2e08abdea",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "d5cff39782155663142f2ad7fcbd2fc182cb5e1f79f821dc2bea3a79cc7f470b",
+      "path": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/PREFLIGHT_SHA256SUMS.txt",
+      "public_sha256": "8567a3ceeb478b5084f36142ff898bf626ffea488eba8a01c3e615c0524966f3",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "27c26fb9e4eeb5b7580a297caa1461a42420629a1bd233f6e140135db031c5f1",
+      "path": "results/_probe_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_rerun100/RUN_PLAN.md",
+      "public_sha256": "5022a6fdd8a20c382110b13cf38f0612c0b936d7e3c0d1d9d3742e14d03ef858",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "e7c484500b6f9ba3ecd119f724b2ef874619d5a06be61048a6f6d95fa3cdf819",
+      "path": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/PREFLIGHT_AUDIT.md",
+      "public_sha256": "7225f682bea84f4b41167cb8967f676e2445d4ffb22262b795d2614a17362ea3",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "53ce73d9e96c9fa9939dd9c07863c5ef968f8262dc2de7ed966a2fa8ce4e1d7b",
+      "path": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/RUN_PLAN.md",
+      "public_sha256": "42088a3c60a0415a253cb265e1186b39ce8947f49945f5f785daebc024b25940",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "66f4cde415b91f0ab28b7b76b180115f0449b70b40497e4120c4f7079cccc7b3",
+      "path": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_decisive_13task_4method_2budget_1run/PREFLIGHT_AUDIT.json",
+      "public_sha256": "7aaf3ab135d91baafb2dc0d436fbae986fa35305f990f8b2731cd6a9cdece160",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "c549535fcda45bfd794cceb91e9e6408184459ce5ed02208e049c205e50f8c33",
+      "path": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_decisive_13task_4method_2budget_1run/PREFLIGHT_AUDIT.md",
+      "public_sha256": "a3db69f4700aa85a6bca3bec62a46168340743584000a321abf956c02b4fb622",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "4232e597a38d7af2825c608735e2d6fde547c75764937b7b0d32435bf4c9d41a",
+      "path": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v2_e10_h3_decisive_13task_4method_2budget_1run/RUN_PLAN.md",
+      "public_sha256": "462ac1223d28f7ab329cddadc5647f07a40abc1e11177e683c0a05ae1c702af1",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_WORKSPACE>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "8ec90833685341b925c73f44a505e20cd01fcc48ecf49a5889071e770a18b02a",
+      "path": "results/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_AUDIT.json",
+      "public_sha256": "5e634ecdd9434bf45623f4ffd4d3821b2408bfaef724a9ac32e3ff3e00bc0781",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "0015f254f4248ad045e6fc77859169d95fff02c6ce89239322f2030dcfd00e37",
+      "path": "results/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_AUDIT.md",
+      "public_sha256": "43ddbc69bf77761ee07936e5b36e93dbae4a9003410a2a458db59214f5429c85",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "6f87db2ea6451efcd94a87d043667d52384a5a32001e06335a7093eca0a782bb",
+      "path": "results/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_HASH_MANIFEST.jsonl",
+      "public_sha256": "6e1fa06f826d0f3d0a1b1bacd356502acefec36e405f55ccff55183c8493b496",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "df27bf14b1e8bf88345fde2e4019c29f7e55f4c769681e591ce5c6f466580177",
+      "path": "results/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_SHA256SUMS.txt",
+      "public_sha256": "fd22e93ae91d7bf138126c90add55a5ca64271d4e6ad9cc7449d98e0e3f6c8f4",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "459850baf7acd067c71d331595fca3125e6dc172f1413dac650f25046f41ddf3",
+      "path": "results/_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/RUN_PLAN.md",
+      "public_sha256": "686626ae027c635a2e11b0f37fa68b9b1060be12295d984830070e6dbe54e77c",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "faacc5415f0d334e02b3defe28fe1af5e5cba392b56834df33bd45dc496f65a9",
+      "path": "results/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_AUDIT.json",
+      "public_sha256": "4c337f63874c6b385eb5c09d4e18b3827b63ece67e391f6f02a0eac79567c8b1",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "225d9df71f8bb08ae9c31bb8a490a3be3903fa8bd209124d1737476e561a5670",
+      "path": "results/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_AUDIT.md",
+      "public_sha256": "2646238cd99eacb9076bbf5f768dec7ce18e6a4a32ff0c59222495456a07e48b",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "ecd738da7cc7b141b7eb6088bf271f2536c93ee64087f560e65a972ea5f60166",
+      "path": "results/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_HASH_MANIFEST.jsonl",
+      "public_sha256": "2b036a5e7786d4911c346dc20ef6651481579aa0a3bc2578e23238f0a58844d6",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "0dfd58cad96c0fb1c1828c00ad0160c67dbd2976ef1ce403a4d971f4023dacc6",
+      "path": "results/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/PREFLIGHT_SHA256SUMS.txt",
+      "public_sha256": "0ef1a86e0c579f5fe4e3558450cda69b910412070bffbc939cbd7e789e09692f",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "4c647011a8adaeb924c95f14780d6e9f5de07e95f14b2e87e48e68d96c92f8e0",
+      "path": "results/_probe_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers/RUN_PLAN.md",
+      "public_sha256": "c86dec77539de59a582fcc24e2993763ae5282189ccd51588fc8bf018ab97932",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "2efb745e24a826a7ec9dbb8ca5c35b9c6be1736f33cccce1bb22c6055dbbe2d2",
+      "path": "tools/pcg_dynamic_state_v2/backfill_pcg_dynamic_state_v2_missing_rows_20260623.py",
+      "public_sha256": "dd2166356b62858e7614f68b63e63141f754a1df728b40d2e1c49e2f530fca0c",
+      "reason": "Public scanner-safe identifier rename; behavior and string literals unchanged.",
+      "replacements": [
+        {
+          "count": null,
+          "from": "api_key",
+          "pattern_kind": "python_identifier_false_positive",
+          "to": "credential"
+        }
+      ]
+    },
+    {
+      "original_sha256": "7ea256c58943c71262ba972d1576eaadaab991ad33dc5fb8d41f90bdbca41179",
+      "path": "tools/run_deepseek_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+      "prior_public_sha256": "2dcb464d7996a7a07d3205ead9371b3599b3c937d0109e197b2d9b79a4c8c960",
+      "public_note": "Public scanner-safe identifier rename; behavior and string literals unchanged.",
+      "public_sha256": "f476ffe0cba2b02ab80f4906e0b47972ef074c4810d00d035f6b4b86d7966bab",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 2,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<AUTHOR_LOCAL_PROTOCOL_DIR>"
+        },
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "fa602b1c9117b45456546aa94a7f50e3fe9e8cc76de1db8825e23227df42eb3c",
+      "path": "tools/run_deepseek_pcg_dynamic_state_v2_static_sanity_20260623.py",
+      "public_sha256": "bafef93b59055c8c14512ec4382b55262f9a4e8cc2e9cc37b4280b9c15734315",
+      "reason": "Public scanner-safe identifier rename; behavior and string literals unchanged.",
+      "replacements": [
+        {
+          "count": null,
+          "from": "api_key",
+          "pattern_kind": "python_identifier_false_positive",
+          "to": "credential"
+        }
+      ]
+    },
+    {
+      "original_sha256": "5694e404cc1660614c37dd4293b4c311e0899409a07fbfefb4acdc37e80168e6",
+      "path": "tools/run_ecvs_deepseek_pcg_dynamic_state_v2_e10_h3_decisive_4method_2budget_1run.py",
+      "prior_public_sha256": "7cd7cbf136410bdcd81c9822b106f97c12b706ddb94f81474148cb3f730826c0",
+      "public_sha256": "11d2d7c2c5afe3229e2f5e5934bcadbbdb3be0e3c66bd1e869766696570e83bb",
+      "reason": "Public scanner-safe identifier rename and removal of a redundant non-ASCII placeholder check.",
+      "replacements": [
+        {
+          "count": null,
+          "from": "api_key",
+          "pattern_kind": "python_identifier_false_positive",
+          "to": "credential"
+        },
+        {
+          "count": 1,
+          "pattern_kind": "redundant_non_ascii_placeholder_literal",
+          "to": "existing non-ASCII and ASCII placeholder checks"
+        }
+      ]
+    },
+    {
+      "original_sha256": "e16b09d0226b95b8330b6deab9fe2eff1bbc4923bcc17453440b03afbf7bf372",
+      "path": "tools/run_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+      "public_sha256": "fb24b738b32d4b505b549912de6be84d1935a1cecd4c22e0c7cf377c3a3cf75a",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    },
+    {
+      "original_sha256": "4a82d32cd6632bdd6a8debb98089859f62795d504618a10e1566fe732a27b0d0",
+      "path": "tools/run_qwen37max_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622.py",
+      "public_sha256": "e94cb8c8cd0f411a39e0dd6a0033ca0ff43835a8d3ac02fc26e270824eed8674",
+      "reason": "Redacted author-local absolute path or author identifier for double-blind review.",
+      "replacements": [
+        {
+          "count": 1,
+          "pattern_kind": "author_local_absolute_path",
+          "to": "<LOCAL_PATH_REDACTED>"
+        }
+      ]
+    }
+  ],
+  "schema_version": "anonymous_review_redaction_map.v1",
+  "scope": "SSR downgrade evidence package for anonymous review"
+}

@@ -1,0 +1,5 @@
+method,rows,backend_error_rows,backend_error_rate,parse_and_score_success_rows,parse_and_score_success_rate,answer_success_rows,answer_success_rate,state_governance_success_rows,state_governance_success_rate,reliable_composite_success_rows,reliable_composite_success_rate,hard_cap_rows,hard_cap_rate
+mature_ssr_loop,200,0,0.000000,200,1.000000,32,0.160000,77,0.385000,23,0.115000,161,0.805000
+rolling_summary,200,0,0.000000,200,1.000000,32,0.160000,58,0.290000,9,0.045000,167,0.835000
+rolling_visible_carry_forward,200,0,0.000000,198,0.990000,88,0.440000,2,0.010000,0,0.000000,200,1.000000
+ssr_no_visible_carry,200,0,0.000000,200,1.000000,37,0.185000,98,0.490000,12,0.060000,145,0.725000

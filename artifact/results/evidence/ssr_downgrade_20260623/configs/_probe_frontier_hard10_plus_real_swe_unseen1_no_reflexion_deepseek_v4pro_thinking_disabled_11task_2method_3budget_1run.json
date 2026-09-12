@@ -1,0 +1,217 @@
+{
+  "api_compatibility_mode": "openai_compatible",
+  "blocked_factors": [
+    "model",
+    "provider",
+    "task_id",
+    "task_family",
+    "difficulty_tier",
+    "run_id"
+  ],
+  "context_mode": "state_only",
+  "decoding_control": {
+    "effective_temperature_must_be_logged": true,
+    "omitted_temperature_allowed_only_if_provider_requires_it": true,
+    "policy": "lowest_supported_randomness",
+    "preferred_temperature": 0,
+    "residual_nondeterminism_control": "paired 5-run design with run_id blocking",
+    "seed_setting": "sensitivity_only_if_all_target_providers_support_compatible_seed_semantics",
+    "temperature_is_manipulated_variable": false
+  },
+  "description": "Exploratory DeepSeek V4 Pro probe: all 10 frontier_hard tasks plus the real-SWE executable-anchor task that was not included in the prior 135-row probe and is not already frontier_hard; 11 tasks x 2 methods x 3 budgets x 1 run = 66 rows. DeepSeek thinking mode is disabled through thinking.type=disabled. Not admission evidence and not main-matrix evidence.",
+  "difficulty_distribution": {
+    "easy": 10,
+    "frontier_hard": 10,
+    "hard": 15,
+    "medium": 15
+  },
+  "experiment_id": "_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run",
+  "final_json_mode": true,
+  "final_protocol_variant": "legacy_v09",
+  "fixed_controls": {
+    "context_mode": "state_only",
+    "final_json_mode": true,
+    "gpt_excluded_from_primary_matrix": true,
+    "reliable_success_definition": "final_json_parse_success == 1 and final_exact_success == 1 and forbidden_token_leakage == 0 and forbidden_action_violation == 0 and boundary_violation == 0 and backend_error == 0",
+    "state_budget_150_excluded_from_primary_matrix": true,
+    "temperature_is_manipulated_variable": false
+  },
+  "frontier_hard_revision": {
+    "aborted_deepseek_pre_revision_run_used": false,
+    "aborted_deepseek_rows_excluded_from_primary_analysis": true,
+    "parent_config_sha256": "4aad0c0b99e34fa91137f3cb4b0861107da46a9ee2baa35a05c8818ad4b30171",
+    "protocol": "frontier_hard_actual_replacement_v1_fixed_seed_no_outcome",
+    "reason_for_superseding": "label_only_revision_did_not_change_task_content",
+    "registry_path": "data/main_v1/frontier_hard_actual_replacement_registry.json",
+    "selection_used_model_outcomes": false,
+    "supersedes_label_only_revision": true
+  },
+  "main_experiment": false,
+  "manifest_sha256": "6ab8fa6ba4d8a1d6a38c9627c291d967a785e43060d6af283c4ac1e78c798de7",
+  "manipulated_variables": [
+    "method",
+    "state_budget_chars"
+  ],
+  "max_retries": 1,
+  "max_workers": 100,
+  "methods": [
+    "rolling_summary",
+    "ssr_only"
+  ],
+  "model_snapshot_control": {
+    "drift_sensitivity_rule": "if provider aliases change or run windows are interrupted by more than 48 hours, flag server_side_model_drift sensitivity",
+    "must_record": [
+      "provider",
+      "base_url",
+      "exact_model_string",
+      "run_started_at_utc",
+      "run_finished_at_utc",
+      "per_row_timestamp"
+    ],
+    "run_window_policy": "run all final-main model calls within a tight continuous window when possible",
+    "snapshot_pinning_available": false,
+    "snapshot_proxy": "exact_model_string + provider + base_url + run_started_at_utc + run_finished_at_utc"
+  },
+  "models": {
+    "deepseek": {
+      "api_compatibility_mode": "openai_compatible",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "api_key_optional": false,
+      "base_url": "https://api.deepseek.com",
+      "decoding_policy_target": "lowest_supported_randomness",
+      "effective_temperature_setting": "explicit_temperature_0_if_supported",
+      "exact_model_string": "deepseek-v4-pro",
+      "max_tokens": 4096,
+      "model": "deepseek-v4-pro",
+      "omit_temperature": false,
+      "preferred_temperature": 0,
+      "provider": "DeepSeek OpenAI-compatible",
+      "temperature": 0,
+      "temperature_send_mode": "explicit",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Shard rows: 1 model (deepseek) x 50 tasks x 4 methods x 3 state budgets x 5 runs = 3000.",
+    "Derived from parent config without changing task, method, prompt, scoring, budget, run, or provider semantics.",
+    "Serial execution policy: max_workers=1 for final main shards.",
+    "GPT and state_budget=150 remain excluded from the primary matrix.",
+    "Aborted DeepSeek pre-revision rows are excluded from this shard and all primary analyses.",
+    "Aborted DeepSeek pre-revision rows are excluded from this shard and all primary analyses.",
+    "Aborted DeepSeek pre-revision rows are excluded from this shard and all primary analyses.",
+    "parent_config_sha256=4aad0c0b99e34fa91137f3cb4b0861107da46a9ee2baa35a05c8818ad4b30171",
+    "manifest_sha256=6ab8fa6ba4d8a1d6a38c9627c291d967a785e43060d6af283c4ac1e78c798de7",
+    "runner_sha256=82417cd43be1f4b904cae735462637d01077d80b082529e9a63e930765aa467f",
+    "Actual frontier-hard replacement protocol supersedes the label-only draft; this shard uses the actual replacement manifest.",
+    "Aborted DeepSeek pre-revision rows are excluded from this shard and all primary analyses."
+  ],
+  "outputs": {
+    "scores_csv": "results/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run/scores.csv",
+    "summary_by_model_method_csv": "results/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run/summary_by_model_method.csv",
+    "summary_by_difficulty_tier_csv": "results/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run/summary_by_difficulty_tier.csv",
+    "summary_by_state_budget_csv": "results/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run/summary_by_state_budget.csv",
+    "matched_wins_csv": "results/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run/matched_wins.csv",
+    "failure_cases_csv": "results/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run/failure_cases.csv"
+  },
+  "parent_config_path": "configs/ssr_loop_final_main_5model_50task_4method_3budget_5run.json",
+  "parent_config_sha256": "4aad0c0b99e34fa91137f3cb4b0861107da46a9ee2baa35a05c8818ad4b30171",
+  "provenance_policy": {
+    "closed_source_snapshot_pinning_available": false,
+    "no_true_weight_snapshot_claim": true,
+    "snapshot_proxy_fields": [
+      "provider",
+      "base_url",
+      "exact_model_string",
+      "run_started_at_utc",
+      "run_finished_at_utc",
+      "git_commit_hash",
+      "config_path",
+      "config_sha256",
+      "manifest_sha256",
+      "runner_sha256",
+      "task_id",
+      "method",
+      "state_budget_chars",
+      "run_id"
+    ]
+  },
+  "raw_dir": "released_raw_outputs/model_outputs/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run",
+  "request_timeout": 300,
+  "research_phase": "exploratory_frontier_hard_plus_real_swe_unseen_no_reflexion_thinking_disabled_probe",
+  "retry_backoff": 2.0,
+  "runner_sha256": "82417cd43be1f4b904cae735462637d01077d80b082529e9a63e930765aa467f",
+  "runs": 1,
+  "score_rows_expected": 66,
+  "source_type_difficulty_distribution": {
+    "diagnostic_controlled|easy": 5,
+    "diagnostic_controlled|frontier_hard": 3,
+    "diagnostic_controlled|hard": 6,
+    "diagnostic_controlled|medium": 6,
+    "real_swe_executable_anchor_controlled|frontier_hard": 4,
+    "real_swe_executable_anchor_controlled|hard": 3,
+    "real_swe_executable_anchor_controlled|medium": 3,
+    "semi_real_repo_style_controlled|easy": 5,
+    "semi_real_repo_style_controlled|frontier_hard": 3,
+    "semi_real_repo_style_controlled|hard": 6,
+    "semi_real_repo_style_controlled|medium": 6
+  },
+  "state_budget_chars": [
+    300,
+    600,
+    1200
+  ],
+  "task_manifest_path": "data/main_v1/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run_subset.jsonl",
+  "tasks": "data/main_v1/_probe_frontier_hard10_plus_real_swe_unseen1_no_reflexion_deepseek_v4pro_thinking_disabled_11task_2method_3budget_1run_subset.jsonl",
+  "temperature": 0,
+  "admission_experiment": false,
+  "exploratory_probe": true,
+  "selection_used_model_outcomes": false,
+  "state_budgets": [
+    300,
+    600,
+    1200
+  ],
+  "budgets": [
+    300,
+    600,
+    1200
+  ],
+  "num_runs": 1,
+  "probe_protocol": {
+    "expected_rows": "11 tasks x 2 methods x 3 state budgets x 1 run = 66 rows",
+    "method_set": [
+      "rolling_summary",
+      "ssr_only"
+    ],
+    "budgets": [
+      300,
+      600,
+      1200
+    ],
+    "runs": 1,
+    "max_workers": 3,
+    "controlled_non_real_count": 10,
+    "real_swe_executable_anchor_controlled_count": 5,
+    "not_admission_evidence": true,
+    "not_main_matrix_evidence": true,
+    "reflexion_style": {
+      "uses_ssr_typed_state_schema": false,
+      "uses_structured_task_cards": false,
+      "uses_free_form_reflection_memory": true,
+      "carries_previous_free_form_reflection": true,
+      "baseline_role": "Reflexion-style self-monitoring baseline without SSR schema"
+    },
+    "token_cap_policy": {
+      "max_tokens": 4096,
+      "rationale": "Use current unified v4 output-cap control. Historical DeepSeek final-main shard used 1800, but main_v1 output-cap policy was later amended to 4096 to reduce truncation confounds.",
+      "not_admission_evidence": true,
+      "not_main_matrix_evidence": true
+    },
+    "task_subset": "all 10 frontier_hard tasks plus the one real-SWE executable-anchor task not in prior 135-row probe and not already frontier_hard"
+  },
+  "max_tokens": 4096
+}

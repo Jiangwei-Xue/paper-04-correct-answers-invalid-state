@@ -1,0 +1,367 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rai": "http://mlcommons.org/croissant/RAI/"
+  },
+  "@type": "Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "name": "PCG Dynamic-State v2 Reliable Co-Success Anonymous Review Artifact",
+  "alternateName": "PCG Dynamic-State v2 reliable co-success benchmark",
+  "description": "Anonymous review artifact containing the frozen protocol, task and oracle manifests, planned row manifests, admission evidence, clean-v2 row-level execution closure records, submission aggregate result tables, scoped saved-output evidence, scorer/verifier code, and reproducibility metadata for a closed-model reliable co-success benchmark. Croissant hosting fields remain placeholders until final public release.",
+  "version": "PLACEHOLDER_RELEASE_TAG_OR_ARCHIVE_VERSION",
+  "datePublished": "PLACEHOLDER_DATE_AFTER_HOSTING",
+  "license": "PLACEHOLDER_LICENSE_UNTIL_RELEASE_CHOSEN",
+  "url": "PLACEHOLDER_HOSTING_LANDING_URL",
+  "sameAs": "PLACEHOLDER_DOI_OR_ARCHIVE_URL",
+  "citeAs": "PLACEHOLDER_CITATION_AFTER_ACCEPTANCE_OR_PUBLIC_RELEASE",
+  "isAccessibleForFree": "PLACEHOLDER_AFTER_HOSTING_POLICY",
+  "keywords": [
+    "closed-model evaluation",
+    "reliable composite success",
+    "state governance",
+    "bounded state transfer",
+    "PCG dynamic-state v2",
+    "artifact review",
+    "saved-output replay"
+  ],
+  "inLanguage": "en",
+  "creator": {
+    "@type": "Organization",
+    "name": "Anonymous authors during double-blind review"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PLACEHOLDER_PUBLIC_PUBLISHER_AFTER_ANONYMITY_PERIOD"
+  },
+  "measurementTechnique": [
+    "offline saved-output replay",
+    "hash-locked task and oracle manifests",
+    "strict scorer for exact answer and state governance",
+    "VCR cassette record/replay/audit"
+  ],
+  "variableMeasured": [
+    "answer_success",
+    "state_governance_success",
+    "reliable_composite_success",
+    "final_json_parse_success",
+    "state_hard_cap_used",
+    "raw_response_sha256",
+    "logical_request_hash"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_benchmark_card",
+      "name": "Benchmark card",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/BENCHMARK_CARD.md",
+      "encodingFormat": "text/markdown",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "Reviewer-facing description of what the benchmark measures, does not measure, and how it should be used."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_confirmatory_config",
+      "name": "Frozen confirmatory config",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json",
+      "encodingFormat": "application/json",
+      "sha256": "7106f3ce8a70947e172b554c924a0d1e3f5bda9718787870482abdcb9e27d900",
+      "description": "Frozen 7,200-row confirmatory design config."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_confirmatory_rows",
+      "name": "Frozen confirmatory row manifest",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl",
+      "encodingFormat": "application/jsonl",
+      "sha256": "10ace9463c960c35bbfa501e23e554924c6ef2f1f5fd904e7e18324e872938e0",
+      "contentSize": "18654693",
+      "description": "Planned confirmatory request rows. These are frozen row definitions, not completed outcome rows."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_budget300_config",
+      "name": "Frozen budget-300 diagnostic config",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.json",
+      "encodingFormat": "application/json",
+      "sha256": "60717eddf293e067b69ca019d64f7a3258d6777655bf103064460e859b8fa7ee",
+      "description": "Frozen budget-300 diagnostic design config."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_budget300_rows",
+      "name": "Frozen budget-300 diagnostic row manifest",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.rows.jsonl",
+      "encodingFormat": "application/jsonl",
+      "sha256": "c12e5c5dca092cd32c2cbcbaaccfd0f6b22dba36ad5a2b47b285530ba606df99",
+      "contentSize": "2084892",
+      "description": "Planned budget-300 diagnostic rows. These rows are not primary-analysis eligible."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_freeze_summary",
+      "name": "Freeze summary",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/admission/FREEZE_SUMMARY_20260625.json",
+      "encodingFormat": "application/json",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "Counts, hashes, provider refresh status, and current admission decision."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_variable_freeze_spec",
+      "name": "Variable freeze spec",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/admission/VARIABLE_FREEZE_SPEC_20260625.yaml",
+      "encodingFormat": "application/x-yaml",
+      "sha256": "14590c0f9ee7f576a93a93a73fa24fa775c28d366ef31a406fe9be77c22459ae",
+      "description": "Frozen axes, controls, scorer, provider, and admission-policy references."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_provider_snapshot",
+      "name": "Provider supported-parameter snapshot",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/admission/PROVIDER_SUPPORTED_PARAMETER_SNAPSHOT_20260625.json",
+      "encodingFormat": "application/json",
+      "sha256": "d01e49b45cfa280ccf9acec23201fc0a2c03ed027b281daff806c18ab6824973",
+      "description": "Provider and request-control snapshot for the frozen model axis."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_admission_summary",
+      "name": "Benchmark admission smoke summary",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/SUMMARY.json",
+      "encodingFormat": "application/json",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "Partial benchmark-admission evidence. Admission rows are not primary results."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_clean_v2_execution_closure",
+      "name": "Clean-v2 main-matrix execution closure",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/results/main_matrix/record_mode_20260627/CLEAN_V2_MATRIX_EXECUTION_CLOSURE_20260629.md",
+      "encodingFormat": "text/markdown",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "Five-model 7,200-row clean-v2 row-level execution and VCR closure report. This is not a final paper aggregation table."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_clean_v2_model_status",
+      "name": "Clean-v2 model execution status",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/results/main_matrix/record_mode_20260627/CLEAN_V2_MATRIX_MODEL_STATUS_20260629.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "Per-model clean-v2 execution status for the five primary model conditions."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_ssr_evidence_readme",
+      "name": "SSR downgrade evidence README",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/results/evidence/ssr_downgrade_20260623/README.md",
+      "encodingFormat": "text/markdown",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "Scope and verification boundary for the scoped SSR downgrade evidence packet."
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fo_ssr_e5_report",
+      "name": "SSR downgrade E5 interlock report",
+      "contentUrl": "PLACEHOLDER_HOSTING_URL/artifact/results/evidence/ssr_downgrade_20260623/E5_INTERLOCK_REPORT_20260623.md",
+      "encodingFormat": "text/markdown",
+      "sha256": "PLACEHOLDER_RECOMPUTE_AFTER_RELEASE_ARCHIVE",
+      "description": "E5 evidence-chain closure report for the scoped evidence packet."
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "fs_released_raw_outputs",
+      "name": "Released raw outputs for scoped SSR downgrade packet",
+      "containedIn": "PLACEHOLDER_HOSTING_URL/artifact/results/evidence/ssr_downgrade_20260623/released_raw_outputs/model_outputs/",
+      "includes": "*.jsonl",
+      "encodingFormat": "application/jsonl",
+      "description": "Released raw model outputs for the scoped evidence packet. These support scoped saved-output replay, not the completed main-matrix result table."
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "rs_main_matrix_frozen_rows",
+      "name": "Frozen planned main-matrix rows",
+      "description": "Homogeneous JSONL row definitions for the confirmatory and budget-300 diagnostic matrices. These are planned request rows, not completed outcomes.",
+      "field": [
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/row_id", "name": "row_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/task_id", "name": "task_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/task_family", "name": "task_family", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/task_difficulty", "name": "task_difficulty", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/model_condition_id", "name": "model_condition_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/provider", "name": "provider", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/access_path", "name": "access_path", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/requested_model", "name": "requested_model", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/method", "name": "method", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/budget", "name": "budget", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/run_id", "name": "run_id", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/matrix_role", "name": "matrix_role", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/primary_analysis_eligible", "name": "primary_analysis_eligible", "dataType": "sc:Boolean" },
+        { "@type": "cr:Field", "@id": "rs_main_matrix_frozen_rows/logical_request_hash", "name": "logical_request_hash", "dataType": "sc:Text" }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "rs_task_manifests",
+      "name": "Task, oracle, and provenance manifests",
+      "description": "Hash-locked model-visible task surfaces, scorer-only oracle surfaces, provenance metadata, and split audit.",
+      "field": [
+        { "@type": "cr:Field", "@id": "rs_task_manifests/task_id", "name": "task_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_task_manifests/family", "name": "family", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_task_manifests/difficulty", "name": "difficulty", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_task_manifests/model_visible_content", "name": "model_visible_content", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_task_manifests/scorer_only_oracle", "name": "scorer_only_oracle", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_task_manifests/task_split_audit_status", "name": "task_split_audit_status", "dataType": "sc:Text" }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "rs_admission_smoke_rows",
+      "name": "Admission smoke rows",
+      "description": "Admission-only controlled rows, score rows, cassettes, and replay outputs for model-condition entry checks. These rows are excluded from primary aggregation.",
+      "field": [
+        { "@type": "cr:Field", "@id": "rs_admission_smoke_rows/model_condition_id", "name": "model_condition_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_admission_smoke_rows/decision", "name": "decision", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_admission_smoke_rows/final_json_parse_success", "name": "final_json_parse_success", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_admission_smoke_rows/score_row_emitted", "name": "score_row_emitted", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_admission_smoke_rows/api_calls_performed", "name": "api_calls_performed", "dataType": "sc:Integer" }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "rs_scoped_evidence_rows",
+      "name": "Scoped SSR downgrade evidence rows",
+      "description": "Verifier-backed historical evidence rows used for method disposition, not for the primary main-matrix result table.",
+      "field": [
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/global_artifact_id", "name": "global_artifact_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/task_id", "name": "task_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/method", "name": "method", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/budget", "name": "budget", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/answer_success", "name": "answer_success", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/state_governance_success", "name": "state_governance_success", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/reliable_composite_success", "name": "reliable_composite_success", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/raw_response_sha256", "name": "raw_response_sha256", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_scoped_evidence_rows/h5_chain_hash", "name": "h5_chain_hash", "dataType": "sc:Text" }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "rs_budget300_diagnostic_summary",
+      "name": "Budget-300 diagnostic summary",
+      "description": "Derived diagnostic summary for low-budget hard-cap, truncation, and carry-failure behavior. It is not primary-analysis eligible.",
+      "field": [
+        { "@type": "cr:Field", "@id": "rs_budget300_diagnostic_summary/method", "name": "method", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "rs_budget300_diagnostic_summary/budget", "name": "budget", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_budget300_diagnostic_summary/rows", "name": "rows", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_budget300_diagnostic_summary/hard_cap_any_rate", "name": "hard_cap_any_rate", "dataType": "sc:Float" },
+        { "@type": "cr:Field", "@id": "rs_budget300_diagnostic_summary/answer_success_count", "name": "answer_success_count", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "rs_budget300_diagnostic_summary/reliable_success_count", "name": "reliable_success_count", "dataType": "sc:Integer" }
+      ]
+    }
+  ],
+  "rai:intendedUse": "Artifact review, benchmark inspection, saved-output replay, and paper-method audit for reliable co-success under bounded state transfer. This artifact is not a general-purpose LLM leaderboard.",
+  "rai:limitations": [
+    "The clean-v2 five-model 7,200-row row-level execution closure and submission aggregate result tables are included; final public hosting metadata and venue-facing manuscript claims remain separate release/manuscript layers.",
+    "Admission smoke rows are excluded from primary aggregation.",
+    "Budget 300 is diagnostic only and must not be pooled into confirmatory method ranking.",
+    "Closed-model live API reruns are not expected to be byte-identical to saved outputs.",
+    "The task substrate is synthetic and calibration-conditioned, not a fully untouched public held-out benchmark.",
+    "The scoped SSR downgrade packet supports a method-disposition claim, not a universal SSR failure claim."
+  ],
+  "rai:dataLimitations": [
+    "The artifact currently contains frozen protocol, planned row manifests, admission evidence, clean-v2 row-level execution closure records, submission aggregate result tables, and scoped SSR-downgrade evidence; final public hosting metadata and manuscript-level statistical interpretation remain outside the Croissant draft.",
+    "The task substrate is synthetic and calibration-conditioned, not a completely untouched held-out public benchmark.",
+    "Closed-model saved-output replay verifies recorded outputs and scores; it does not guarantee future live API reproducibility.",
+    "Budget 300 is a diagnostic stress regime and is excluded from confirmatory aggregation."
+  ],
+  "rai:dataBiases": [
+    "The model axis is a frozen experimental sample of five model conditions, not a population-representative sample of all LLMs.",
+    "The task family emphasizes bounded state transfer and exact/governed co-success, so results may not generalize to open-ended reasoning, preference, or safety benchmarks.",
+    "Provider routes differ by condition: GPT and Claude are OpenRouter-routed, while DeepSeek, Kimi, and Qwen are direct-provider conditions."
+  ],
+  "rai:personalSensitiveInformation": "No known personal or sensitive information is included. The benchmark uses synthetic task content and model-generated responses, not human-subject records, demographic labels, medical records, financial records, private documents, or scraped social-media data.",
+  "rai:dataUseCases": [
+    "Artifact review and offline verification.",
+    "Benchmark inspection for reliable co-success under bounded state transfer.",
+    "Saved-output replay and hash-chain audit.",
+    "Method and metric analysis after respecting diagnostic-vs-confirmatory boundaries."
+  ],
+  "rai:dataSocialImpact": [
+    "Positive impact: improves auditability of closed-model evaluation by separating saved-output replay from live API reruns and by documenting benchmark limits.",
+    "Risk: users may overinterpret the benchmark as a general LLM leaderboard, safety benchmark, or live-provider reproducibility guarantee.",
+    "Mitigation: the benchmark card, RAI note, and claim map restrict claims to scoped reliable co-success under the frozen protocol."
+  ],
+  "rai:hasSyntheticData": true,
+  "rai:dataSensitivity": "Synthetic task and model-output artifact. It does not contain human-subject records, private documents, demographic labels, medical records, financial records, or scraped social-media data.",
+  "rai:knownRisks": [
+    "Evaluation claim overreach beyond the bounded state-transfer setting.",
+    "Provider routing or closed-model drift if users rerun live APIs instead of replaying saved outputs.",
+    "Mistaking diagnostic or admission rows for primary results.",
+    "Overfitting to a calibration-conditioned synthetic task substrate."
+  ],
+  "rai:recommendedUses": [
+    "Verify saved outputs, hash locks, scorer behavior, and replay cassettes.",
+    "Inspect benchmark design and variable controls.",
+    "Evaluate scoped reliable co-success claims only after respecting the execution-versus-aggregation boundary."
+  ],
+  "rai:outOfScopeUses": [
+    "Training or fine-tuning models.",
+    "General LLM leaderboard ranking.",
+    "Claims about model safety or human preference.",
+    "Claims that current live APIs reproduce historical saved outputs."
+  ],
+  "rai:maintenancePlan": "Update this metadata after public hosting, license choice, DOI assignment, final archive checksums, and full main-matrix result manifests are fixed."
+  ,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+      "name": "Model-visible task manifest"
+    },
+    {
+      "@id": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl",
+      "name": "Scorer-only oracle manifest"
+    },
+    {
+      "@id": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl",
+      "name": "Frozen confirmatory row manifest"
+    },
+    {
+      "@id": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.rows.jsonl",
+      "name": "Frozen budget-300 diagnostic row manifest"
+    },
+    {
+      "@id": "artifact/results/evidence/ssr_downgrade_20260623/",
+      "name": "Scoped SSR downgrade saved-output evidence packet"
+    },
+    {
+      "@id": "artifact/results/main_matrix/record_mode_20260627/CLEAN_V2_MATRIX_EXECUTION_CLOSURE_20260629.md",
+      "name": "Clean-v2 main-matrix execution closure"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "name": "Main-matrix freeze generation",
+      "prov:used": "artifact/verification/build_main_matrix_freeze.py"
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "Static freeze verification",
+      "prov:used": "artifact/verification/verify_main_matrix_freeze.py"
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "Saved-output replay verification",
+      "prov:used": "artifact/verification/replay_ssr_downgrade_from_saved_outputs.py"
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "Budget-300 diagnostic summary generation",
+      "prov:used": "artifact/verification/summarize_budget_300_diagnostic.py"
+    }
+  ]
+}

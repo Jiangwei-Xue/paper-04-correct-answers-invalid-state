@@ -1,0 +1,6 @@
+model_condition_id,rows,backend_error_rows,backend_error_rate,parse_and_score_success_rows,parse_and_score_success_rate,answer_success_rows,answer_success_rate,state_governance_success_rows,state_governance_success_rate,reliable_composite_success_rows,reliable_composite_success_rate,hard_cap_rows,hard_cap_rate
+deepseek_v4pro,1440,6,0.004167,1434,0.995833,361,0.250694,333,0.231250,142,0.098611,138,0.095833
+kimi_k26,1440,7,0.004861,1438,0.998611,202,0.140278,219,0.152083,55,0.038194,554,0.384722
+openrouter_claude48,1440,0,0.000000,1439,0.999306,219,0.152083,281,0.195139,39,0.027083,613,0.425694
+openrouter_gpt55,1440,0,0.000000,1433,0.995139,213,0.147917,290,0.201389,47,0.032639,497,0.345139
+qwen37max,1440,0,0.000000,1440,1.000000,354,0.245833,460,0.319444,165,0.114583,237,0.164583

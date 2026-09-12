@@ -1,0 +1,309 @@
+{
+  "blocking_before_api_execution": false,
+  "created_at_utc": "2026-06-25T00:00:00Z",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "access_path": "openrouter_chat_completions_api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "base_url": "https://openrouter.ai/api/v1",
+      "condition_id": "openrouter_gpt55",
+      "expected_exact_model_string": "openai/gpt-5.5-20260423",
+      "fallback_enabled": false,
+      "live_refresh_result": {
+        "content_exact_ok": true,
+        "finish_reason": "stop",
+        "http_status": 200,
+        "message_reasoning_present": false,
+        "openrouter_generation_metadata_error_body_present": true,
+        "openrouter_generation_metadata_http_status": 404,
+        "openrouter_generation_metadata_present": false,
+        "openrouter_generation_metadata_raw_sha256": "f5345d57f30c6ea45a3888179c75fc5b7435c9b23916533772ebc5151a47dffc",
+        "openrouter_generation_metadata_sha256": null,
+        "openrouter_generation_metadata_status": "unavailable_error",
+        "raw_response_sha256": "ba5047a0640d5379848b24a22868da1faf5a69d94fc15d50912f0d0840ceb0e9",
+        "reasoning_details_present": false,
+        "reasoning_tokens": 0,
+        "request_payload_sha256": "f0dc903e8cdd1f57573d222884491cc495e91f342f4e3b09d84004dfd86fe6db",
+        "returned_model": "openai/gpt-5.5-20260423"
+      },
+      "openrouter_used": true,
+      "provider": "openrouter",
+      "provider_route_hint": "openai",
+      "request_controls": {
+        "cache": "not_requested",
+        "max_tokens": 4096,
+        "provider": {
+          "send_mode": "explicit",
+          "value": {
+            "allow_fallbacks": false
+          }
+        },
+        "reasoning_or_thinking": {
+          "reasoning_disable_mode": "openrouter_reasoning_effort_none",
+          "send_mode": "explicit",
+          "value": {
+            "reasoning": {
+              "effort": "none"
+            }
+          }
+        },
+        "stream": {
+          "send_mode": "explicit",
+          "value": false
+        },
+        "temperature": {
+          "send_mode": "omitted",
+          "value": null
+        },
+        "tools": "disabled",
+        "web": "disabled"
+      },
+      "requested_model": "openai/gpt-5.5",
+      "snapshot_status": "live_refresh_passed_nonbenchmark_prompt"
+    },
+    {
+      "access_path": "openrouter_chat_completions_api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "base_url": "https://openrouter.ai/api/v1",
+      "condition_id": "openrouter_claude48",
+      "expected_exact_model_string": "anthropic/claude-4.8-opus-20260528",
+      "fallback_enabled": false,
+      "live_refresh_result": {
+        "content_exact_ok": true,
+        "finish_reason": "stop",
+        "http_status": 200,
+        "message_reasoning_present": false,
+        "openrouter_generation_metadata_error_body_present": true,
+        "openrouter_generation_metadata_http_status": 404,
+        "openrouter_generation_metadata_present": false,
+        "openrouter_generation_metadata_raw_sha256": "a8f6f92e3d61d75d5ddf771e90bc524f9beccf2514a1a7aeeb7609868af7b102",
+        "openrouter_generation_metadata_sha256": null,
+        "openrouter_generation_metadata_status": "unavailable_error",
+        "raw_response_sha256": "a03ff0be7ca4dea601db1378b177635729b7b1d3e8ac32506ad81ca5dcd1cf5b",
+        "reasoning_details_present": false,
+        "reasoning_tokens": 0,
+        "request_payload_sha256": "cf91725100cf81de9afd465505a69f2567ed661b8caa3d65c8e84e1c5d8dd9df",
+        "returned_model": "anthropic/claude-4.8-opus-20260528"
+      },
+      "openrouter_used": true,
+      "provider": "openrouter",
+      "provider_route_hint": "anthropic",
+      "request_controls": {
+        "cache": "not_requested",
+        "max_tokens": 4096,
+        "provider": {
+          "send_mode": "explicit",
+          "value": {
+            "allow_fallbacks": false
+          }
+        },
+        "reasoning_or_thinking": {
+          "reasoning_disable_mode": "openrouter_reasoning_effort_none",
+          "send_mode": "explicit",
+          "value": {
+            "reasoning": {
+              "effort": "none"
+            }
+          }
+        },
+        "stream": {
+          "send_mode": "explicit",
+          "value": false
+        },
+        "temperature": {
+          "send_mode": "omitted",
+          "value": null
+        },
+        "tools": "disabled",
+        "web": "disabled"
+      },
+      "requested_model": "anthropic/claude-opus-4.8",
+      "snapshot_status": "live_refresh_passed_nonbenchmark_prompt"
+    },
+    {
+      "access_path": "direct_provider_openai_compatible",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "base_url": "https://api.deepseek.com",
+      "condition_id": "deepseek_v4pro",
+      "fallback_enabled": false,
+      "live_refresh_result": {
+        "content_exact_ok": true,
+        "finish_reason": "stop",
+        "http_status": 200,
+        "message_reasoning_present": false,
+        "openrouter_generation_metadata_error_body_present": false,
+        "openrouter_generation_metadata_http_status": null,
+        "openrouter_generation_metadata_present": false,
+        "openrouter_generation_metadata_raw_sha256": null,
+        "openrouter_generation_metadata_sha256": null,
+        "openrouter_generation_metadata_status": "not_applicable",
+        "raw_response_sha256": "917aef4975360d139633e4b76b760b09d408d86c6f11f1031c905ed4aa3a3d85",
+        "reasoning_details_present": false,
+        "reasoning_tokens": null,
+        "request_payload_sha256": "50f32af4e35c9c77429c96811767c69ff39f8b39b42635070ec371d3157a6c75",
+        "returned_model": "deepseek-v4-pro"
+      },
+      "openrouter_used": false,
+      "provider": "deepseek",
+      "request_controls": {
+        "cache": "not_requested",
+        "max_tokens": 4096,
+        "reasoning_or_thinking": {
+          "send_mode": "explicit",
+          "value": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "stream": {
+          "send_mode": "explicit",
+          "value": false
+        },
+        "temperature": {
+          "send_mode": "explicit",
+          "value": 0
+        },
+        "tools": "disabled",
+        "web": "disabled"
+      },
+      "requested_model": "deepseek-v4-pro",
+      "snapshot_status": "live_refresh_passed_nonbenchmark_prompt"
+    },
+    {
+      "access_path": "direct_provider_openai_compatible",
+      "api_key_env": "MOONSHOT_API_KEY",
+      "base_url": "https://api.moonshot.cn/v1",
+      "condition_id": "kimi_k26",
+      "fallback_enabled": false,
+      "live_refresh_result": {
+        "content_exact_ok": true,
+        "finish_reason": "stop",
+        "http_status": 200,
+        "message_reasoning_present": false,
+        "openrouter_generation_metadata_error_body_present": false,
+        "openrouter_generation_metadata_http_status": null,
+        "openrouter_generation_metadata_present": false,
+        "openrouter_generation_metadata_raw_sha256": null,
+        "openrouter_generation_metadata_sha256": null,
+        "openrouter_generation_metadata_status": "not_applicable",
+        "raw_response_sha256": "8b09957523a3e647b5452b44a62f8fc860b6904902d806715ef7321ce624e162",
+        "reasoning_details_present": false,
+        "reasoning_tokens": null,
+        "request_payload_sha256": "21a1f25367dffe324a47b0e47ebc6028c059296d55788b435f4020c3d72a99be",
+        "returned_model": "kimi-k2.6"
+      },
+      "openrouter_used": false,
+      "provider": "moonshot",
+      "request_controls": {
+        "cache": "not_requested",
+        "max_tokens": 4096,
+        "reasoning_or_thinking": {
+          "send_mode": "explicit",
+          "value": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "stream": {
+          "send_mode": "explicit",
+          "value": false
+        },
+        "temperature": {
+          "send_mode": "explicit",
+          "value": 0.6
+        },
+        "tools": "disabled",
+        "web": "disabled"
+      },
+      "requested_model": "kimi-k2.6",
+      "snapshot_status": "live_refresh_passed_nonbenchmark_prompt"
+    },
+    {
+      "access_path": "direct_provider_openai_compatible",
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "condition_id": "qwen37max",
+      "fallback_enabled": false,
+      "live_refresh_result": {
+        "content_exact_ok": true,
+        "finish_reason": "stop",
+        "http_status": 200,
+        "message_reasoning_present": false,
+        "openrouter_generation_metadata_error_body_present": false,
+        "openrouter_generation_metadata_http_status": null,
+        "openrouter_generation_metadata_present": false,
+        "openrouter_generation_metadata_raw_sha256": null,
+        "openrouter_generation_metadata_sha256": null,
+        "openrouter_generation_metadata_status": "not_applicable",
+        "raw_response_sha256": "b237d5fa4a33eb8ddd1878cc8050b676dabc37e46e70892f325df2ccba1c5e63",
+        "reasoning_details_present": false,
+        "reasoning_tokens": null,
+        "request_payload_sha256": "fff566aa08def38e6c46614e56648647f3d4dc14261a576e233f3b390ab1425f",
+        "returned_model": "qwen3.7-max"
+      },
+      "openrouter_used": false,
+      "provider": "dashscope",
+      "request_controls": {
+        "cache": "not_requested",
+        "max_tokens": 4096,
+        "reasoning_or_thinking": {
+          "send_mode": "explicit",
+          "value": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "stream": {
+          "send_mode": "explicit",
+          "value": false
+        },
+        "temperature": {
+          "send_mode": "explicit",
+          "value": 0.7
+        },
+        "tools": "disabled",
+        "web": "disabled"
+      },
+      "requested_model": "qwen3.7-max",
+      "snapshot_status": "live_refresh_passed_nonbenchmark_prompt"
+    }
+  ],
+  "global_controls": {
+    "direct_provider_conditions": [
+      "deepseek_v4pro",
+      "kimi_k26",
+      "qwen37max"
+    ],
+    "fallback_allowed": false,
+    "main_run_api_policy": "artifact/protocol/main_matrix/MAIN_RUN_API_POLICY.md",
+    "model_axis_disposition": "artifact/protocol/main_matrix/MODEL_AXIS_DISPOSITION.md",
+    "openrouter_conditions": [
+      "openrouter_gpt55",
+      "openrouter_claude48"
+    ],
+    "openrouter_generation_error_body_counts_as_metadata_present": false,
+    "openrouter_used_in_primary_axis": true,
+    "raw_provider_metadata_required": true,
+    "returned_model_string_required": true,
+    "tools_allowed": false,
+    "web_allowed": false
+  },
+  "live_refresh": {
+    "adapter_record_source": "artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_adapter_record_source.jsonl",
+    "cassette": "artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_live_refresh.cassette.jsonl",
+    "endpoint_count": 5,
+    "passed": true,
+    "replay_output": "artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_live_refresh.replay.jsonl",
+    "report": "artifact/protocol/main_matrix/admission/live_refresh_20260625/PROVIDER_LIVE_REFRESH_REPORT.md",
+    "successful_adapter_rows": 5,
+    "summary": "artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_live_refresh_summary.json"
+  },
+  "reason": "Endpoint strings and request controls are frozen from current protocol; the 2026-06-25 nonbenchmark live refresh passed for all five endpoints. OpenRouter GPT/Claude rows explicitly set reasoning.effort=none and returned zero reasoning tokens. The five-model benchmark smoke has passed.",
+  "schema_version": "pcg_dynamic_state_v2.provider_supported_parameter_snapshot.v1",
+  "snapshot_scope": "new-repo main-matrix admission",
+  "status": "LIVE_REFRESH_PASSED_NONBENCHMARK_PROMPT"
+}

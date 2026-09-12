@@ -1,0 +1,171 @@
+{
+  "api_called": false,
+  "api_key_value_printed": false,
+  "audit_type": "kimi_k26_random10_new_matrix_pilot_preflight",
+  "checks": [
+    {
+      "check": "selected task rows = 10",
+      "detail": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "oracle rows = 10",
+      "detail": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "family split = 2 each",
+      "detail": {
+        "api_migration_state_transition": 2,
+        "decoy_heavy_same_prefix_config": 2,
+        "permission_boundary_with_attractive_blocked_path": 2,
+        "protected_information_redaction_under_task_pressure": 2,
+        "requirement_overwrite_cumulative_active": 2
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "method list = six-method new matrix",
+      "detail": [
+        "loop_only",
+        "rolling_summary",
+        "rolling_visible_carry_forward",
+        "rolling_visible_fields_only",
+        "ssr_no_visible_carry",
+        "mature_ssr_loop"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "state budgets = 300/600/1200",
+      "detail": [
+        300,
+        600,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "runs = 1",
+      "detail": 1,
+      "status": "PASS"
+    },
+    {
+      "check": "expected rows = 180",
+      "detail": 180,
+      "status": "PASS"
+    },
+    {
+      "check": "provider direct kimi_k26",
+      "detail": {
+        "access_path": "direct_provider",
+        "api_key_env": "MOONSHOT_API_KEY",
+        "api_key_env_alternates_recorded_not_printed": [
+          "KIMI_API_KEY"
+        ],
+        "base_url": "https://api.moonshot.cn/v1",
+        "condition_id": "kimi_k26",
+        "fallback_enabled": false,
+        "provider": "moonshot",
+        "requested_model": "kimi-k2.6"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "temperature explicit Kimi provider setting",
+      "detail": {
+        "send_mode": "explicit",
+        "value": 0.6
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "Kimi thinking disabled",
+      "detail": {
+        "send_mode": "explicit",
+        "value": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "tools/web disabled",
+      "detail": {
+        "tools": "disabled",
+        "web": "disabled"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "task split audit PASS",
+      "detail": "PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "no prior row output files in result dir",
+      "detail": [],
+      "status": "PASS"
+    },
+    {
+      "check": "raw output dir absent or empty",
+      "detail": [],
+      "status": "PASS"
+    },
+    {
+      "check": "variable control doc exists",
+      "detail": "<AUTHOR_LOCAL_PROTOCOL_DIR>/LATEST_EXPERIMENT_VARIABLE_REQUIREMENTS_GOVERNANCE_MAIN_MATRIX_v1_20260621.md",
+      "status": "PASS"
+    },
+    {
+      "check": "method protocol doc exists",
+      "detail": "<AUTHOR_LOCAL_PROTOCOL_DIR>/METHOD_CONDITION_PROTOCOLS_GOVERNANCE_MAIN_MATRIX_v1_20260621.md",
+      "status": "PASS"
+    },
+    {
+      "check": "strict scorer exists",
+      "detail": "tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+      "status": "PASS"
+    }
+  ],
+  "created_at_utc": "2026-06-21T16:51:40Z",
+  "difficulty_counts": {
+    "hard": 3,
+    "medium": 7
+  },
+  "expected_rows": 180,
+  "experiment_id": "_probe_kimi_k26_pcg_dynamic_state_v2_random10_6method_3budget_1run_20260622_50workers",
+  "family_counts": {
+    "api_migration_state_transition": 2,
+    "decoy_heavy_same_prefix_config": 2,
+    "permission_boundary_with_attractive_blocked_path": 2,
+    "protected_information_redaction_under_task_pressure": 2,
+    "requirement_overwrite_cumulative_active": 2
+  },
+  "git_invoked": false,
+  "hashes": {
+    "base_runner_sha256": "5694e404cc1660614c37dd4293b4c311e0899409a07fbfefb4acdc37e80168e6",
+    "config_sha256": "a4b968977b528a9d7210aafc222b9b4c74b4a871c8bed95d550a666b678817d5",
+    "qwen_wrapper_sha256": "4a82d32cd6632bdd6a8debb98089859f62795d504618a10e1566fe732a27b0d0",
+    "random10_runner_sha256": "7ea256c58943c71262ba972d1576eaadaab991ad33dc5fb8d41f90bdbca41179",
+    "runner_sha256": "e16b09d0226b95b8330b6deab9fe2eff1bbc4923bcc17453440b03afbf7bf372",
+    "scorer_sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b",
+    "subset_model_visible_manifest_sha256": "f2c73bcfe956933dcefbb9746511ea34162899fbc5e0237e19a4d902f57299b0",
+    "subset_oracle_manifest_sha256": "71c107feefafdc3cad49aa66ed7392343b0f8932e29a2d1ea674c935890dd4fe"
+  },
+  "overall_status": "PASS",
+  "selected_task_ids": [
+    "pcgds_v2_00008_api_migration_state_transition_hard",
+    "pcgds_v2_00004_api_migration_state_transition_medium",
+    "pcgds_v2_00030_decoy_heavy_same_prefix_config_hard",
+    "pcgds_v2_00032_decoy_heavy_same_prefix_config_hard",
+    "pcgds_v2_00012_permission_boundary_with_attractive_blocked_path_medium",
+    "pcgds_v2_00013_permission_boundary_with_attractive_blocked_path_medium",
+    "pcgds_v2_00035_protected_information_redaction_under_task_pressure_medium",
+    "pcgds_v2_00036_protected_information_redaction_under_task_pressure_medium",
+    "pcgds_v2_00019_requirement_overwrite_cumulative_active_medium",
+    "pcgds_v2_00021_requirement_overwrite_cumulative_active_medium"
+  ]
+}

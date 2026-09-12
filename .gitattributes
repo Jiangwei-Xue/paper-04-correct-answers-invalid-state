@@ -1,0 +1,2 @@
+artifact/results/baselines/minimal_validity_suite_20260706/baseline_outputs.jsonl filter=lfs diff=lfs merge=lfs -text
+artifact/results/baselines/minimal_validity_suite_20260706/baseline_scores.jsonl filter=lfs diff=lfs merge=lfs -text

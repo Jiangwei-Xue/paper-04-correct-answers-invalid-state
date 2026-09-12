@@ -1,0 +1,50 @@
+{
+  "created_at_utc": "2026-06-26T16:02:24Z",
+  "experiment_id": "pcg_dynamic_state_v2_benchmark_admission_smoke_20260626",
+  "matrix_role": "admission_benchmark_smoke_not_primary",
+  "matrix_shape": {
+    "budgets": 1,
+    "expected_rows": 4,
+    "methods": 4,
+    "models": 1,
+    "runs": 1,
+    "tasks": 1
+  },
+  "metadata_relock": {
+    "api_calls_performed": 0,
+    "created_at_utc": "2026-06-26T16:27:21Z",
+    "reason": "no_api_metadata_relock_after_sap_freeze"
+  },
+  "model_admission_criteria": {
+    "path": "artifact/protocol/main_matrix/admission/MODEL_ADMISSION_CRITERIA_20260626.md",
+    "sha256": "a9b8f6ee4702b4099cf3d16f60f6d19b344ed0b6cad197d1dc533245f03cc816"
+  },
+  "model_condition_id": "openrouter_claude48",
+  "primary_analysis_eligible": false,
+  "role": "budget300_diagnostic_4row",
+  "row_manifest": {
+    "path": "artifact/protocol/main_matrix/admission/benchmark_smoke_20260626/openrouter_claude48/openrouter_claude48_budget300_diagnostic_4row.rows.jsonl",
+    "sha256": "8aee3ccfdbe43f41615746ae3d2054d7d7d455a98f5c1eea7b4e7858a67da367"
+  },
+  "runner": {
+    "path": "artifact/verification/run_model_admission_smoke.py",
+    "sha256": "5873ec701fe7d1f7e19a3065006e792de0422256ab3afbac1562e5728a236848"
+  },
+  "schema_version": "pcg_dynamic_state_v2.benchmark_admission_smoke_config.v1",
+  "scorer": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b"
+  },
+  "source_configs": [
+    "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json",
+    "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.json"
+  ],
+  "statistical_analysis_plan": {
+    "path": "artifact/protocol/main_matrix/STATISTICAL_ANALYSIS_PLAN.md",
+    "sha256": "efcb9e52ccc4621a573c9eb7430d99216cbe6aa2baf6f9fbba65950a9f96a2c5"
+  },
+  "variable_freeze_spec": {
+    "path": "artifact/protocol/main_matrix/admission/VARIABLE_FREEZE_SPEC_20260625.yaml",
+    "sha256": "83871f5d9aae7f42366909bdeb0284a2fef34ce65e92ca7857d3e17da84f419a"
+  }
+}

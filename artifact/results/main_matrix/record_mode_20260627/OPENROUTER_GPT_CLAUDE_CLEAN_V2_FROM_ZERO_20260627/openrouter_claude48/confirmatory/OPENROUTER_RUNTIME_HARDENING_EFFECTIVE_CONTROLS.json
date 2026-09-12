@@ -1,0 +1,60 @@
+{
+  "does_not_modify_existing_rows": true,
+  "halt_on_first_openrouter_transport_failure": true,
+  "local_transport_path_failure_guard": {
+    "action": "halt_slice_without_retry",
+    "enabled": true,
+    "failure_class": "confirmed_local_transport_path_failure",
+    "halt_classes": [
+      "confirmed_local_transport_path_failure",
+      "remote_disconnected",
+      "transport_error",
+      "transport_timeout"
+    ],
+    "trigger": "any pre-HTTP local transport exception classified by the runner"
+  },
+  "max_workers_ceiling_enforced": 10,
+  "minimum_provider_call_interval_seconds_enforced": 0,
+  "minimum_submission_interval_seconds_enforced": 0,
+  "model_condition_id": "openrouter_claude48",
+  "openrouter_metadata_header": "enabled",
+  "override_id": "openrouter_clean_v2_runtime_hardening_20260627",
+  "plugins": [
+    {
+      "enabled": false,
+      "id": "context-compression"
+    }
+  ],
+  "provider_call_interval_seconds": 0.0,
+  "provider_policy": {
+    "allow_fallbacks": false,
+    "order": [
+      "anthropic"
+    ],
+    "require_parameters": true
+  },
+  "retry_policy": {
+    "backoff_seconds": [
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "max_sleep_seconds": 180.0,
+    "max_transport_attempts": 5,
+    "policy_id": "openrouter_post_pause_bounded_backoff_20260627",
+    "respect_retry_after": true,
+    "retryable_http_statuses": [
+      408,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "schema_version": "pcg_dynamic_state_v2.transport_retry_policy.v1"
+  },
+  "schema_version": "pcg_dynamic_state_v2.runtime_control_override.v1",
+  "scope": "openrouter_clean_v2_from_zero",
+  "sha256": "fdea9bd5251bd09da96c2db4f8d4f8b1eb729e7ccd03509f47ba0675469fea0e"
+}

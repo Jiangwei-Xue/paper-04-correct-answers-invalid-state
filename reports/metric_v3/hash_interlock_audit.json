@@ -1,0 +1,24 @@
+{
+  "schema": "academic_experiment_audit.hash_interlock.v1",
+  "agent": "hash-interlock-agent",
+  "summary": "The V3 spec, adapters, suite, sidecar, inputs, scores, and executor report have a file-level SHA-256 interlock manifest. The V3 replay is offline and inherits source raw/score hashes from V2.",
+  "evidence_strength": "E4",
+  "pass_fail_table": {
+    "spec_hash": "pass",
+    "suite_hash": "pass",
+    "sidecar_hash": "pass",
+    "tier_input_score_hashes": "pass",
+    "source_v2_hash_interlock": "pass",
+    "full_model_run_chain_recreated": "not_applicable"
+  },
+  "red_flags": ["V3 is a derived offline replay, so it does not create new API request/response artifacts."],
+  "open_questions": ["A future new-model V3 run would need its own request, environment, and raw-output chain."],
+  "required_fixes_before_main_matrix": [],
+  "safe_to_include": ["reports/metric_v3/v3_artifact_manifest.json", "results/metric_v3", "reports/metric_v3"],
+  "exclude_or_rerun": ["No V3 artifact is excluded by the current hash gate."],
+  "confidence": "high",
+  "findings": [
+    {"finding_id": "HI_V3_001", "agent": "hash-interlock-agent", "severity": "R0", "status": "pass", "claim": "The V3 file-level lineage from saved V2 raw rows and V2 final-answer labels to V3 inputs and scores is recorded and hash-verifiable.", "evidence_refs": [{"type": "file", "ref": "reports/metric_v3/v3_artifact_manifest.json", "hash": "91cea13a6daa308595d1fb3b5d571ed49e461974979e3998d8ab81855d89b3bf"}, {"type": "file", "ref": "reports/metric_v3/v3_spec_hash.json", "hash": null}, {"type": "public_release", "ref": "pcg-v3-github-reproduction-20260910-v6", "hash": null}], "affected_runs": ["V3 offline replay"], "affected_artifacts": ["results/metric_v3", "reports/metric_v3"], "recommended_action": "Run scripts/verify_metric_v3.sh before any manuscript adoption.", "blocks_main_matrix": false},
+    {"finding_id": "HI_V3_002", "agent": "hash-interlock-agent", "severity": "R1", "status": "pass", "claim": "No network calls were performed during V3 derivation, scoring, or executor analysis.", "evidence_refs": [{"type": "manifest", "ref": "reports/metric_v3/oracles_v3_manifest.json", "hash": null}, {"type": "file", "ref": "reports/metric_v3/rescore_summary_v3.json", "hash": "05561ac9fb5bb15f9d00ddcde45205b9fc39242441bc8a7657184f9b72e3b341"}], "affected_runs": ["V3 offline replay"], "affected_artifacts": ["results/metric_v3"], "recommended_action": "Keep V3 clearly labeled as offline replay over saved outputs.", "blocks_main_matrix": false}
+  ]
+}

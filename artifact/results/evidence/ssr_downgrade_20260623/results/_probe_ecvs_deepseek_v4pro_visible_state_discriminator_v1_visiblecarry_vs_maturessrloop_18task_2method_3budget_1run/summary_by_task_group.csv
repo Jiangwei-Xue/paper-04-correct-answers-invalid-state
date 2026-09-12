@@ -1,0 +1,4 @@
+selection_group,difficulty_tier,source_type,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+,,diagnostic_controlled_transition,36,35,0,1,0.833333,0.0,0
+,,real_swe_style_controlled_transition,36,34,0,2,0.305556,0.0,0
+,,semi_real_controlled_transition,36,35,0,1,0.472222,0.027778,0

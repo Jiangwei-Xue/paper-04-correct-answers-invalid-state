@@ -1,0 +1,75 @@
+{
+  "admission_decision": {
+    "confirmatory_rows": 12,
+    "decision": "ADMIT_OPEN_WEIGHT_SUPPLEMENT",
+    "hard_failure_count_all_admission_rows": 0,
+    "outcome_fields_used_for_admission": false,
+    "parse_and_score_success_count": 12,
+    "per_model_threshold": "11/12",
+    "vcr_completed": true
+  },
+  "answer_success_count": 7,
+  "api_calls_performed": 61,
+  "backend_error_count": 0,
+  "created_at_utc": "2026-06-29T11:25:04Z",
+  "elapsed_seconds": 20.464,
+  "expected_returned_model": "qwen/qwen3-coder-480b-a35b-07-25",
+  "expected_rows": 16,
+  "fallback_enabled": false,
+  "final_exact_success_count": 7,
+  "final_json_parse_success_count": 16,
+  "finish_reason_distribution": {
+    "stop": 16
+  },
+  "hard_failure_count": 0,
+  "http_status_distribution": {
+    "200": 16
+  },
+  "max_tokens": 4096,
+  "model_condition_id": "openrouter_qwen3_coder_alibaba_supplement",
+  "network_execution": "direct_no_system_proxy",
+  "new_rows_recorded_now": 16,
+  "nonzero_reasoning_tokens_count": 0,
+  "open_weight_supplement": true,
+  "outputs": {
+    "adapter": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/adapter_source.admission.jsonl",
+    "cassette": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/openrouter_qwen3_coder_alibaba_supplement_admission.cassette.jsonl",
+    "controlled": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/CONTROLLED_ROWS.admission.jsonl",
+    "hash_manifest": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/HASH_MANIFEST.admission.jsonl",
+    "replay": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/openrouter_qwen3_coder_alibaba_supplement_admission.replay.jsonl",
+    "scores": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/scores.admission.jsonl",
+    "scores_csv": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/scores.admission.csv",
+    "vcr_audit_log": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/vcr_audit.admission.log",
+    "vcr_record_log": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/vcr_record.admission.log",
+    "vcr_replay_log": "artifact/results/main_matrix/record_mode_20260627/OPEN_WEIGHT_QWEN3_CODER_SUPPLEMENT_20260629/openrouter_qwen3_coder_alibaba_supplement/vcr_replay.admission.log"
+  },
+  "parse_and_score_success_count": 16,
+  "phase": "admission",
+  "preexisting_rows_reused": 0,
+  "primary_analysis_eligible": false,
+  "provider_name": "Alibaba",
+  "provider_order": [
+    "alibaba"
+  ],
+  "provider_tag": "alibaba/opensource",
+  "quantization": "unknown",
+  "reasoning_content_present_count": 0,
+  "reasoning_tokens_observed_distribution": {
+    "0": 16
+  },
+  "reliable_composite_success_count": 5,
+  "requested_model": "qwen/qwen3-coder",
+  "resume": false,
+  "resume_compatibility_check": null,
+  "returned_model_match_count": 16,
+  "schema_version": "pcg_dynamic_state_v2.open_weight_qwen3_coder_supplement_summary.v1",
+  "score_rows": 16,
+  "started_at_utc": "2026-06-29T11:24:43Z",
+  "state_governance_success_count": 5,
+  "status": "COMPLETE",
+  "supplement_id": "open_weight_qwen3_coder_supplement_20260629",
+  "temperature": 0,
+  "top_k": "not_sent",
+  "top_p": 1,
+  "vcr_completed": true
+}

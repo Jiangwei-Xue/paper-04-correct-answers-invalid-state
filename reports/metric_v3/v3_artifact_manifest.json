@@ -1,0 +1,214 @@
+{
+  "analysis_plan": {
+    "artifact_type": "config",
+    "path": "docs/metric_v3_revision_analysis_plan.md",
+    "sha256": "4c5e21233c965f26b13f0f7d4f98574116f0e8e87426f73f49d24a1dfb344d53",
+    "size_bytes": 2221
+  },
+  "generated_at_utc": "2026-08-12T19:05:13Z",
+  "public_release_id": "pcg-v3-github-reproduction-20260910-v6",
+  "lineage": "V2 saved raw rows + V2 final-answer labels -> V3 replay inputs -> V3 score rows; no model calls.",
+  "network_calls_performed": 0,
+  "schema": "carried_state_validity_v3.artifact_manifest.v1",
+  "sidecar": {
+    "artifact_type": "dataset",
+    "path": "results/metric_v3/oracles_v3/main_matrix_v1.sidecar.jsonl",
+    "rows": 40,
+    "sha256": "625942dd20d15ea03b10db1b00dcbc591622f99625cf68c4c419fa7b968b4864",
+    "size_bytes": 93864
+  },
+  "spec": {
+    "artifact_type": "config",
+    "path": "specs/carried_state_validity_v3.yaml",
+    "sha256": "0312e40a7c0175f70f1559977b17049e2803fdc9be5176d1fd866295ab89d669",
+    "size_bytes": 3354
+  },
+  "tiers": [
+    {
+      "source_raw": {
+        "artifact_type": "raw_output",
+        "path": "results/metric_v2/raw_inputs/primary.jsonl",
+        "rows": 7200,
+        "sha256": "ad1597b91183a4c763a8cd7d302975e10b85d821931540b2d7e4159f23206e27",
+        "size_bytes": 25155408
+      },
+      "source_v2_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v2/scores_v2/primary.production_with_v1.jsonl",
+        "rows": 7200,
+        "sha256": "8704df9accb9ed8f33dc90c5a02591d9332dad5db87ca98181b237f2ed651ad2",
+        "size_bytes": 13744837
+      },
+      "tier": "primary",
+      "v3_input": {
+        "artifact_type": "parsed_output",
+        "path": "results/metric_v3/inputs/primary.jsonl",
+        "rows": 7200,
+        "sha256": "033037b3a287d831085b8bda2aac33d66e52d104ac75f09b0e54e60fd1cce617",
+        "size_bytes": 26817912
+      },
+      "v3_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v3/scores_v3/primary.production.jsonl",
+        "rows": 7200,
+        "sha256": "f2496c6135829421c80b560289868b1312a91c61cfbd9c89fb23e5cc40757deb",
+        "size_bytes": 11508649
+      }
+    },
+    {
+      "source_raw": {
+        "artifact_type": "raw_output",
+        "path": "results/metric_v2/raw_inputs/primary_budget300.jsonl",
+        "rows": 800,
+        "sha256": "a8cdc12bb614ae56658e29876c3ccdc79e4122a712210ab17406c15c3774e67e",
+        "size_bytes": 2535770
+      },
+      "source_v2_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v2/scores_v2/primary_budget300.production_with_v1.jsonl",
+        "rows": 800,
+        "sha256": "f19fe84d6f80b2b2e234b7e8420758708087353628fa711efc6605e40688412b",
+        "size_bytes": 1493746
+      },
+      "tier": "primary_budget300",
+      "v3_input": {
+        "artifact_type": "parsed_output",
+        "path": "results/metric_v3/inputs/primary_budget300.jsonl",
+        "rows": 800,
+        "sha256": "2da79a96f90fe9e59be0a96b9b644b2b5ce4a357aeb467420a756878b61f4a3f",
+        "size_bytes": 2728474
+      },
+      "v3_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v3/scores_v3/primary_budget300.production.jsonl",
+        "rows": 800,
+        "sha256": "4b3092e125cf285a257071b933c6451ffdc8b47983c22875d846bd337a04f9bb",
+        "size_bytes": 1230510
+      }
+    },
+    {
+      "source_raw": {
+        "artifact_type": "raw_output",
+        "path": "results/metric_v2/raw_inputs/qwen.jsonl",
+        "rows": 1440,
+        "sha256": "dc6aaad3d1911a122b8e1965c76d97c1e01c7bb85de07a294c906a446c3c29f6",
+        "size_bytes": 4955858
+      },
+      "source_v2_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v2/scores_v2/qwen.production_with_v1.jsonl",
+        "rows": 1440,
+        "sha256": "cc8f70d3bc64637a839491b41c205e9b90f73a82f8bbf69c2ba3a88dad8fca41",
+        "size_bytes": 2836779
+      },
+      "tier": "qwen",
+      "v3_input": {
+        "artifact_type": "parsed_output",
+        "path": "results/metric_v3/inputs/qwen.jsonl",
+        "rows": 1440,
+        "sha256": "3b77bf42c0fa51eea6c68a42f3968391815207fe85c7d608bc5660efba5c5f29",
+        "size_bytes": 5284030
+      },
+      "v3_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v3/scores_v3/qwen.production.jsonl",
+        "rows": 1440,
+        "sha256": "ce73d9ce1370c78c9b5b4249ee168640e4eff617ef7816825c8256afde443da6",
+        "size_bytes": 2465612
+      }
+    },
+    {
+      "source_raw": {
+        "artifact_type": "raw_output",
+        "path": "results/metric_v2/raw_inputs/qwen_budget300.jsonl",
+        "rows": 160,
+        "sha256": "08f8b7c39ffc0af15ede0b0f94fc014f7f0796e4451dea95686d886e186c6a35",
+        "size_bytes": 494067
+      },
+      "source_v2_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v2/scores_v2/qwen_budget300.production_with_v1.jsonl",
+        "rows": 160,
+        "sha256": "71f997aad89ee768b3c06a9c865247a45b4164ab76da81f2dd1d3d57a2005620",
+        "size_bytes": 312719
+      },
+      "tier": "qwen_budget300",
+      "v3_input": {
+        "artifact_type": "parsed_output",
+        "path": "results/metric_v3/inputs/qwen_budget300.jsonl",
+        "rows": 160,
+        "sha256": "f8b93f1eeb94b91d0e8db2850d4e71e34375464167de10dfcd685f64f2ffd2d7",
+        "size_bytes": 532136
+      },
+      "v3_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v3/scores_v3/qwen_budget300.production.jsonl",
+        "rows": 160,
+        "sha256": "d74db53af4c8d3eccd4efff14049832d72f2bcf762f134a518223f6928ebaaa7",
+        "size_bytes": 262894
+      }
+    },
+    {
+      "source_raw": {
+        "artifact_type": "raw_output",
+        "path": "results/metric_v2/raw_inputs/deepseek_sanity.jsonl",
+        "rows": 40,
+        "sha256": "1177e17b80a3e6089d64bff50000ede891de6cda8481c4f738143043e47254e7",
+        "size_bytes": 115393
+      },
+      "source_v2_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v2/scores_v2/deepseek_sanity.production_with_v1.jsonl",
+        "rows": 40,
+        "sha256": "04fc6cffb92357a08dec21acd2b16202b8bb6856d647dedf88b7c9a43de9e806",
+        "size_bytes": 64156
+      },
+      "tier": "deepseek_sanity",
+      "v3_input": {
+        "artifact_type": "parsed_output",
+        "path": "results/metric_v3/inputs/deepseek_sanity.jsonl",
+        "rows": 40,
+        "sha256": "adde049c1fad4e443a828a243a611fcb1cf49fda7ec952cd42ca4cdc13ce8d9e",
+        "size_bytes": 124947
+      },
+      "v3_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v3/scores_v3/deepseek_sanity.production.jsonl",
+        "rows": 40,
+        "sha256": "c0c1b84909bfe946fd0e89833fa9d6ab781f39e228b1ecbe73eba9703643f29a",
+        "size_bytes": 58439
+      }
+    },
+    {
+      "source_raw": {
+        "artifact_type": "raw_output",
+        "path": "results/metric_v2/raw_inputs/deterministic_validity_suite.jsonl",
+        "rows": 36000,
+        "sha256": "8ad2d24fbcf4638f42c6fbc0c357511793d5f001e859ecf15b1036f436f61c9b",
+        "size_bytes": 44997474
+      },
+      "source_v2_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v2/scores_v2/deterministic_validity_suite.production_with_v1.jsonl",
+        "rows": 36000,
+        "sha256": "7aee71199b86658a082214b40c4bc0269b8f26ab728dd09e36f536f8646b95ca",
+        "size_bytes": 63408712
+      },
+      "tier": "deterministic_validity_suite",
+      "v3_input": {
+        "artifact_type": "parsed_output",
+        "path": "results/metric_v3/inputs/deterministic_validity_suite.jsonl",
+        "rows": 36000,
+        "sha256": "ae85f15298d326038d46712b839fcadd47e61e185813a78e389dc8fbd63c1f01",
+        "size_bytes": 54060076
+      },
+      "v3_score": {
+        "artifact_type": "metric",
+        "path": "results/metric_v3/scores_v3/deterministic_validity_suite.production.jsonl",
+        "rows": 36000,
+        "sha256": "9be6abeec1a4bc85af9d876ac1c803de0d61bf16cacbcd2c760325e06c3813fe",
+        "size_bytes": 57968138
+      }
+    }
+  ]
+}

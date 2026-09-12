@@ -1,0 +1,14 @@
+{
+  "environment_lock_sha256": "c9fdd0c5ffa4e9b0c146dc81482754797e34a7cb2c9d275f2d1ce7b516341ecb",
+  "machine": "arm64",
+  "model_api_called_by_lock_builder": false,
+  "note": "Environment lock records local verifier environment. It is not a container image hash.",
+  "platform": "Darwin-arm64",
+  "processor": null,
+  "python_executable_name": "python3.14",
+  "python_version": "3.14",
+  "requirements_path": "requirements.txt",
+  "requirements_sha256": "378f5763eecd4a0dd4e2977f1b63227d119fdace60ca265328fb2f01fa2c0bb8",
+  "schema_version": "pcg_dynamic_state_v2.backfill_h5_environment_lock.v1",
+  "secret_files_read": false
+}

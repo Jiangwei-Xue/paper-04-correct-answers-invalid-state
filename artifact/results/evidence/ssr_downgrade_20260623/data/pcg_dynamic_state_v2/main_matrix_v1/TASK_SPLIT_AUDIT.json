@@ -1,0 +1,78 @@
+{
+  "banned_method_term_hits": [],
+  "difficulty_distribution": {
+    "easy": 10,
+    "hard": 15,
+    "medium": 15
+  },
+  "errors": [],
+  "family_distribution": {
+    "api_migration_state_transition": 8,
+    "decoy_heavy_same_prefix_config": 8,
+    "permission_boundary_with_attractive_blocked_path": 8,
+    "protected_information_redaction_under_task_pressure": 8,
+    "requirement_overwrite_cumulative_active": 8
+  },
+  "method_blind_generation": true,
+  "model_visible_oracle_only_key_hits": {},
+  "model_visible_task_id_order_matches_oracle": true,
+  "no_outcome_selection": true,
+  "pressure_distribution": {
+    "boundary_pressure": {
+      "high": 12,
+      "low": 8,
+      "medium": 20
+    },
+    "decoy_pressure": {
+      "high": 18,
+      "low": 8,
+      "medium": 14
+    },
+    "retention_pressure": {
+      "high": 17,
+      "low": 5,
+      "medium": 18
+    },
+    "suppression_pressure": {
+      "high": 27,
+      "low": 6,
+      "medium": 7
+    },
+    "update_pressure": {
+      "high": 21,
+      "low": 10,
+      "medium": 9
+    }
+  },
+  "primary_seed": 20260620,
+  "schema_version": "pcg_dynamic_state_v2.main_matrix_task_split_audit.v1",
+  "selection_rule": "stratified_random_by_family_difficulty_seeded",
+  "selection_used_model_outcomes": false,
+  "status": "PASS",
+  "task_count": 40,
+  "unique_task_ids": 40,
+  "validity_summary": {
+    "decoy_indistinguishability_medium_high_count": 40,
+    "decoy_indistinguishability_medium_high_rate": 1.0,
+    "final_answer_schema_clear_pass_count": 40,
+    "gates": {
+      "decoy_indistinguishability_medium_high_at_least_75pct": true,
+      "final_answer_schema_clear_100pct": true,
+      "hard_average_state_transition_count_at_least_4": true,
+      "mechanical_carry_sufficient_no_at_least_70pct": true,
+      "oracle_text_consistency_100pct": true,
+      "overwrite_semantics_clear_100pct": true,
+      "requires_state_labeling_yes_at_least_85pct": true,
+      "token_name_leaks_status_100pct": true
+    },
+    "hard_average_state_transition_count": 5.133333333333334,
+    "mechanical_carry_sufficient_no_count": 40,
+    "mechanical_carry_sufficient_no_rate": 1.0,
+    "oracle_text_consistency_pass_count": 40,
+    "passed": true,
+    "requires_state_labeling_yes_count": 40,
+    "requires_state_labeling_yes_rate": 1.0,
+    "task_count": 40,
+    "token_name_leaks_pass_count": 40
+  }
+}

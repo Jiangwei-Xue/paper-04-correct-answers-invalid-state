@@ -1,0 +1,51 @@
+{
+  "analysis_boundary": "Diagnostic scale reference only. The visible-only policies do not call an LLM or read the scorer oracle during generation. The oracle ceiling control is not a model baseline.",
+  "api_calls_performed": 0,
+  "basis": {
+    "oracle_manifest": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl",
+    "primary_row_manifest": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl",
+    "rows": 7200,
+    "scorer": "artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "visible_task_manifest": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/MODEL_VISIBLE_TASK_MANIFEST.jsonl"
+  },
+  "live_model_sanity_condition": {
+    "enabled": false,
+    "provider": "deepseek",
+    "required_model_if_enabled": "deepseek-v4-pro"
+  },
+  "policies": [
+    {
+      "description": "Randomly samples visible candidate tokens and visible paths.",
+      "oracle_access_for_generation": false,
+      "policy_id": "random_visible_v1",
+      "policy_kind": "visible_only"
+    },
+    {
+      "description": "Copies the initially active token set and initially allowed paths.",
+      "oracle_access_for_generation": false,
+      "policy_id": "copy_initial_visible_v1",
+      "policy_kind": "visible_only"
+    },
+    {
+      "description": "Carries every visible candidate token and path.",
+      "oracle_access_for_generation": false,
+      "policy_id": "carry_all_visible_v1",
+      "policy_kind": "visible_only"
+    },
+    {
+      "description": "Applies simple visible-text status rules to active and excluded candidates.",
+      "oracle_access_for_generation": false,
+      "policy_id": "rule_visible_transition_v1",
+      "policy_kind": "visible_only"
+    },
+    {
+      "description": "Uses the scorer oracle to confirm the deterministic scorer ceiling.",
+      "oracle_access_for_generation": true,
+      "policy_id": "oracle_ceiling_control_v1",
+      "policy_kind": "oracle_upper_control"
+    }
+  ],
+  "run_started_at_utc": "2026-07-07T16:53:34Z",
+  "schema_version": "pcg_dynamic_state_v2.minimal_baseline_validity_suite.config.v1",
+  "suite_id": "minimal_baseline_validity_suite_20260706"
+}

@@ -1,0 +1,18 @@
+{
+  "artifact_manifest_path": "data/pcg_dynamic_state_v2/h5_release_lock_20260623/ARTIFACT_HASH_MANIFEST.jsonl",
+  "environment_lock_path": "data/pcg_dynamic_state_v2/h5_release_lock_20260623/ENVIRONMENT_LOCK.json",
+  "environment_lock_sha256": "136cc86db1297378b8d5b4ededf5f1d56353ee9e2f1cf3779f2773efc729d355",
+  "failures": [],
+  "h4_incomplete_rows": 0,
+  "h5_private_raw_lock_rows": 644,
+  "lock_id": "pcg_dynamic_state_v2_core_ssr_downgrade_h5_lock_20260623",
+  "model_api_called": false,
+  "public_release_status": "NOT_PUBLIC_READY_UNTIL_RAW_POLICY_AND_ANONYMIZED_RELEASE_REPO",
+  "row_count": 644,
+  "row_manifest_path": "data/pcg_dynamic_state_v2/h5_release_lock_20260623/ROW_H5_MANIFEST.jsonl",
+  "schema_version": "pcg_dynamic_state_v2.h5_release_lock_summary.v1",
+  "scope": "Core non-Claude/GPT SSR-downgrade evidence: DeepSeek decisive, DeepSeek random10, Qwen random10, Kimi random10.",
+  "scores_with_hashes_path": "data/pcg_dynamic_state_v2/h5_release_lock_20260623/scores_with_h5_hashes.csv",
+  "secret_files_read": false,
+  "summary_sha256": "bb19505d6e9dfdfb2c540661fa2b122362d84bbfc43ba44063e6ef5eef29807b"
+}

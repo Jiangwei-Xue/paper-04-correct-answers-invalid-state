@@ -1,0 +1,450 @@
+{
+  "by_method": {
+    "LEGACY_HIT_OUTSIDE_FINAL_SURFACE": {
+      "rolling_summary": 175,
+      "rolling_visible_carry_forward": 596,
+      "ssr_no_visible_carry": 164
+    },
+    "V2_FINAL_SURFACE_EXTRACTION_RECOVERY": {
+      "rolling_summary": 117,
+      "rolling_visible_carry_forward": 76,
+      "ssr_no_visible_carry": 89
+    }
+  },
+  "counts": {
+    "LEGACY_HIT_OUTSIDE_FINAL_SURFACE": 935,
+    "V2_FINAL_SURFACE_EXTRACTION_RECOVERY": 282
+  },
+  "examples": {
+    "LEGACY_HIT_OUTSIDE_FINAL_SURFACE": [
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_02_8f61ad.py\"], \"required_tokens\": [\"API_02_331C5D\", \"API_02_486764\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_visible_carry_forward",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_02_E90D41"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_02_E90D41"
+        ],
+        "row_id": "pcgds_v2_00002_api_migration_state_transition_easy::qwen37max::rolling_visible_carry_forward::budget1200::run1",
+        "task_id": "pcgds_v2_00002_api_migration_state_transition_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_02_8f61ad.py\"], \"required_tokens\": [\"API_02_331C5D\", \"API_02_486764\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_visible_carry_forward",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_02_E90D41"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_02_E90D41"
+        ],
+        "row_id": "pcgds_v2_00002_api_migration_state_transition_easy::qwen37max::rolling_visible_carry_forward::budget1200::run2",
+        "task_id": "pcgds_v2_00002_api_migration_state_transition_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"API_02_331C5D\", \"API_02_486764\"], \"required_tokens\": [\"API_02_331C5D\", \"API_02_486764\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_visible_carry_forward",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_02_E90D41"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_02_E90D41"
+        ],
+        "row_id": "pcgds_v2_00002_api_migration_state_transition_easy::qwen37max::rolling_visible_carry_forward::budget600::run2",
+        "task_id": "pcgds_v2_00002_api_migration_state_transition_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_03_72e4c1.py\"], \"required_tokens\": [\"API_03_14E3A9\", \"API_03_387C99\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "row_id": "pcgds_v2_00003_api_migration_state_transition_medium::qwen37max::rolling_summary::budget1200::run2",
+        "task_id": "pcgds_v2_00003_api_migration_state_transition_medium"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_03_72e4c1.py\"], \"required_tokens\": [\"API_03_14E3A9\", \"API_03_387C99\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "row_id": "pcgds_v2_00003_api_migration_state_transition_medium::qwen37max::rolling_summary::budget600::run2",
+        "task_id": "pcgds_v2_00003_api_migration_state_transition_medium"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_03_72e4c1.py\"], \"required_tokens\": [\"API_03_14E3A9\", \"API_03_387C99\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_visible_carry_forward",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "row_id": "pcgds_v2_00003_api_migration_state_transition_medium::qwen37max::rolling_visible_carry_forward::budget1200::run1",
+        "task_id": "pcgds_v2_00003_api_migration_state_transition_medium"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_03_72e4c1.py\"], \"required_tokens\": [\"API_03_14E3A9\", \"API_03_387C99\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_visible_carry_forward",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "row_id": "pcgds_v2_00003_api_migration_state_transition_medium::qwen37max::rolling_visible_carry_forward::budget1200::run3",
+        "task_id": "pcgds_v2_00003_api_migration_state_transition_medium"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [],
+        "category": "LEGACY_HIT_OUTSIDE_FINAL_SURFACE",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_03_72e4c1.py\"], \"required_tokens\": [\"API_03_14E3A9\", \"API_03_387C99\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": false,
+        "legacy_answer_success": true,
+        "legacy_blocked_path_hits": [],
+        "method": "rolling_visible_carry_forward",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "required_items_recovered_only_outside_final_surface": [
+          "API_03_D048D7",
+          "API_03_DE2EBD"
+        ],
+        "row_id": "pcgds_v2_00003_api_migration_state_transition_medium::qwen37max::rolling_visible_carry_forward::budget600::run1",
+        "task_id": "pcgds_v2_00003_api_migration_state_transition_medium"
+      }
+    ],
+    "V2_FINAL_SURFACE_EXTRACTION_RECOVERY": [
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/api/unit_01_e43288.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_01_f1c1da.py\"], \"required_tokens\": [\"API_01_10BBFA\", \"API_01_C1FFF0\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/api/unit_01_e43288.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00001_api_migration_state_transition_easy::qwen37max::rolling_summary::budget1200::run2",
+        "task_id": "pcgds_v2_00001_api_migration_state_transition_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/api/unit_01_e43288.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_01_f1c1da.py\"], \"required_tokens\": [\"API_01_10BBFA\", \"API_01_C1FFF0\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/api/unit_01_e43288.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00001_api_migration_state_transition_easy::qwen37max::rolling_summary::budget600::run2",
+        "task_id": "pcgds_v2_00001_api_migration_state_transition_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/api/unit_04_68ea21.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_04_037310.py\"], \"required_tokens\": [\"API_04_B5CD0B\", \"API_04_84F137\", \"API_04_C25C8D\", \"API_04_640965\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/api/unit_04_68ea21.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00004_api_migration_state_transition_medium::qwen37max::rolling_summary::budget600::run2",
+        "task_id": "pcgds_v2_00004_api_migration_state_transition_medium"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/api/unit_06_dac9f4.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/api/unit_06_4213d0.py\"], \"required_tokens\": [\"API_06_D0CCF4\", \"API_06_192615\", \"API_06_5A8EDA\", \"API_06_D3A402\", \"API_06_C60ABB\", \"API_06_63B126\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/api/unit_06_dac9f4.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00006_api_migration_state_transition_hard::qwen37max::rolling_summary::budget600::run1",
+        "task_id": "pcgds_v2_00006_api_migration_state_transition_hard"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/permission/unit_09_734097.py\"], \"required_tokens\": [\"PATH_09_520A66\", \"PATH_09_EDB0F0\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy::qwen37max::rolling_summary::budget1200::run2",
+        "task_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/permission/unit_09_734097.py\"], \"required_tokens\": [\"PATH_09_520A66\", \"PATH_09_EDB0F0\", \"src/permission/unit_09_734097.py\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy::qwen37max::rolling_summary::budget600::run1",
+        "task_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"PATH_09_520A66\", \"PATH_09_EDB0F0\"], \"required_tokens\": [\"PATH_09_520A66\", \"PATH_09_EDB0F0\", \"src/permission/unit_09_734097.py\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy::qwen37max::rolling_summary::budget600::run2",
+        "task_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy"
+      },
+      {
+        "blocked_path_hits_inside_final_surface": [],
+        "blocked_path_hits_only_outside_final_surface": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "category": "V2_FINAL_SURFACE_EXTRACTION_RECOVERY",
+        "final_answer_excerpt": "{\"allowed_paths\": [\"src/permission/unit_09_734097.py\"], \"required_tokens\": [\"PATH_09_520A66\", \"PATH_09_EDB0F0\"]}",
+        "final_answer_keys": [
+          "allowed_paths",
+          "boundary_checks",
+          "required_tokens",
+          "state_labels",
+          "state_transitions"
+        ],
+        "final_answer_success_v2": true,
+        "legacy_answer_success": false,
+        "legacy_blocked_path_hits": [
+          "src/permission/unit_09_3a5681.py"
+        ],
+        "method": "rolling_summary",
+        "model": "qwen37max",
+        "required_items_missing_from_final_surface": [],
+        "required_items_recovered_only_outside_final_surface": [],
+        "row_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy::qwen37max::rolling_summary::budget600::run3",
+        "task_id": "pcgds_v2_00009_permission_boundary_with_attractive_blocked_path_easy"
+      }
+    ]
+  }
+}

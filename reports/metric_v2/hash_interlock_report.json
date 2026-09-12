@@ -1,0 +1,10 @@
+{
+  "network_calls_performed": 0,
+  "original_evidence_unchanged": true,
+  "original_files_checked": 1407,
+  "original_hash_failures": [],
+  "passed": true,
+  "schema": "metric_v2_hash_interlock_report.v1",
+  "sidecar_hash_ok": true,
+  "sidecar_source_hash_ok": true
+}

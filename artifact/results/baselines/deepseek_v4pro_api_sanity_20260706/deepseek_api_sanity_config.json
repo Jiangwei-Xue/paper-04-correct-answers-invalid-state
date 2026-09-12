@@ -1,0 +1,59 @@
+{
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "api_key_value_stored": false,
+  "boundary": "Diagnostic learned-policy sanity, not a primary matrix condition.",
+  "created_at_utc": "2026-07-06T09:34:29Z",
+  "matrix_role": "diagnostic_api_sanity_not_primary",
+  "max_workers": 10,
+  "model_condition_id": "deepseek_v4pro",
+  "openrouter_used": false,
+  "oracle_manifest": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl",
+    "sha256": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280"
+  },
+  "primary_analysis_eligible": false,
+  "provider": "deepseek",
+  "provider_snapshot": {
+    "path": "artifact/protocol/main_matrix/admission/PROVIDER_SUPPORTED_PARAMETER_SNAPSHOT_20260625.json",
+    "sha256": "5169a38b905f32d614c2a94e4adbd0d13d9a18ec7f1c297e78d4509b1a88b54f"
+  },
+  "request_controls": {
+    "cache": "not_requested",
+    "max_tokens": 4096,
+    "reasoning_or_thinking": {
+      "send_mode": "explicit",
+      "value": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "web": "disabled"
+  },
+  "requested_model": "deepseek-v4-pro",
+  "rows": 40,
+  "runner": {
+    "path": "artifact/verification/run_deepseek_v4pro_api_sanity.py",
+    "sha256": "34408b8306e6e2e0c3acfe3b25acded30ed0b5e4127809eee41e896dfeaf41ee"
+  },
+  "schema_version": "pcg_dynamic_state_v2.deepseek_api_sanity_config.v1",
+  "scorer": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py",
+    "sha256": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b"
+  },
+  "suite_id": "deepseek_v4pro_api_sanity_20260706",
+  "task_count": 40,
+  "visible_task_manifest": {
+    "path": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "sha256": "f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1"
+  }
+}

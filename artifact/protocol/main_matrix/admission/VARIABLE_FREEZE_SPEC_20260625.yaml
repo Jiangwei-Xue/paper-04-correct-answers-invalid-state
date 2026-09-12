@@ -1,0 +1,91 @@
+schema_version: pcg_dynamic_state_v2.variable_freeze_spec.v1
+created_at_utc: 2026-06-25T00:00:00Z
+scope: new-repo main-matrix admission
+allowed_matrix_axes:
+  - task_id
+  - model_condition_id
+  - method
+  - budget
+  - run_id
+confirmatory_matrix:
+  config: artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json
+  row_manifest: artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl
+  budgets: [600, 1200]
+  primary_analysis_eligible: true
+diagnostic_matrix:
+  config: artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.json
+  row_manifest: artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.rows.jsonl
+  budgets: [300]
+  primary_analysis_eligible: false
+frozen_dataset:
+  model_visible_manifest: artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/MODEL_VISIBLE_TASK_MANIFEST.jsonl
+  model_visible_manifest_sha256: f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1
+  scorer_oracle_manifest: artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl
+  scorer_oracle_manifest_sha256: 670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280
+  task_split_audit: artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/TASK_SPLIT_AUDIT.json
+  task_split_audit_sha256: 546af43dc07adad7d6b61ea52cf8fe30c27c83997ae473f0e9aafa989627b746
+frozen_implementation:
+  runner_contract: artifact/verification/main_matrix_vcr_runner.py
+  runner_contract_sha256: 296e9a5c847c1b0659fc5bbdc9a3284c963f15d4a72071496a58d3931cff7b79
+  strict_scorer: artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_main_matrix.py
+  strict_scorer_sha256: 67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b
+  base_scorer: artifact/results/evidence/ssr_downgrade_20260623/tools/pcg_dynamic_state_v2/score_pcg_dynamic_state_v2_outputs.py
+  base_scorer_sha256: c47582ff3e85f6d49db089308f94a77e3eabf3a0bda36ec35995676e088be55b
+main_run_api_policy:
+  path: artifact/protocol/main_matrix/MAIN_RUN_API_POLICY.md
+  sha256: 3a749e5567f184210aa2f073f1d2bd380be8fc64ba214ea7a57725d85fafd692
+  request_timeout_seconds: 120
+  max_transport_retries: 2
+  max_concurrent_requests: 10
+  concurrency_scope: global_live_adapter
+  cache_policy: no_live_cache_replay_only_after_record
+statistical_analysis_plan:
+  path: artifact/protocol/main_matrix/STATISTICAL_ANALYSIS_PLAN.md
+  sha256: efcb9e52ccc4621a573c9eb7430d99216cbe6aa2baf6f9fbba65950a9f96a2c5
+  primary_estimator: design_based_paired_risk_difference
+  primary_ci: task_cluster_bootstrap_10000
+  primary_contrast: rolling_visible_carry_forward_minus_ssr_no_visible_carry
+  key_secondary_contrast: mature_ssr_loop_minus_rolling_visible_carry_forward
+  glmm_role: model_assisted_sensitivity_only
+  budget300_role: diagnostic_only_excluded_from_primary
+model_axis_disposition:
+  path: artifact/protocol/main_matrix/MODEL_AXIS_DISPOSITION.md
+  sha256: f986bff7297930b5411db38b6f8da7d7f5be72d7d662e37d9730a2e32d85cf97
+  kimi_axis: kimi_k26
+  kimi_k27_code_status: excluded_before_primary_execution_mandatory_thinking
+model_admission_criteria:
+  path: artifact/protocol/main_matrix/admission/MODEL_ADMISSION_CRITERIA_20260626.md
+  sha256: a9b8f6ee4702b4099cf3d16f60f6d19b344ed0b6cad197d1dc533245f03cc816
+  required_confirmatory_smoke_rows: 60
+  per_model_parse_score_threshold: 11/12
+  global_parse_score_threshold: 57/60
+  outcome_fields_as_admission_filters: false
+scorer_metric_contract:
+  primary_metric: reliable_composite_success
+  decomposition_metrics: [answer_success, state_governance_success]
+  strict_governance_requires: state_carry_surface_present
+  standalone_state_governance_use: diagnostic_only_not_primary_ranking
+  empty_state_diagnostic_arm: loop_only
+paper_framing_contract:
+  path: artifact/protocol/main_matrix/PAPER_FRAMING_AND_RQS.md
+  sha256: db16f8ad2097a6ca9fd482bd18f594e91f6ce6ca1f7a5edb463cf8758b65f81e
+  primary_frame: measurement_paper_about_reliable_co_success
+  ssr_role: mechanism_diagnostic_arm_not_primary_method_contribution
+frozen_provider_policy:
+  snapshot: artifact/protocol/main_matrix/admission/PROVIDER_SUPPORTED_PARAMETER_SNAPSHOT_20260625.json
+  openrouter_variable_control: artifact/protocol/main_matrix/admission/OPENROUTER_VARIABLE_CONTROL_20260626.md
+  openrouter_variable_control_sha256: d5a0114ef109516e853130b2126d7d4af15a7477d01aedda06d17e834ca4c58f
+  openrouter_used_in_primary_axis: true
+  openrouter_conditions: [openrouter_gpt55, openrouter_claude48]
+  direct_provider_conditions: [deepseek_v4pro, kimi_k26, qwen37max]
+  fallback_allowed: false
+  live_refresh_required_before_api_execution: false
+  live_refresh_summary: artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_live_refresh_summary.json
+disallowed_pooling:
+  - historical_calibration_runs
+  - admission_smoke_rows
+  - static_sanity_rows
+  - targeted_backfills
+  - budget_300_diagnostic_rows
+  - sentinel_drift_probe_rows
+  - routed_provider_rows_without_frozen_route_equivalence

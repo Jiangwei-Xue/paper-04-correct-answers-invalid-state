@@ -1,0 +1,7 @@
+{
+  "implementation": "CPython",
+  "max_workers": 10,
+  "platform": "Darwin-arm64",
+  "python_version": "3.14",
+  "schema_version": "pcg_dynamic_state_v2.deepseek_api_sanity_environment.v1"
+}

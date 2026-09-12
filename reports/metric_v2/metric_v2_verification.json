@@ -1,0 +1,322 @@
+{
+  "differential": {
+    "all_binary_components_agree": true,
+    "all_reason_code_sets_agree": true,
+    "network_calls_performed": 0,
+    "schema": "metric_v2_differential_report.v1",
+    "tiers": {
+      "deepseek_sanity": {
+        "binary_component_agreement": true,
+        "mismatch_count": 0,
+        "mismatches_sample": [],
+        "missing_or_extra_row_ids": [],
+        "production": "results/metric_v2/scores_v2/deepseek_sanity.production.jsonl",
+        "production_rows": 40,
+        "reason_code_set_agreement": true,
+        "reference": "results/metric_v2/scores_v2/deepseek_sanity.reference.jsonl",
+        "reference_rows": 40
+      },
+      "deterministic_validity_suite": {
+        "binary_component_agreement": true,
+        "mismatch_count": 0,
+        "mismatches_sample": [],
+        "missing_or_extra_row_ids": [],
+        "production": "results/metric_v2/scores_v2/deterministic_validity_suite.production.jsonl",
+        "production_rows": 36000,
+        "reason_code_set_agreement": true,
+        "reference": "results/metric_v2/scores_v2/deterministic_validity_suite.reference.jsonl",
+        "reference_rows": 36000
+      },
+      "primary": {
+        "binary_component_agreement": true,
+        "mismatch_count": 0,
+        "mismatches_sample": [],
+        "missing_or_extra_row_ids": [],
+        "production": "results/metric_v2/scores_v2/primary.production.jsonl",
+        "production_rows": 7200,
+        "reason_code_set_agreement": true,
+        "reference": "results/metric_v2/scores_v2/primary.reference.jsonl",
+        "reference_rows": 7200
+      },
+      "primary_budget300": {
+        "binary_component_agreement": true,
+        "mismatch_count": 0,
+        "mismatches_sample": [],
+        "missing_or_extra_row_ids": [],
+        "production": "results/metric_v2/scores_v2/primary_budget300.production.jsonl",
+        "production_rows": 800,
+        "reason_code_set_agreement": true,
+        "reference": "results/metric_v2/scores_v2/primary_budget300.reference.jsonl",
+        "reference_rows": 800
+      },
+      "qwen": {
+        "binary_component_agreement": true,
+        "mismatch_count": 0,
+        "mismatches_sample": [],
+        "missing_or_extra_row_ids": [],
+        "production": "results/metric_v2/scores_v2/qwen.production.jsonl",
+        "production_rows": 1440,
+        "reason_code_set_agreement": true,
+        "reference": "results/metric_v2/scores_v2/qwen.reference.jsonl",
+        "reference_rows": 1440
+      },
+      "qwen_budget300": {
+        "binary_component_agreement": true,
+        "mismatch_count": 0,
+        "mismatches_sample": [],
+        "missing_or_extra_row_ids": [],
+        "production": "results/metric_v2/scores_v2/qwen_budget300.production.jsonl",
+        "production_rows": 160,
+        "reason_code_set_agreement": true,
+        "reference": "results/metric_v2/scores_v2/qwen_budget300.reference.jsonl",
+        "reference_rows": 160
+      }
+    }
+  },
+  "executor": {
+    "bootstrap_replicates": 10000,
+    "family_count": 5,
+    "network_calls_performed": 0,
+    "passed": true,
+    "rows": 7200,
+    "schema": "metric_v2_executor_verification.v1",
+    "task_count": 40
+  },
+  "hash_interlock": {
+    "network_calls_performed": 0,
+    "original_evidence_unchanged": true,
+    "original_files_checked": 1407,
+    "original_hash_failures": [],
+    "passed": true,
+    "schema": "metric_v2_hash_interlock_report.v1",
+    "sidecar_hash_ok": true,
+    "sidecar_source_hash_ok": true
+  },
+  "network_calls_performed": 0,
+  "passed": true,
+  "property_mutation": {
+    "mutation_kill_rate": 1.0,
+    "mutations": [
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M01_omit_required",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:API_01_BBBBBB",
+          "MISSING_REQUIRED_STATE"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M02_move_required_to_NO",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:API_01_BBBBBB",
+          "MISSING_REQUIRED_STATE",
+          "REQUIRED_STATE_NEGATED"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M03_insert_disallowed_OUT",
+        "reason_codes": [
+          "DISALLOWED_STATE_OUTPUT"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M04_blocked_answer_path",
+        "reason_codes": [
+          "ANSWER_BOUNDARY_LEAK",
+          "ANSWER_DISALLOWED:src/api/blocked.py"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M05_same_prefix_decoy",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:API_01_BBBBBB",
+          "MISSING_REQUIRED_STATE"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M06_raw_state",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:API_01_AAAAAA",
+          "ANSWER_UNSUPPORTED:API_01_BBBBBB",
+          "ANSWER_UNSUPPORTED:src/api/ok.py",
+          "MISSING_REQUIRED_STATE",
+          "NO_OUTPUT_BEARING_STATE",
+          "PARSE_ASSIGNMENTS"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M07_oracle_only_exposure",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:src/api/ok.py",
+          "ORACLE_ONLY_LITERAL_EXPOSURE"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M08_unsupported_answer",
+        "reason_codes": [
+          "ANSWER_BOUNDARY_LEAK",
+          "ANSWER_DISALLOWED:API_01_CCCCCC"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M09_disallowed_answer",
+        "reason_codes": [
+          "ANSWER_BOUNDARY_LEAK",
+          "ANSWER_DISALLOWED:src/api/blocked.py"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M10_malformed_state",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:API_01_AAAAAA",
+          "ANSWER_UNSUPPORTED:API_01_BBBBBB",
+          "ANSWER_UNSUPPORTED:src/api/ok.py",
+          "MISSING_REQUIRED_STATE",
+          "NO_OUTPUT_BEARING_STATE",
+          "PARSE_RAW_FALLBACK"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M11_remove_output_surface",
+        "reason_codes": [
+          "ANSWER_UNSUPPORTED:API_01_AAAAAA",
+          "ANSWER_UNSUPPORTED:API_01_BBBBBB",
+          "ANSWER_UNSUPPORTED:src/api/ok.py",
+          "MISSING_REQUIRED_STATE",
+          "NO_OUTPUT_BEARING_STATE"
+        ]
+      },
+      {
+        "joint_after_mutation": false,
+        "killed": true,
+        "name": "M12_negate_required",
+        "reason_codes": [
+          "ANSWER_NEGATED:API_01_AAAAAA",
+          "ANSWER_NEGATED:API_01_BBBBBB",
+          "ANSWER_UNSUPPORTED:src/api/ok.py",
+          "REQUIRED_STATE_NEGATED"
+        ]
+      }
+    ],
+    "network_calls_performed": 0,
+    "passed": true,
+    "properties": [
+      {
+        "detail": "",
+        "name": "P01_perfect_is_valid",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P02_missing_required_is_invalid",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P03_required_in_exclusion_is_invalid",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P04_disallowed_positive_state_breaks_safety",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P05_blocked_path_answer_breaks_joint",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P06_same_prefix_does_not_satisfy",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P07_unknown_only_field_not_output",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P08_raw_fallback_not_parseable",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P09_json_and_assignment_agree",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P10_field_order_invariant",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P11_governance_label_does_not_leak_operational_answer",
+        "passed": true
+      },
+      {
+        "detail": "",
+        "name": "P12_validity_is_monotone_under_disallowed_addition",
+        "passed": true
+      }
+    ],
+    "property_pass_rate": 1.0,
+    "schema": "metric_v2_property_mutation_report.v1"
+  },
+  "schema": "metric_v2_verification_summary.v1",
+  "tier_row_checks": {
+    "deepseek_sanity": {
+      "expected": 40,
+      "passed": true,
+      "rows": 40
+    },
+    "deterministic_validity_suite": {
+      "expected": 36000,
+      "passed": true,
+      "rows": 36000
+    },
+    "primary": {
+      "expected": 7200,
+      "passed": true,
+      "rows": 7200
+    },
+    "primary_budget300": {
+      "expected": 800,
+      "passed": true,
+      "rows": 800
+    },
+    "qwen": {
+      "expected": 1440,
+      "passed": true,
+      "rows": 1440
+    },
+    "qwen_budget300": {
+      "expected": 160,
+      "passed": true,
+      "rows": 160
+    }
+  }
+}

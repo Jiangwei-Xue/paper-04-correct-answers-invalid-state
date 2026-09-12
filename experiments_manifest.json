@@ -1,0 +1,55 @@
+{
+  "schema": "pcg.public_experiments_manifest.v1",
+  "reproduction_profile": "SAVED_OUTPUT_OFFLINE_REPLAY",
+  "experiments": [
+    {
+      "id": "primary_matrix",
+      "role": "claim-bearing",
+      "rows": 7200,
+      "design": "40 tasks x 5 model conditions x 6 protocols x 2 budgets x 3 repeats",
+      "budgets": [600, 1200],
+      "replay_entry": "scripts/reproduce_public_release.py",
+      "score_output": "results/metric_v3/scores_v3/primary.production.jsonl"
+    },
+    {
+      "id": "budget_300_diagnostic",
+      "role": "diagnostic",
+      "rows": 800,
+      "budget": 300,
+      "replay_entry": "scripts/reproduce_public_release.py",
+      "score_output": "results/metric_v3/scores_v3/primary_budget300.production.jsonl"
+    },
+    {
+      "id": "qwen_supplement",
+      "role": "supplementary evidence",
+      "rows": 1600,
+      "replay_entry": "scripts/reproduce_public_release.py",
+      "score_outputs": [
+        "results/metric_v3/scores_v3/qwen.production.jsonl",
+        "results/metric_v3/scores_v3/qwen_budget300.production.jsonl"
+      ]
+    },
+    {
+      "id": "deepseek_sanity",
+      "role": "sanity check",
+      "rows": 40,
+      "replay_entry": "scripts/reproduce_public_release.py",
+      "score_output": "results/metric_v3/scores_v3/deepseek_sanity.production.jsonl"
+    },
+    {
+      "id": "deterministic_validity_suite",
+      "role": "local control",
+      "rows": 36000,
+      "replay_entry": "scripts/reproduce_public_release.py",
+      "score_output": "results/metric_v3/scores_v3/deterministic_validity_suite.production.jsonl"
+    },
+    {
+      "id": "v3_executor",
+      "role": "operational criterion analysis",
+      "rows": 7200,
+      "replay_entry": "scripts/reproduce_public_release.py",
+      "output": "reports/metric_v3/independent_executor_v3_report.json"
+    }
+  ]
+}
+

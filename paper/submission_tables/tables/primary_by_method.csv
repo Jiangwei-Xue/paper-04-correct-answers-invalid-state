@@ -1,0 +1,7 @@
+method,rows,backend_error_rows,backend_error_rate,parse_and_score_success_rows,parse_and_score_success_rate,answer_success_rows,answer_success_rate,state_governance_success_rows,state_governance_success_rate,reliable_composite_success_rows,reliable_composite_success_rate,hard_cap_rows,hard_cap_rate
+loop_only,1200,2,0.001667,1194,0.995000,0,0.000000,0,0.000000,0,0.000000,313,0.260833
+mature_ssr_loop,1200,2,0.001667,1200,1.000000,157,0.130833,407,0.339167,114,0.095000,310,0.258333
+rolling_summary,1200,3,0.002500,1192,0.993333,250,0.208333,394,0.328333,69,0.057500,569,0.474167
+rolling_visible_carry_forward,1200,4,0.003333,1199,0.999167,748,0.623333,315,0.262500,224,0.186667,626,0.521667
+rolling_visible_fields_only,1200,1,0.000833,1200,1.000000,0,0.000000,0,0.000000,0,0.000000,0,0.000000
+ssr_no_visible_carry,1200,1,0.000833,1199,0.999167,194,0.161667,467,0.389167,41,0.034167,221,0.184167

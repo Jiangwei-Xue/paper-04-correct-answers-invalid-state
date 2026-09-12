@@ -1,0 +1,168 @@
+{
+  "condition": {
+    "access_path": "direct_provider",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "condition_id": "deepseek_v4pro",
+    "fallback_enabled": false,
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro"
+  },
+  "difficulty_distribution": {
+    "easy": 3,
+    "hard": 4,
+    "medium": 4
+  },
+  "expected_rows": 44,
+  "experiment_id": "_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run",
+  "family_distribution": {
+    "api_migration": 3,
+    "decoy_heavy_config": 2,
+    "permission_boundary": 3,
+    "requirement_overwrite": 3
+  },
+  "internal_method_mapping": {
+    "mature_ssr_loop": "ssr_loop",
+    "rolling_visible_carry_forward": "rolling_visible_carry_forward"
+  },
+  "local_artifacts": {
+    "config_path": "configs/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run.json",
+    "model_snapshot_proxy": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/MODEL_SNAPSHOT_PROXY.json",
+    "preflight_audit_json": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/PREFLIGHT_AUDIT.json",
+    "preflight_audit_md": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/PREFLIGHT_AUDIT.md",
+    "preflight_hash_manifest": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/PREFLIGHT_HASH_MANIFEST.jsonl",
+    "preflight_sha256sums": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/PREFLIGHT_SHA256SUMS.txt",
+    "raw_dir": "released_raw_outputs/model_outputs/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/deepseek",
+    "result_dir": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run",
+    "run_plan": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/RUN_PLAN.md",
+    "supported_parameter_snapshot": "results/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/SUPPORTED_PARAMETER_SNAPSHOT.json"
+  },
+  "max_workers_default": 10,
+  "max_workers_user_override_allowed_max": 100,
+  "method_protocol_versions": {
+    "mature_ssr_loop": "mature_ssr_loop_protocol_v1_ecvs_safe_visible_only",
+    "rolling_visible_carry_forward": "rolling_visible_identifier_carry_forward_v1_ecvs_safe_visible_only"
+  },
+  "methods": [
+    "rolling_visible_carry_forward",
+    "mature_ssr_loop"
+  ],
+  "positioning": "calibration_only_not_primary_evidence",
+  "request_controls": {
+    "frequency_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "max_tokens": 4096,
+    "min_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "presence_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "reasoning_disable_mode": "thinking.type=disabled",
+    "reasoning_request": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "repetition_penalty": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "seed": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stop": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "stream": {
+      "send_mode": "explicit",
+      "value": false
+    },
+    "temperature": {
+      "send_mode": "explicit",
+      "value": 0
+    },
+    "tools": "disabled",
+    "top_a": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_k": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "top_p": {
+      "send_mode": "omitted",
+      "value": null
+    },
+    "web": "disabled"
+  },
+  "retry_policy": {
+    "failed_attempts_retained": true,
+    "max_attempts": 2,
+    "policy_id": "ecvs_pcg_probe_retry_policy_v1",
+    "post_hoc_failed_row_deletion": false,
+    "retry_backoff_seconds": 2.0,
+    "retryable_http_statuses": [
+      408,
+      409,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ]
+  },
+  "row_gate": {
+    "backend_error": "rerun_required",
+    "exact_failure": "measured_row",
+    "parse_failure": "measured_row",
+    "positive_reasoning_tokens": "excluded",
+    "reasoning_content_returned": "excluded"
+  },
+  "runs": 1,
+  "safety": {
+    "api_run_requires_flag": "--run-api",
+    "default_mode": "preflight_only_no_api_no_key_read",
+    "preflight_calls_api": false,
+    "preflight_reads_api_key": false
+  },
+  "selection_rule": "PCG dynamic-state v1 fixed sequence: 3 easy, 4 medium, 4 hard; family round-robin; no model outcomes.",
+  "selection_seed": "pcg_dynamic_state_v1_seed_20260620_e3_m4_h4_no_outcome",
+  "source_artifact_hashes": {
+    "control_standard_sha256": "cfdfa066acea25bbb6c6e30b30e4dda934cf9fd3b2c1bb3231a8d111126cae71",
+    "generator_spec_sha256": "d6ca2709b772c1fac3ca1c15a63d560f36f4f55dbb672f7a7f7ef8c2e7bc51d2",
+    "method_protocol_registry_sha256": "4cb568252b91163127a1ab9e25413eae1a0f95002076684cb4525690606614d4",
+    "model_visible_manifest_sha256": "1564687749c350d1f7bf81b656a728d3a441d2f49f17544a8d34cec04ec5766d",
+    "pcg_manifest_sha256": "929d583ef7b2915d338127866a26007e53c423732cc757f6a94dbcaed3581620",
+    "pcg_tasks_jsonl_sha256": "7fa63e48d03e30423937985160354f51bccf766cbd48931f652b3ad27161aeed",
+    "scorer_oracle_manifest_sha256": "3318d3247ea911325a8a90d7fb52e51fc024f29ca086ec0d109d0234e43b84f9",
+    "task_provenance_manifest_sha256": "276568f4f908f36e65d560b050b98c4a566b709a9c5c9db9d3f6161da9f66c01",
+    "task_selection_csv_sha256": "debe52b540b08baafdca14de1aa40e1627a39be9a2d96f5970a576488a341be3",
+    "task_split_audit_sha256": "ddd7353debca78ee079b1e175634de7441bbe6a48dfc2bf59a756cbb8008b61e"
+  },
+  "source_artifacts": {
+    "control_standard": "<AUTHOR_LOCAL_WORKSPACE>/stateful-reasoning-benchmark-release/docs/protocol/fresh_main_matrix_v2/LATEST_EXPERIMENT_VARIABLE_REQUIREMENTS_ROLLING_VISIBLE_CARRY_FORWARD_LOCAL.md",
+    "generator_spec": "docs/pcg_dynamic_state/GENERATOR_SPEC.md",
+    "method_protocol_registry": "<AUTHOR_LOCAL_WORKSPACE>/stateful-reasoning-benchmark-release/docs/protocol/fresh_main_matrix_v2/METHOD_CONDITION_PROTOCOLS.md",
+    "model_visible_manifest": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+    "pcg_manifest": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/tasks_pcg_v1_e3_m4_h4_manifest.json",
+    "pcg_tasks_jsonl": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/tasks_pcg_v1_e3_m4_h4.jsonl",
+    "scorer_oracle_manifest": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/SCORER_ORACLE_MANIFEST.jsonl",
+    "task_provenance_manifest": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/TASK_PROVENANCE_MANIFEST.jsonl",
+    "task_selection_csv": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/TASK_SELECTION.csv",
+    "task_split_audit": "data/pcg_dynamic_state/_probe_ecvs_deepseek_v4pro_pcg_dynamic_state_v1_e3_m4_h4_visiblecarry_vs_maturessrloop_11task_2method_2budget_1run/TASK_SPLIT_AUDIT.json"
+  },
+  "state_budget_chars": [
+    600,
+    1200
+  ],
+  "task_count": 11
+}

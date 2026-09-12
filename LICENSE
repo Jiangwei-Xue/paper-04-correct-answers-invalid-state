@@ -1,0 +1,13 @@
+This repository uses layered licensing. No single license applies to the
+complete package.
+
+- Project documentation and derived result tables are licensed under the
+  Creative Commons Attribution 4.0 International License. See
+  LICENSES/CC-BY-4.0.txt.
+- Project analysis and verification code is licensed under the MIT License.
+  See LICENSES/MIT.txt.
+- Third-party material, public datasets, provider records, and model outputs
+  remain subject to their original licenses, terms of use, and provider
+  policies. See LICENSES/THIRD_PARTY.md.
+
+See LICENSES/README.md for the path-level scope. The manuscript is not bundled.

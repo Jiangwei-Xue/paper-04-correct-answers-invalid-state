@@ -1,0 +1,4 @@
+run_or_artifact,matrix_entry_allowed,allowed_use,reason
+openrouter_gpt55_runner_preflight_1task_1method_1budget_1run,false,access/routing preflight only,one-task preflight; H2 max chain; not admission
+openrouter_claude48_runner_preflight_1task_1method_1budget_1run,false,access/routing preflight only,one-task preflight; task failed; H2 max chain
+v4 variable-control registry/docs,false,forward control basis,planning/freeze docs only

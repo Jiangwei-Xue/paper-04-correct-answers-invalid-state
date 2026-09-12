@@ -1,0 +1,11 @@
+{
+  "model_visible_contains_oracle_key": false,
+  "model_visible_manifest": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/MODEL_VISIBLE_TASK_MANIFEST.jsonl",
+  "no_outcome_selection": true,
+  "oracle_rows": 1,
+  "prompt_oracle_split_status": "PASS",
+  "schema_version": "pcg_dynamic_state_v2.static_sanity_split_audit.v1",
+  "scorer_oracle_manifest": "data/pcg_dynamic_state_v2/pcg_dynamic_state_v2_static_sanity_deepseek_1task_4method_budget600_1run_20260623/SCORER_ORACLE_MANIFEST.jsonl",
+  "task_ids_match": true,
+  "visible_rows": 1
+}

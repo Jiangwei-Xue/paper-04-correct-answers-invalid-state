@@ -1,0 +1,3 @@
+budget,rows,backend_error_rows,backend_error_rate,parse_and_score_success_rows,parse_and_score_success_rate,answer_success_rows,answer_success_rate,state_governance_success_rows,state_governance_success_rate,reliable_composite_success_rows,reliable_composite_success_rate,hard_cap_rows,hard_cap_rate
+1200,3600,9,0.002500,3592,0.997778,588,0.163333,839,0.233056,247,0.068611,440,0.122222
+600,3600,4,0.001111,3592,0.997778,761,0.211389,744,0.206667,201,0.055833,1599,0.444167

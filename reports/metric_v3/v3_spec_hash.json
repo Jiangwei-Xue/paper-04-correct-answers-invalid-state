@@ -1,0 +1,14 @@
+{
+  "schema": "carried_state_validity_v3.freeze_manifest.v1",
+  "spec": "specs/carried_state_validity_v3.yaml",
+  "spec_sha256": "0312e40a7c0175f70f1559977b17049e2803fdc9be5176d1fd866295ab89d669",
+  "suite": "reports/metric_v3/gates/representation_invariance_suite.json",
+  "suite_sha256": "c4f096e1b5d1abaebdbe109000e98592126903e168aef00b7913391e61fbee37",
+  "analysis_plan": "docs/metric_v3_revision_analysis_plan.md",
+  "analysis_plan_sha256": "4c5e21233c965f26b13f0f7d4f98574116f0e8e87426f73f49d24a1dfb344d53",
+  "adapter_sha256": "e18ceef94db93720a2743717bc125736981c8ec304f1c3f023e83451c2d7348b",
+  "evaluator_sha256": "973ed041013dc81066ba99924866c35acc1a02fc7b63f5f4ca5e726b7cda5198",
+  "serializer_sha256": "76becb18afa2b1ce8b6ab40a883cf27af58b4397116ae79de9de92876f84d527",
+  "freeze_condition": "representation_invariance_passed_and_adapter_hidden_status_gate_passed",
+  "network_calls_performed": 0
+}

@@ -1,0 +1,5 @@
+selection_group,difficulty_tier,source_type,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+frontier_hard_non_real,frontier_hard,diagnostic_controlled,12,12,0,0,0.25,0.25,0
+frontier_hard_non_real,frontier_hard,semi_real_repo_style_controlled,18,18,0,0,0.111111,0.055556,0
+real_swe_non_frontier,hard,real_swe_executable_anchor_controlled,12,12,0,0,0.583333,0.5,0
+real_swe_non_frontier,medium,real_swe_executable_anchor_controlled,18,18,0,0,0.5,0.333333,0

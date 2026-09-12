@@ -1,0 +1,4 @@
+selection_group,difficulty_tier,source_type,rows,clean_rows,excluded_rows,rerun_required_rows,final_exact_success_avg,reliable_success_avg,positive_reasoning_rows
+pcg_easy,easy,pcg_dynamic_state_synthetic,12,12,0,0,0.916667,0.916667,0
+pcg_hard,hard,pcg_dynamic_state_synthetic,16,16,0,0,1.0,1.0,0
+pcg_medium,medium,pcg_dynamic_state_synthetic,16,16,0,0,1.0,1.0,0

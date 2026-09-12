@@ -1,0 +1,17 @@
+{
+  "derived_at_utc": "2026-08-12T17:38:12Z",
+  "family_counts": {
+    "api_migration_state_transition": 8,
+    "decoy_heavy_same_prefix_config": 8,
+    "permission_boundary_with_attractive_blocked_path": 8,
+    "protected_information_redaction_under_task_pressure": 8,
+    "requirement_overwrite_cumulative_active": 8
+  },
+  "network_calls_performed": 0,
+  "schema": "carried_state_validity_v2.oracle_sidecar_manifest.v1",
+  "sidecar": "results/metric_v2/oracles_v2/main_matrix_v1.sidecar.jsonl",
+  "sidecar_sha256": "4c96bfa33c5158726e872808c56c30fcb37654a50d690f157115e4da7efd0648",
+  "source_oracle": "artifact/results/evidence/ssr_downgrade_20260623/data/pcg_dynamic_state_v2/main_matrix_v1/SCORER_ORACLE_MANIFEST.jsonl",
+  "source_oracle_sha256": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280",
+  "task_count": 40
+}

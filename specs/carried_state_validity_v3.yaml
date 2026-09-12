@@ -1,0 +1,54 @@
+spec_id: carried_state_validity_v3
+spec_version: "3.0.0"
+status: frozen_after_representation_invariance_pass
+freeze_date: 2026-08-13
+freeze_basis:
+  representation_invariance_suite: reports/metric_v3/gates/representation_invariance_suite.json
+  representation_invariance_cases: 10
+  representations: [rolling_summary, visible_carry, ssr]
+  adapter_hidden_status_access: false
+answer_metric: final_answer_success_v2
+legacy_answer_metric: answer_success_legacy_rawscan
+v2_policy: preserved_as_frozen_prior_contract_and_not_modified
+canonical_state:
+  positive_operational_items: "Items positively asserted by a deterministic adapter."
+  negative_or_excluded_items: "Items explicitly asserted as revoked, stale, forbidden, blocked, protected, excluded, or otherwise not outputtable."
+  ambiguous_items: "Items with unresolved or conflicting polarity; fail closed."
+  annotation_items: "Non-operational notes retained for audit only."
+adapters:
+  input: "Native carried-state surface plus task-visible identifier universe."
+  forbidden_inputs:
+    - hidden oracle status
+    - final answer
+    - executor result
+    - scorer labels
+  ambiguity_policy: fail_closed
+  architecture: "native representation -> method-specific adapter -> canonical operational state -> common evaluator"
+validity_fields:
+  representation_parseable_v3: "The native state can be deterministically canonicalized without raw fallback."
+  positive_operational_state_present_v3: "The canonical positive operational set is non-empty."
+  exclusion_safety_v3: "No oracle-disallowed item is positively claimed, and no oracle-only literal is exposed."
+  operational_state_sufficiency_v3: "All mandatory current facts are positive and at least one admissible action option is positive."
+  answer_state_consistency_v3: "Every operational answer item, including a chosen path, is positively supported and not disallowed."
+  intrinsic_state_validity_v3: "representation_parseable_v3 AND positive_operational_state_present_v3 AND exclusion_safety_v3 AND operational_state_sufficiency_v3."
+  carried_state_validity_v3: "intrinsic_state_validity_v3 AND answer_state_consistency_v3."
+  joint_final_answer_state_success_v3: "final_answer_success_v2 AND carried_state_validity_v3."
+action_semantics:
+  mandatory_current_facts: "The frozen oracle's final active items."
+  admissible_action_options: "The frozen oracle's allowed answer paths; one supported option is sufficient unless a task-specific contract says otherwise."
+  option_requirement_policy: "Each admissible path is evaluated against the mandatory current facts because the frozen oracle does not provide path-specific prerequisite partitions."
+  answer_selected_path_policy: "If the final answer selects a path, that path must be positively supported by the canonical state."
+analysis:
+  representation_as_blocking_variable: true
+  pooled_executor_rd_primary: false
+  primary_executor_estimand: "Within-method risk difference P(E=1 | A_final_v2=1, V3=1, M=m) - P(E=1 | A_final_v2=1, V3=0, M=m)."
+  task_cluster_bootstrap_replicates: 10000
+  task_cluster_bootstrap_seed: 20260813
+denominators:
+  primary_rows: 7200
+  preserve_all_rows: true
+  outcome_dependent_refill: false
+  revision_analysis_plan: docs/metric_v3_revision_analysis_plan.md
+provenance:
+  underlying_outputs_predate_v3_spec: true
+  preregistration_claim_permitted: false

@@ -1,0 +1,71 @@
+{
+  "api_calls_performed": 0,
+  "baseline_config_sha256": "50692c3261a9539b959655c9f08a9e86ce5720c1babd9348df6afb59cb5123ed",
+  "baseline_output_rows": 36000,
+  "baseline_score_rows": 36000,
+  "by_policy": [
+    {
+      "answer_success_count": 0,
+      "answer_success_rate": 0.0,
+      "baseline_policy_id": "carry_all_visible_v1",
+      "co_success_count": 0,
+      "co_success_rate": 0.0,
+      "n": 7200,
+      "state_governance_success_count": 0,
+      "state_governance_success_rate": 0.0
+    },
+    {
+      "answer_success_count": 1080,
+      "answer_success_rate": 0.15,
+      "baseline_policy_id": "copy_initial_visible_v1",
+      "co_success_count": 1080,
+      "co_success_rate": 0.15,
+      "n": 7200,
+      "state_governance_success_count": 7200,
+      "state_governance_success_rate": 1.0
+    },
+    {
+      "answer_success_count": 7200,
+      "answer_success_rate": 1.0,
+      "baseline_policy_id": "oracle_ceiling_control_v1",
+      "co_success_count": 7200,
+      "co_success_rate": 1.0,
+      "n": 7200,
+      "state_governance_success_count": 7200,
+      "state_governance_success_rate": 1.0
+    },
+    {
+      "answer_success_count": 38,
+      "answer_success_rate": 0.005278,
+      "baseline_policy_id": "random_visible_v1",
+      "co_success_count": 38,
+      "co_success_rate": 0.005278,
+      "n": 7200,
+      "state_governance_success_count": 1320,
+      "state_governance_success_rate": 0.183333
+    },
+    {
+      "answer_success_count": 1080,
+      "answer_success_rate": 0.15,
+      "baseline_policy_id": "rule_visible_transition_v1",
+      "co_success_count": 1080,
+      "co_success_rate": 0.15,
+      "n": 7200,
+      "state_governance_success_count": 1080,
+      "state_governance_success_rate": 0.15
+    }
+  ],
+  "environment_record_sha256": "41db350f62088f2e92adcdf4e6cbb337c3aa476274a1e38020066e8db337f90a",
+  "generated_at_utc": "2026-07-07T16:53:34Z",
+  "policy_count": 5,
+  "schema_version": "pcg_dynamic_state_v2.minimal_baseline_summary.v1",
+  "source_hashes": {
+    "oracle_manifest": "670c47db3b1a873eba10045fc4e8e656d464128a225850854cceb3fbd4f85280",
+    "row_manifest": "10ace9463c960c35bbfa501e23e554924c6ef2f1f5fd904e7e18324e872938e0",
+    "scorer": "67c18a606d50760990ef28054b059058c69e758d8439b1caa1ed2e8f1dc6417b",
+    "script": "e7db02d15088777b078f2a9b2cbe57309ebedfab5a5f73a4bbecdf8da7dda552",
+    "visible_manifest": "f26636d5c6f01b13e659d9162a2e5b366d8c448d2c03190dfbe137a392d3b1a1"
+  },
+  "source_rows": 7200,
+  "suite_id": "minimal_baseline_validity_suite_20260706"
+}

@@ -1,0 +1,22 @@
+{
+  "confirmatory_config": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.json",
+  "confirmatory_config_sha256": "71d54ae9e0c0da423d54663007eac2e87decfd020ad1f46d538e1aad01dcc2ba",
+  "confirmatory_row_count": 7200,
+  "confirmatory_rows": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_confirmatory_40task_5model_6method_2budget_3run_20260625.rows.jsonl",
+  "confirmatory_rows_sha256": "10ace9463c960c35bbfa501e23e554924c6ef2f1f5fd904e7e18324e872938e0",
+  "created_at_utc": "2026-06-25T00:00:00Z",
+  "decision": "READY_FOR_MAIN_RECORD_MODE",
+  "diagnostic_config": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.json",
+  "diagnostic_config_sha256": "2e94b821cce7f3c0f5befa4121697d52347560bc6980f687d51025921c29dc8d",
+  "diagnostic_row_count": 800,
+  "diagnostic_rows": "artifact/protocol/main_matrix/configs/pcg_dynamic_state_v2_budget300_diagnostic_40task_5model_4method_1budget_1run_20260625.rows.jsonl",
+  "diagnostic_rows_sha256": "c12e5c5dca092cd32c2cbcbaaccfd0f6b22dba36ad5a2b47b285530ba606df99",
+  "hash_manifest": "artifact/protocol/main_matrix/admission/HASH_MANIFEST_20260625.jsonl",
+  "hash_manifest_sha256": "8928bd8d461eff3f042e84ef74889a2c7b98a7d95f8a4cb181e66e88a10485c2",
+  "provider_live_refresh_passed": true,
+  "provider_live_refresh_successful_adapter_rows": 5,
+  "provider_live_refresh_summary": "artifact/protocol/main_matrix/admission/live_refresh_20260625/provider_live_refresh_summary.json",
+  "provider_snapshot": "artifact/protocol/main_matrix/admission/PROVIDER_SUPPORTED_PARAMETER_SNAPSHOT_20260625.json",
+  "provider_snapshot_sha256": "2c5a8f4d57026356ccf3aee9489b85a6b035c2ab7a204da150fef8a0daf3d885",
+  "schema_version": "pcg_dynamic_state_v2.freeze_summary.v1"
+}

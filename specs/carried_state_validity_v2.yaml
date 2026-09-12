@@ -1,0 +1,96 @@
+spec_id: carried_state_validity_v2
+spec_version: "2.0.0"
+purpose: "Measure whether a carried state is parseable, present, complete, safe, and sufficient for the answer that follows."
+denominator_policy:
+  preserve_all_rows: true
+  outcome_dependent_refill: false
+  transport_failures: retain_and_report
+  parse_failures: retain_and_report
+  diagnostic_tiers_are_separate: true
+relations:
+  intrinsic_state_validity_v2: "state_parseable_v2 AND output_bearing_present_v2 AND exclusion_safety_v2 AND required_state_completeness_v2"
+  carried_state_validity_v2: "intrinsic_state_validity_v2 AND answer_state_consistency_v2"
+  joint_answer_state_success_v2: "answer_success_v2 AND carried_state_validity_v2"
+field_definitions:
+  state_parseable_v2: "The final carried-state surface is an unambiguous JSON object or field-assignment record; raw or malformed fallback is false."
+  output_bearing_present_v2: "At least one declared output-bearing state field contains a non-empty value."
+  exclusion_safety_v2: "No disallowed token/path is positively carried or emitted on the operational answer surface; oracle-only literals are absent from all emitted surfaces."
+  required_state_completeness_v2: "Every required_state_item from the derived task oracle appears positively in an output-bearing state field and is not directly negated."
+  answer_state_consistency_v2: "Every operational answer token/path is positively supported by the carried state and is not disallowed."
+  answer_success_v2: "Legacy answer correctness semantics reimplemented independently: all required tokens present and no forbidden/protected/revoked/stale token or blocked path leaks on the answer surface."
+  intrinsic_state_validity_v2: "Derived conjunction of the four intrinsic component fields."
+  carried_state_validity_v2: "Derived conjunction of intrinsic_state_validity_v2 and answer_state_consistency_v2."
+  joint_answer_state_success_v2: "Derived conjunction of answer_success_v2 and carried_state_validity_v2."
+state_field_roles:
+  output_bearing:
+    - OUT
+    - ALW
+    - ALLOW
+    - ALLOWED
+    - ALLOWED_PATH
+    - ALLOWED_PATHS
+    - ACTIVE
+    - ACTIVE_SET
+    - ACTIVE_TOKENS
+    - REQUIRED
+    - REQUIRED_TOKENS
+    - VISIBLE_KEEP
+    - KEEP
+    - OUTPUT
+    - OUTPUT_SET
+    - FINAL
+    - FINAL_ACTIVE
+    - FINAL_ACTIVE_SET
+    - FINAL_TOKENS
+    - FINAL_ACTIVE_TOKENS
+    - CARRY_ALL
+  exclusion_or_governance:
+    - NO
+    - NO_CAT
+    - DENY
+    - DENIED
+    - EXCLUDED
+    - EXCLUDE
+    - FORBIDDEN
+    - PROTECTED
+    - REVOKED
+    - STALE
+    - BLOCKED
+    - BOUND
+    - BOUNDARY
+    - B
+    - NOTE
+    - NOTES
+    - CHECK
+    - CHECKS
+    - CK
+    - BOUNDARY_CHECKS
+    - STATE_LABELS
+    - STATE_TRANSITIONS
+  annotation:
+    - CURRENT_GOAL
+    - GAP
+    - NEXT_MISTAKE_TO_AVOID
+    - G
+    - N
+    - SUMMARY
+    - VISIBLE_NOTE
+    - VISIBLE_BOUNDARY
+    - VISIBLE_ALLOWED_SCOPE
+    - LOOP
+  diagnostic:
+    - TRACE
+    - EVIDENCE
+    - SEGMENT
+    - FAMILY
+    - DEBUG
+unknown_field_policy: parseable_but_not_output_bearing_and_fail_closed_for_completeness
+matching:
+  exact_item_boundary: "(?<![A-Za-z0-9_])ITEM(?![A-Za-z0-9_])"
+  case_sensitive: true
+oracle_derivation:
+  source: frozen_hidden_state_machine_only
+  required_state_items: oracle.required_exact_tokens
+  optional_allowed_items: oracle.allowed_paths
+  disallowed_output_items: oracle.final_excluded_set + oracle.blocked_paths
+  oracle_only_literals: explicit_source_field_only

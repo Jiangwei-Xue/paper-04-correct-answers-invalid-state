@@ -1,0 +1,7 @@
+{
+  "api_calls_performed": 0,
+  "implementation": "CPython",
+  "platform": "Darwin-arm64",
+  "python_version": "3.14",
+  "schema_version": "pcg_dynamic_state_v2.minimal_baseline_environment.v1"
+}

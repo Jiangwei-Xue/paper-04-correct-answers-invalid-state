@@ -1,0 +1,7 @@
+{
+  "failures": [],
+  "network_calls_performed": 0,
+  "passed": true,
+  "rows_checked": 36000,
+  "schema": "metric_v2_legacy_v1_preservation.v1"
+}
