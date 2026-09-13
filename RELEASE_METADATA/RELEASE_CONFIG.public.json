@@ -47,6 +47,7 @@
       "results/README.md"
     ],
     "stale_patterns": [
+      "pcg-v3-github-reproduction-20260912-v7",
       "pcg-v3-public-replay-20260910-v5",
       "verify_public_release_v5.py",
       "docs/CHINESE_ALLOWLIST.md",
@@ -55,7 +56,7 @@
     ]
   },
   "release_class": "public",
-  "release_name": "pcg-v3-github-reproduction-20260912-v7",
+  "release_name": "pcg-v3-github-reproduction-20260913-v8",
   "schema_version": 1,
   "source_date_epoch": 315532800,
   "statistical_claims": [],
@@ -67,6 +68,6 @@
       "reproducibility"
     ],
     "name": "experiment-release",
-    "version": "1.2.1"
+    "version": "1.2.2"
   }
 }

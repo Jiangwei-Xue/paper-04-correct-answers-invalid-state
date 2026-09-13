@@ -30,7 +30,14 @@ def main():
     for item in meta['paper_files']:
         assert re.fullmatch(r'[0-9a-f]{64}', item['sha256'])
         assert not Path(item['path']).is_absolute()
-    assert 'No single license' in (ROOT / 'LICENSE').read_text()
+    license_scope = '\n'.join(
+        (ROOT / rel).read_text()
+        for rel in ('LICENSE', 'LICENSES/README.md')
+    ).lower()
+    assert (
+        'no single license' in license_scope
+        or 'not governed by one blanket license' in license_scope
+    )
     assert meta['primary_results']['rows'] == 7200
     assert meta['primary_results']['final_answer_success'] == 696
     assert meta['primary_results']['answer_aligned_validity'] == 180

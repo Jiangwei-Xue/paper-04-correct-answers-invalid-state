@@ -6,7 +6,7 @@ This repository reconstructs the paper's claim-bearing results from saved model 
 Corresponding preprint: **When Correct Answers Carry Invalid State: Evaluating Explicit State Carriers in Stateful LLM Agents**, by Jiangwei Xue, Zhida Qin, and Yuda Bi.
 DOI: [10.5281/zenodo.22720976](https://doi.org/10.5281/zenodo.22720976).
 Reproducibility repository: [https://github.com/Jiangwei-Xue/paper-04-correct-answers-invalid-state](https://github.com/Jiangwei-Xue/paper-04-correct-answers-invalid-state).
-Reproduction release: `pcg-v3-github-reproduction-20260912-v7`.
+Reproduction release: `pcg-v3-github-reproduction-20260913-v8`.
 The PDF and complete LaTeX source are supplied separately; `LATEST_PAPER.json` binds their public hashes to this release.
 
 ## Reproduction scope
@@ -30,9 +30,9 @@ The reproduction semantics do not depend on local time. `TZ=UTC` is used for the
 After downloading the release archive:
 
 ```sh
-7zz x pcg-v3-github-reproduction-20260912-v7.7z
-cd pcg-v3-github-reproduction-20260912-v7
-python3 scripts/reproduce_public_release.py --archive ../pcg-v3-github-reproduction-20260912-v7.7z
+7zz x pcg-v3-github-reproduction-20260913-v8.7z
+cd pcg-v3-github-reproduction-20260913-v8
+python3 scripts/reproduce_public_release.py --archive ../pcg-v3-github-reproduction-20260913-v8.7z
 ```
 
 The final JSON object must contain `"passed": true` and `"api_calls_performed": 0`.

@@ -2,7 +2,7 @@
 
 ## Scope
 
-Release ID: `pcg-v3-github-reproduction-20260912-v7`.
+Release ID: `pcg-v3-github-reproduction-20260913-v8`.
 
 The validated scope is saved-output offline replay. The package recomputes the paper's retained deterministic results without generating new provider responses.
 

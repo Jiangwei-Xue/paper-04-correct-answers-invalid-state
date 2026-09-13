@@ -1,7 +1,7 @@
 {
   "full_declared_reproduction": "PASS",
   "package_validation": "PASS",
-  "release_id": "pcg-v3-github-reproduction-20260912-v7",
+  "release_id": "pcg-v3-github-reproduction-20260913-v8",
   "reproduction_profile": "SAVED_OUTPUT_OFFLINE_REPLAY",
   "result_equivalence": "PASS",
   "scientific_validation": "PASS"

@@ -12,7 +12,7 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE_ID = "pcg-v3-github-reproduction-20260912-v7"
+RELEASE_ID = "pcg-v3-github-reproduction-20260913-v8"
 
 REQUIRED_FILES = {
     "README.md",

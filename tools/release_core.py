@@ -33,7 +33,7 @@ from pathlib import Path, PurePosixPath, PureWindowsPath
 from typing import Any, Iterable, Iterator, Sequence
 
 
-TOOL_VERSION = "1.2.1"
+TOOL_VERSION = "1.2.2"
 SCHEMA_VERSION = 1
 METADATA_DIR = "RELEASE_METADATA"
 MANIFEST_PATH = f"{METADATA_DIR}/RELEASE_MANIFEST.jsonl"
@@ -599,7 +599,15 @@ def _privacy_patterns() -> dict[str, re.Pattern[bytes]]:
         "privacy.posix_tmp": re.compile(rb"/t[m]p/(?:[A-Za-z0-9]|\.[A-Za-z0-9])"),
         "privacy.windows_home_backslash": re.compile(rb"[A-Za-z]:\\Users\\[A-Za-z0-9._ -]+\\"),
         "privacy.windows_home_slash": re.compile(rb"[A-Za-z]:/Users/[A-Za-z0-9._ -]+/"),
-        "privacy.windows_drive": re.compile(rb"(?<![A-Za-z0-9])[A-Za-z]:\\(?!\\)(?!Users\\<)"),
+        # A drive prefix alone occurs frequently by chance inside compressed
+        # binary streams. Require two printable path segments so ordinary
+        # absolute paths (for example D:\\dataset\\file.json) remain blocked
+        # without treating arbitrary PDF stream bytes as machine paths.
+        "privacy.windows_drive": re.compile(
+            rb"(?<![A-Za-z0-9])[A-Za-z]:\\(?!\\)(?!Users\\<)"
+            rb"(?=[A-Za-z0-9._ -]{1,128}\\[A-Za-z0-9._ -]{1,128}"
+            rb"(?:\\|(?=[\x00\s\"']|$)))"
+        ),
         "privacy.unc_path": re.compile(rb"\\\\[A-Za-z0-9._-]+\\[A-Za-z0-9$._ -]+\\"),
         "privacy.ci_workspace": re.compile(rb"/(?:__w|github/workspace|builds|workspace)/[A-Za-z0-9._/-]+"),
     }

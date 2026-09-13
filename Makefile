@@ -1,4 +1,4 @@
-ARCHIVE ?= ../pcg-v3-github-reproduction-20260910-v6.7z
+ARCHIVE ?= ../pcg-v3-github-reproduction-20260913-v8.7z
 
 .PHONY: reproduce verify-release verify-profile
 

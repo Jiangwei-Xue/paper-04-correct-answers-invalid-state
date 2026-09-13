@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the corresponding preprint when using this reproduction package."
 type: software
 title: "PCG V3 carried-state reproduction package"
-version: "7"
+version: "8"
 authors:
   - family-names: Xue
     given-names: Jiangwei
