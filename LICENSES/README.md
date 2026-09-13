@@ -1,19 +1,31 @@
 # Layered licensing
 
-No single license applies to the complete package.
+No single license applies to this repository as a whole. License scope is
+determined by both path and material type; a file-specific or upstream notice
+takes precedence.
 
-| Content class | License or terms |
+| Repository material | Governing license or terms |
 |---|---|
-| Project documentation and derived result tables | Creative Commons Attribution 4.0 International; see `CC-BY-4.0.txt` |
-| Project analysis and verification code | MIT License; see `MIT.txt` |
-| Third-party material, provider records, and model outputs | Original source or provider terms; see `THIRD_PARTY.md` |
+| Project-authored code under `metric_v2/`, `metric_v3/`, `scripts/`, and `tools/` | MIT License; see `MIT.txt` |
+| Project-authored Python code under `artifact/`, plus `Makefile` and other project-authored executable configuration | MIT License; see `MIT.txt` |
+| `README.md`, project-authored documentation under `docs/`, `RELEASE_AUDIT.md`, and `CITATION.cff` | CC BY 4.0; see `CC-BY-4.0.txt` |
+| Project-authored documentation under `artifact/` | CC BY 4.0; see `CC-BY-4.0.txt` |
+| Author-generated aggregate tables under `paper/submission_tables/tables/` and aggregate tables and reports under `reports/` | CC BY 4.0; see `CC-BY-4.0.txt` |
+| Model requests, model responses, provider metadata, and provider-generated records under `artifact/results/` | Original provider and model terms; no new license is granted |
+| Benchmark-derived records, public data, and material derived from public data | Original source, dataset, or benchmark terms; no new license is granted unless a file-specific notice says otherwise |
+| Third-party code, libraries, repository content, trademarks, and independently licensed components | Their original licenses or terms; see `THIRD_PARTY.md` |
 
-Path-level application:
+The MIT grant for project-authored Python code under `artifact/` does not cover
+saved records, model outputs, provider metadata, benchmark-derived content, or
+third-party material that happens to appear below that directory. Likewise, the
+CC BY 4.0 grant for project-authored documentation does not apply automatically
+to every Markdown file or to embedded third-party material.
 
-- CC BY 4.0: `README.md`, project-authored material under `docs/`, `RELEASE_AUDIT.md`, and derived aggregate tables under `paper/submission_tables/tables/` and `reports/`;
-- MIT: project-authored Python modules, verification scripts, and `Makefile`;
-- original terms: saved provider records and model outputs under `artifact/results/`, third-party material, and any component carrying its own notice.
+## Manuscript boundary
 
-The manuscript is not bundled. This licensing map does not change third-party rights or provider terms.
+The manuscript is not bundled in this GitHub repository. The separately
+published preprint, DOI `10.5281/zenodo.22720976`, is licensed under CC BY 4.0
+according to the license attached to its Zenodo record. That license does not
+extend to this repository as a whole, to provider records, or to model outputs.
 
-The separately supplied preprint (DOI `10.5281/zenodo.22720976`) is licensed under CC BY 4.0, as stated in its PDF and LaTeX source. This does not extend that license to provider records or model outputs.
+See `THIRD_PARTY.md` for the repository-specific inventory and reuse boundaries.

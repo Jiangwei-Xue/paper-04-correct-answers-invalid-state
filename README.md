@@ -88,13 +88,22 @@ The same operations are available as `make verify-release`, `make reproduce`, an
 
 ## Licensing
 
-Licensing is layered:
+This repository uses layered licensing:
 
-- project documentation and derived result tables: CC BY 4.0;
-- project analysis and verification code: MIT License;
-- third-party material, provider records, and model outputs: their original terms.
+- project-authored analysis, scoring, replay, and verification code:
+  MIT License;
+- project-authored documentation and derived aggregate tables:
+  CC BY 4.0;
+- saved provider records, model outputs, benchmark-derived material,
+  public data, and third-party content: their original applicable terms.
 
-See `LICENSES/README.md` for the path-level scope. The manuscript is not bundled in this repository archive.
+The manuscript is not bundled in this repository. The separately
+published CC BY 4.0 preprint is available at
+https://doi.org/10.5281/zenodo.22720976.
+
+See `LICENSE`, `LICENSES/README.md`, and
+`LICENSES/THIRD_PARTY.md` for the controlling path and material
+boundaries. No single license applies to the repository as a whole.
 
 ## Publication metadata verification
 

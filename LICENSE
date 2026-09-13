@@ -1,13 +1,81 @@
-This repository uses layered licensing. No single license applies to the
-complete package.
+# Layered licensing notice
 
-- Project documentation and derived result tables are licensed under the
-  Creative Commons Attribution 4.0 International License. See
-  LICENSES/CC-BY-4.0.txt.
-- Project analysis and verification code is licensed under the MIT License.
-  See LICENSES/MIT.txt.
-- Third-party material, public datasets, provider records, and model outputs
-  remain subject to their original licenses, terms of use, and provider
-  policies. See LICENSES/THIRD_PARTY.md.
+Copyright (c) 2026 the project authors.
 
-See LICENSES/README.md for the path-level scope. The manuscript is not bundled.
+This repository is not governed by one blanket license. The following
+path- and material-level terms apply.
+
+## MIT License
+
+The MIT License applies to project-authored analysis, scoring, replay,
+verification, and utility code, including:
+
+- project-authored code under `metric_v2/`;
+- project-authored code under `metric_v3/`;
+- project-authored executable code under `scripts/` and `tools/`;
+- project-authored Python modules under `artifact/`;
+- `Makefile` and other project-authored executable configuration.
+
+The full MIT License is provided in `LICENSES/MIT.txt`.
+
+This grant does not apply to third-party code or externally governed
+records merely because they appear in one of these directories.
+
+## Creative Commons Attribution 4.0 International
+
+CC BY 4.0 applies, to the extent copyright or database rights exist and
+the project authors hold those rights, to:
+
+- `README.md`;
+- project-authored documentation under `docs/`;
+- `RELEASE_AUDIT.md`;
+- project-authored documentation under `artifact/`;
+- author-generated aggregate tables under
+  `paper/submission_tables/tables/`;
+- author-generated aggregate tables and reports under `reports/`;
+- `CITATION.cff`; and
+- other project-authored documentation and derived summaries explicitly
+  identified as CC BY 4.0.
+
+The full CC BY 4.0 legal text is provided in
+`LICENSES/CC-BY-4.0.txt`.
+
+## Manuscript
+
+The manuscript is not bundled in this GitHub repository.
+
+The separately published preprint:
+
+“When Correct Answers Carry Invalid State: Evaluating Explicit State
+Carriers in Stateful LLM Agents”
+
+by Jiangwei Xue, Zhida Qin, and Yuda Bi is available at:
+
+https://doi.org/10.5281/zenodo.22720976
+
+The author-owned manuscript material in that Zenodo record is licensed
+under CC BY 4.0 according to the license attached to that record. That
+license does not automatically apply to the complete GitHub repository.
+
+## Third-party and provider-governed material
+
+No new license is granted by this repository for:
+
+- saved model requests or responses;
+- provider metadata and provider-generated records;
+- benchmark-derived records;
+- public datasets and material derived from them;
+- third-party repository content;
+- third-party libraries; or
+- trademarks and other externally controlled material.
+
+Those materials remain subject to their original licenses, provider
+terms, dataset terms, and applicable law. See
+`LICENSES/THIRD_PARTY.md`.
+
+A file-specific or upstream notice takes precedence for the material it
+covers.
+
+The MIT and CC BY 4.0 licenses apply to different material classes.
+They are not alternative licenses from which a user may choose for the
+repository as a whole.
